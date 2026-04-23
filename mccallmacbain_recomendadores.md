@@ -1,4 +1,4 @@
-# McCall MacBain — Briefing para Recomendadores
+# McCall MacBain - Briefing para Recomendadores
 *Preparado por Andy · 23/04/2026*
 *⚠️ URGENTE: contato com recomendadores deve ser feito em abril/maio/2026 (3 meses antes do prazo)*
 
@@ -6,7 +6,7 @@
 
 ## Contexto Rápido
 
-O **McCall MacBain Scholarship** é a maior bolsa de liderança do Canadá — financia mestrado integral na McGill University (Montreal), incluindo mensalidade + CAD $2.000/mês + auxílio de mudança. A bolsa é para líderes com potencial de impacto, **não** para o melhor GPA.
+O **McCall MacBain Scholarship** é a maior bolsa de liderança do Canadá - financia mestrado integral na McGill University (Montreal), incluindo mensalidade + CAD $2.000/mês + auxílio de mudança. A bolsa é para líderes com potencial de impacto, **não** para o melhor GPA.
 
 - **Portal abre:** Junho 2026
 - **Prazo internacional:** 19 de agosto de 2026
@@ -27,13 +27,13 @@ O **McCall MacBain Scholarship** é a maior bolsa de liderança do Canadá — f
 ## Mensagem para enviar ao Recomendador (template)
 
 ```
-Assunto: Pedido de carta de recomendação — McCall MacBain Scholarship (prazo ago/2026)
+Assunto: Pedido de carta de recomendação - McCall MacBain Scholarship (prazo ago/2026)
 
 [Nome],
 
 Espero que você esteja bem.
 
-Estou escrevendo para te convidar a ser um dos meus recomendadores para o McCall MacBain Scholarship — a maior bolsa de liderança do Canadá para mestrado na McGill University, em Montreal.
+Estou escrevendo para te convidar a ser um dos meus recomendadores para o McCall MacBain Scholarship - a maior bolsa de liderança do Canadá para mestrado na McGill University, em Montreal.
 
 A bolsa não é por nota acadêmica, mas por liderança, caráter, espírito empreendedor e potencial de impacto. Por isso, a sua perspectiva sobre o meu trabalho [na Laudite / na Dream Bots] é exatamente o que os avaliadores precisam ouvir.
 
@@ -42,7 +42,7 @@ O processo funciona assim:
 - Quando eu submeter minha candidatura, o sistema vai enviar um formulário de recomendação diretamente para o seu email
 - O prazo para a carta é 19 de agosto de 2026
 
-Gostaria de saber se você toparia me apoiar. Se sim, posso te enviar um briefing mais detalhado sobre a bolsa e os pontos que eu acho que fariam mais diferença você destacar — para facilitar ao máximo o processo para você.
+Gostaria de saber se você toparia me apoiar. Se sim, posso te enviar um briefing mais detalhado sobre a bolsa e os pontos que eu acho que fariam mais diferença você destacar - para facilitar ao máximo o processo para você.
 
 Obrigado pela consideração!
 
@@ -53,7 +53,7 @@ Thiago
 
 ## Briefing de Pontos para os Recomendadores
 
-*Enviar este briefing depois que confirmarem — simplifica muito o trabalho deles e aumenta a qualidade da carta.*
+*Enviar este briefing depois que confirmarem - simplifica muito o trabalho deles e aumenta a qualidade da carta.*
 
 ### Para o recomendador da Laudite:
 
@@ -64,7 +64,7 @@ Thiago
 | Liderança | Como o Thiago cresceu de estagiário para líder de equipe. Exemplos de decisões que ele tomou. |
 | Impacto na comunidade | Como o trabalho dele impacta clínicos e pacientes diretamente (não só métricas de produto) |
 | Caráter | Exemplos de integridade, iniciativa própria, capacidade de aprender com erros |
-| Potencial | O que você enxerga como próximo passo natural para ele — e por que o mestrado faz sentido |
+| Potencial | O que você enxerga como próximo passo natural para ele - e por que o mestrado faz sentido |
 
 **Pontos específicos sugeridos:**
 - A expansão do público-alvo do produto para patologistas e endoscopistas (foi liderada ou co-liderada por Thiago)
@@ -81,7 +81,7 @@ Thiago
 | Critério | O que falar sobre o Thiago |
 |---|---|
 | Espírito empreendedor | Como ele identificou o problema, como enfrentou incerteza, o que construiu com recursos limitados |
-| Liderança por influência | Como liderou sem hierarquia formal — convencendo através de visão e trabalho |
+| Liderança por influência | Como liderou sem hierarquia formal - convencendo através de visão e trabalho |
 | Caráter sob pressão | Como ele agiu quando as coisas não saíram como planejado |
 | Internacionalidade | A experiência no START Global (networking com fundadores de Berlim, Cingapura, São Paulo) |
 
@@ -93,7 +93,7 @@ Thiago
 
 ---
 
-## Checklist — Ações para o Thiago
+## Checklist - Ações para o Thiago
 
 - [ ] **AGORA (abril/maio):** Contatar CEO/VP Laudite → enviar template de mensagem acima
 - [ ] **AGORA (abril/maio):** Contatar co-fundador Dream Bots → enviar template de mensagem acima
@@ -105,7 +105,7 @@ Thiago
 
 ## Por que a carta importa tanto aqui
 
-O McCall MacBain tem 5 critérios: caráter excepcional, engajamento comunitário, liderança, espírito empreendedor e força acadêmica. Os primeiros 4 são avaliados principalmente pelas cartas e pelos essays — não pelo transcript. Um recomendador bem briefado que fala com especificidade e convicção sobre liderança real vale mais do que qualquer nota.
+O McCall MacBain tem 5 critérios: caráter excepcional, engajamento comunitário, liderança, espírito empreendedor e força acadêmica. Os primeiros 4 são avaliados principalmente pelas cartas e pelos essays - não pelo transcript. Um recomendador bem briefado que fala com especificidade e convicção sobre liderança real vale mais do que qualquer nota.
 
 ---
 

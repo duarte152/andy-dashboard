@@ -1,4 +1,4 @@
-# Thiago Rocha Duarte — CV (English, International Format)
+# Thiago Rocha Duarte - CV (English, International Format)
 
 Last updated: 2026-04-22
 
@@ -17,23 +17,23 @@ Product and enablement professional with over four years of experience in B2B/B2
 
 ## EDUCATION
 
-**Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)** — Rio de Janeiro, Brazil
+**Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)** - Rio de Janeiro, Brazil
 Bachelor of Social Communication | January 2017 – December 2022
 
-**Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)** — Rio de Janeiro, Brazil
+**Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)** - Rio de Janeiro, Brazil
 Minor in Entrepreneurship / Entrepreneurial Studies | July 2021 – December 2022
 
-**CPOR/RJ — Centro de Preparação de Oficiais da Reserva** — Rio de Janeiro, Brazil
+**CPOR/RJ - Centro de Preparação de Oficiais da Reserva** - Rio de Janeiro, Brazil
 Military Intelligence, Command & Control, and Information Operations | 2018
 
-**Colégio Santo Inácio** — Rio de Janeiro, Brazil
+**Colégio Santo Inácio** - Rio de Janeiro, Brazil
 Secondary Education | 2014 – 2016
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
-**Laudite** — HealthTech SaaS Platform | Rio de Janeiro, Brazil
+**Laudite** - HealthTech SaaS Platform | Rio de Janeiro, Brazil
 
 *Product Specialists & Product Enablement Lead* | January 2025 – Present
 - Lead product enablement strategy across B2B and B2C customer segments, designing training programs, playbooks, and onboarding workflows that reduce time-to-value for new users
@@ -57,7 +57,7 @@ Secondary Education | 2014 – 2016
 
 ---
 
-**Dream Bots** — Technology & Automation Startup | Rio de Janeiro, Brazil
+**Dream Bots** - Technology & Automation Startup | Rio de Janeiro, Brazil
 
 *Co-Founder* | January 2021 – January 2024
 - Co-founded a startup delivering automation solutions for investment operations, marketing workflows, and customer service processes
@@ -66,7 +66,7 @@ Secondary Education | 2014 – 2016
 
 ---
 
-**START Global — START Fellowship** | Switzerland / Remote
+**START Global - START Fellowship** | Switzerland / Remote
 
 *Fellow, European Startup Incubation & Acceleration Program* | June 2021 – December 2021
 - Selected for a competitive European startup fellowship based at the University of St. Gallen, focused on incubating early-stage ventures with international potential
@@ -81,7 +81,7 @@ Secondary Education | 2014 – 2016
 - Commissioned as an officer following completion of Officer Candidate School
 - Led 13 teams across operational and administrative functions, managing operations and logistics across two Brazilian states
 
-*Officer Candidate — EIPOT/BESCOM* | January 2019 – June 2019
+*Officer Candidate - EIPOT/BESCOM* | January 2019 – June 2019
 - Completed rigorous military officer candidate training in leadership, intelligence operations, command & control, and information operations
 
 ---
@@ -102,7 +102,7 @@ Secondary Education | 2014 – 2016
 
 ## CERTIFICATIONS
 
-Technology Entrepreneurship: Lab to Market — Harvard Online
+Technology Entrepreneurship: Lab to Market - Harvard Online
 
 ---
 

@@ -107,7 +107,7 @@ linkedin.com/in/thiago-rocha-duarte-6982341b1
 ## EMAIL 4 — Dr. Watjana Lilaonitkul (UCL) 🔥 MELHOR MATCH UK
 
 **Para:** watjana.lilaonitkul@ucl.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant — CDSS Adoption & Responsible Clinical AI Deployment | UCL 2027
+**Assunto:** Prospective MPhil/PhD Applicant — Clinical AI Adoption & Responsible Deployment | UCL 2027
 
 ---
 
@@ -115,9 +115,9 @@ Dear Dr. Lilaonitkul,
 
 I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at UCL, with a potential start in 2027.
 
-My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company in the medical imaging and clinical reporting space. Over four years, I have worked directly with radiologists, pathologists, and endoscopists navigating new digital workflows — giving me an unusually direct view of how clinical decision support tools succeed or fail at the point of use.
+My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently working as Product Specialists & Product Enablement Lead at Laudite — Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports, with the clinician retaining full decision-making authority. Over four years, I have worked directly with those clinicians navigating new AI-assisted workflows — giving me an unusually direct view of how that interface succeeds or fails at the point of use.
 
-Your research on AI-enabled digital health systems — particularly the use of digital nudges to modify clinical behaviour and the challenge of deploying AI responsibly in high-stakes care settings — connects directly to what I observe in practice. At Laudite, the question of how to design interventions that shift clinical behaviour around a digital tool without disrupting the integrity of clinical judgment is one I work on daily. The gap between a technically functional CDSS and one that clinicians actually trust and integrate into their decision-making is precisely where I have spent most of my professional energy.
+Your research on AI-enabled digital health systems — particularly the use of digital nudges to modify clinical behaviour and the challenge of deploying AI responsibly in high-stakes care settings — connects directly to what I observe in practice. At Laudite, the question of how to design enablement interventions that shift clinical behaviour around an AI tool without disrupting the integrity of clinical judgment is one I work on daily. The gap between a technically functional AI system and one that clinicians actually trust and integrate into their workflow is precisely where I have spent most of my professional energy.
 
 I have been thinking around questions of how the design of behavioural interventions around clinical AI tools affects adoption and responsible use in practice — and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 

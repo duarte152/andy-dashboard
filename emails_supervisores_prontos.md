@@ -1,6 +1,6 @@
 # Emails Personalizados — Top 5 Supervisores (Austrália)
 
-*Redigidos em: 2026-04-17*
+*Redigidos em: 2026-04-17 · Atualizado em: 2026-04-23 (EMAIL 2 — Bain: Laudite descrito como plataforma GenAI)*
 *Instrução: copiar, revisar, e enviar de thiago.duarte152@gmail.com*
 *Anexar: cv_english.md (converter para PDF antes)*
 
@@ -25,9 +25,9 @@ My name is Thiago Rocha Duarte. I am a Brazilian and Portuguese national current
 
 Your recent work particularly resonates with me: your 2025 paper in NPJ Digital Medicine on the mixed-methods evaluation of a clinical decision support system for reducing variation in healthcare captures almost exactly the type of problem I encounter in practice. At Laudite, we routinely face the challenge of how to get clinicians to actually use tools that have been shown to work — and I have come to believe that this gap between demonstrated capability and real-world adoption is one of the most consequential open questions in digital health.
 
-I am interested in researching the organizational, behavioral, and design factors that determine whether digital health technologies achieve sustained clinical adoption at scale — particularly in healthcare systems with varying digital maturity. I believe this question is a natural extension of your work at QDHeC and could benefit from the practitioner perspective I bring.
+I have been thinking around questions of how organizational and behavioral factors shape whether digital health tools achieve sustained adoption in clinical environments — and I would be grateful to be guided by your expertise on where you see the most tractable directions within your current work at QDHeC.
 
-I hold a Bachelor's degree in Social Communication from PUC-Rio (Brazil), with a minor in Entrepreneurship. Before Laudite, I co-founded a technology automation startup (Dream Bots) and completed the START Global Fellowship at the University of St. Gallen in Switzerland. I also hold Portuguese citizenship, which simplifies my pathway to a graduate student visa in Australia.
+I hold a Bachelor's degree in Social Communication from PUC-Rio (Brazil), with a minor in Entrepreneurship. Before Laudite, I co-founded a technology automation startup (Dream Bots) and participated in the START Global Fellowship program at the University of St. Gallen in Switzerland — a remote program focused on scaling startups and impactful entrepreneurship. I also hold Portuguese citizenship, which simplifies my pathway to a graduate student visa in Australia.
 
 I have attached a brief CV for your reference. I would be genuinely grateful for a 20-minute conversation — even informally — to better understand your current research directions and whether there might be a fit between your group's work and my background.
 
@@ -52,13 +52,13 @@ Dear Professor Bain,
 
 I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at Monash University, with a potential start in 2027.
 
-My name is Thiago Rocha Duarte. I am a Brazilian and Portuguese national based in Rio de Janeiro, currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS platform operating in the medical imaging and clinical reporting space. Over four years at Laudite, I have moved from marketing intern to leading the product enablement function — designing onboarding workflows, training programs, and playbooks that determine whether clinicians actually adopt new technology in their workflows.
+My name is Thiago Rocha Duarte. I am a Brazilian and Portuguese national based in Rio de Janeiro, currently working as Product Specialists & Product Enablement Lead at Laudite — Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite's core product uses a large language model pipeline to generate structured clinical reports from dictation and prior data, making it one of the few production-scale deployments of GenAI in clinical workflows in Brazil. Over four years, I have moved from marketing intern to leading the product enablement function — designing the onboarding workflows, training programmes, and adoption systems that determine whether clinicians actually integrate AI-generated outputs into their practice.
 
-Your 2025 paper in the Internal Medicine Journal on the challenges of implementing generative AI in clinical healthcare struck a particular chord. One of the recurring patterns I observe in practice is that the governance and communication layer around a clinical AI tool matters as much as the tool itself — and that organisations chronically underestimate what is required to make the human-technology interface work in high-stakes clinical settings.
+Your 2025 paper in the Internal Medicine Journal on the challenges of implementing generative AI in clinical healthcare struck a particular chord. The patterns you describe — around governance, communication infrastructure, and the gap between technical deployment and clinical adoption — are exactly what I work with daily. At Laudite, I have seen firsthand that the quality of the LLM output is rarely the limiting factor; what determines whether a clinical AI tool succeeds is whether the human and organisational layer around it is built with the same rigour as the model itself.
 
-I am interested in researching the implementation and governance frameworks that enable clinical AI and digital health technologies to achieve sustained adoption — particularly the gap between deployment and genuine clinical integration. I believe this question maps onto themes in your current work and could benefit from the product management and enablement lens I bring from industry.
+I have been thinking around questions of how implementation and governance frameworks shape whether clinical AI tools achieve sustained adoption beyond initial deployment — and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
 
-Before Laudite, I co-founded Dream Bots, a technology automation startup, and completed the START Global Fellowship at the University of St. Gallen — a European startup incubation program. I hold a Bachelor's from PUC-Rio (Social Communication, Minor in Entrepreneurship) and served as a Second Lieutenant in the Brazilian Army. I also hold Portuguese citizenship.
+Before Laudite, I co-founded Dream Bots, a technology automation startup, and participated in the START Global Fellowship program at the University of St. Gallen in Switzerland — a remote program focused on scaling startups and impactful entrepreneurship. I hold a Bachelor's from PUC-Rio (Social Communication, Minor in Entrepreneurship) and served as a Second Lieutenant in the Brazilian Army. I also hold Portuguese citizenship.
 
 I understand you actively welcome HDR students in digital health and health informatics. I have attached a brief CV. I would greatly appreciate a short conversation to explore whether there is a fit.
 
@@ -92,11 +92,11 @@ Your 2025 systematic review in NPJ Digital Medicine on clinicians' acceptance an
 
 What I find missing in most digital health research — and what I could contribute to your group — is a rigorous examination of what happens in the *human infrastructure* surrounding a clinical tool: the onboarding design, the ongoing enablement programs, the moments of re-engagement after early disengagement. I have been building and iterating on exactly these interventions for four years, and I believe the question of how structured enablement programs affect the shape of the long-term adoption curve is both academically novel and practically consequential.
 
-A proposed research question that I believe sits naturally within your group's agenda: *What is the relationship between the structure and timing of product enablement interventions and the long-term acceptance trajectory of clinical decision support systems, as measured by usage patterns and clinician-reported outcomes?*
+I have been thinking around questions of how structured enablement interventions shape the long-term adoption trajectory of clinical decision support systems — but I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 
-I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I co-founded Dream Bots (a technology automation startup) and completed the START Global Fellowship at the University of St. Gallen in Switzerland. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I co-founded Dream Bots (a technology automation startup) and participated in the START Global Fellowship remote program at the University of St. Gallen. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
-I have attached a brief CV. I would be genuinely grateful for a short conversation — even informally — to hear your perspective on whether this direction might complement your group's current research.
+I have attached a brief CV. I would be genuinely grateful for a short conversation — even informally — to hear your perspective on whether this direction might complement your group's current research priorities, and where you see the most promising angles for a Research Master's within your group.
 
 I am also exploring funding pathways including the RTP scholarship — could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
 
@@ -121,13 +121,13 @@ Dear Professor Gray,
 
 I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at the University of Melbourne, with a potential start in 2027.
 
-My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently serving as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS platform in the clinical reporting space. A central question in my current work is: how do you design the conditions under which clinicians actually derive value from digital health technology? This is, I believe, a question that sits at the heart of your research agenda.
+My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently serving as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS platform in the clinical reporting space. A central question in my current work is: how do you design the conditions under which clinicians actually derive value from digital health technology?
 
 Your recently published Research Handbook on Health Information Systems (2025) and your work on co-designing patient engagement tools for EMR systems reflect a perspective I deeply recognise from practice — that health IT only creates value when it is designed with and for the people who must use it, not just at them.
 
-I am interested in researching the mechanisms by which product enablement and clinical education programs drive sustained technology adoption in healthcare — essentially, how digital health organisations can build the human infrastructure that transforms software from a product into a genuine clinical capability. I believe this question benefits from both academic frameworks and the practitioner knowledge I bring.
+I have been thinking around questions of how enablement programs and workforce development initiatives shape whether digital health tools create genuine, lasting value in practice — and I would be grateful to be guided by your perspective on where you see the most relevant directions within your current research.
 
-Beyond Laudite, I co-founded Dream Bots (a technology automation startup) and completed the START Global Fellowship at the University of St. Gallen. I hold a Bachelor's in Social Communication and a Minor in Entrepreneurship from PUC-Rio, and I am a citizen of both Brazil and Portugal.
+Beyond Laudite, I co-founded Dream Bots (a technology automation startup) and participated in the START Global Fellowship program at the University of St. Gallen in Switzerland — a remote program focused on scaling startups and impactful entrepreneurship. I hold a Bachelor's in Social Communication and a Minor in Entrepreneurship from PUC-Rio, and I am a citizen of both Brazil and Portugal.
 
 I have attached a brief CV. I would greatly appreciate the opportunity to speak briefly about your current research directions and whether my profile might be a fit for your group.
 
@@ -153,11 +153,11 @@ Dear Professor Qureshi,
 
 I am writing to express interest in pursuing a Research Master's degree under your supervision at the Australian National University, with a potential start in 2027.
 
-My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company operating in the medical imaging sector. Alongside my industry career, I co-founded Dream Bots, a technology automation startup, and in 2021 I was selected for the START Global Fellowship at the University of St. Gallen in Switzerland, one of Europe's leading entrepreneurship programs.
+My name is Thiago Rocha Duarte — a Brazilian and Portuguese national currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company operating in the medical imaging sector. Alongside my industry career, I co-founded Dream Bots, a technology automation startup, and in 2021 I participated in the START Global Fellowship program at the University of St. Gallen in Switzerland — a remote program focused on scaling startups and impactful entrepreneurship.
 
 Your framework on digital social innovation — particularly the question of how ICT-based platforms and digital ventures create social value in complex institutional settings — connects directly to my experience and questions. In my four years at Laudite, I have observed how a SaaS platform changes not just clinical workflows, but the relationships between healthcare providers, patients, and institutions. And in Dream Bots, I saw how the logic of automation platforms interacts with the economic and social incentives of the organisations they serve. I am drawn to your work because it gives academic language and rigour to patterns I have observed empirically but lack the theoretical tools to fully explain.
 
-I am interested in researching how digital health platforms create and distribute value across stakeholder ecosystems — and what governance and business model structures enable platforms to generate both commercial viability and social impact in healthcare. I believe this sits naturally within the digital social innovation and platform economy frameworks you have been developing.
+I have been thinking around questions of how digital health platforms create and distribute value across stakeholder ecosystems — and what enables them to generate both commercial viability and social impact. I would be grateful to be guided by your expertise on where these questions intersect most productively with your current research.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil) with a Minor in Entrepreneurship, and served as a Second Lieutenant in the Brazilian Army before entering the technology sector. I hold both Brazilian and Portuguese citizenship.
 

@@ -96,13 +96,13 @@ Secondary Education | 2014 – 2016
 
 **Content & Communication:** Video Production, Tutorial Design, Technical Writing, Digital Marketing
 
-**Leadership:** Team Management, Cross-functional Collaboration, Military Leadership, Startup Founding
+**Leadership:** Team Management, Cross-functional Collaboration, Startup Founding
 
 ---
 
 ## CERTIFICATIONS
 
-Technology Entrepreneurship: Lab to Market
+Technology Entrepreneurship: Lab to Market — Harvard Online
 
 ---
 

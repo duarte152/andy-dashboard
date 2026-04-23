@@ -6,7 +6,11 @@
 
 ---
 
-## EMAIL 1 — Prof. Clair Sullivan (UQ) 🔥 PRIORIDADE MÁXIMA
+## EMAIL 1 — Prof. Clair Sullivan (UQ) ~~🔥 PRIORIDADE MÁXIMA~~
+
+> ⚠️ **NÃO ENVIAR** — Verificado em 22/04/2026: perfil da UQ indica "Not available for supervision". Monitorar mensalmente — se abrir, enviar.
+
+---
 
 **Para:** c.sullivan1@uq.edu.au
 **Assunto:** Prospective MRes Student — Digital Health Technology Adoption Research | UQ 2027
@@ -58,6 +62,8 @@ Before Laudite, I co-founded Dream Bots, a technology automation startup, and co
 
 I understand you actively welcome HDR students in digital health and health informatics. I have attached a brief CV. I would greatly appreciate a short conversation to explore whether there is a fit.
 
+I am also exploring funding pathways including the RTP scholarship — could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
 Thank you for your time.
 
 Warmly,
@@ -92,6 +98,8 @@ I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor 
 
 I have attached a brief CV. I would be genuinely grateful for a short conversation — even informally — to hear your perspective on whether this direction might complement your group's current research.
 
+I am also exploring funding pathways including the RTP scholarship — could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
 Thank you very much for your time and consideration.
 
 Warmly,
@@ -123,6 +131,8 @@ Beyond Laudite, I co-founded Dream Bots (a technology automation startup) and co
 
 I have attached a brief CV. I would greatly appreciate the opportunity to speak briefly about your current research directions and whether my profile might be a fit for your group.
 
+I am also exploring funding pathways including the RTP scholarship — could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
 Thank you for your time.
 
 Warmly,
@@ -153,6 +163,8 @@ I hold a Bachelor's in Social Communication from PUC-Rio (Brazil) with a Minor i
 
 I would be very grateful for a short conversation to explore whether my background and research interests might fit your current group and agenda.
 
+I am also exploring funding pathways including the RTP scholarship — could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
 Thank you for your consideration.
 
 Warmly,
@@ -164,9 +176,11 @@ linkedin.com/in/thiago-rocha-duarte-6982341b1
 
 ## INSTRUÇÕES DE ENVIO
 
+> Atualizado em 22/04/2026 após verificação de disponibilidade.
+
 1. **Converter CV para PDF** antes de anexar (cv_english.md → PDF)
 2. **Enviar um por vez**, com 1-2 dias de intervalo
-3. **Ordem recomendada:** Sullivan → Bain → Baysari → Gray → Qureshi
+3. **Ordem recomendada:** Bain → Baysari → Gray → Qureshi (Sullivan removida — indisponível)
 4. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
-5. **Janela ideal:** maio–julho de 2026
-6. **Personalizar antes de enviar:** confirmar que os papers mencionados ainda são recentes e relevantes
+5. **Janela ideal:** agora — não esperar
+6. **Sullivan (EMAIL 1):** NÃO enviar agora — monitorar mensalmente

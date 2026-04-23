@@ -18,11 +18,11 @@ Your 2025 systematic review in NPJ Digital Medicine on clinicians' acceptance an
 
 What I find missing in most digital health research — and what I could contribute to your group — is a rigorous examination of what happens in the *human infrastructure* surrounding a clinical tool: the onboarding design, the ongoing enablement programs, the moments of re-engagement after early disengagement. I have been building and iterating on exactly these interventions for four years, and I believe the question of how structured enablement programs affect the shape of the long-term adoption curve is both academically novel and practically consequential.
 
-A proposed research question that I believe sits naturally within your group's agenda: *What is the relationship between the structure and timing of product enablement interventions and the long-term acceptance trajectory of clinical decision support systems, as measured by usage patterns and clinician-reported outcomes?*
+I have been thinking around questions of how structured enablement interventions shape the long-term adoption trajectory of clinical decision support systems — but I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 
-I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I co-founded Dream Bots (a technology automation startup) and completed the START Global Fellowship at the University of St. Gallen in Switzerland. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I co-founded Dream Bots (a technology automation startup) and participated in the START Global Fellowship program at the University of St. Gallen in Switzerland — a remote program focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
-I have attached a brief CV. I would be genuinely grateful for a short conversation — even informally — to hear your perspective on whether this direction might complement your group's current research.
+I have attached a brief CV. I would be genuinely grateful for a short conversation — even informally — to hear your perspective on whether this direction might complement your group's current research priorities, and where you see the most promising angles for a Research Master's within your group.
 
 Thank you very much for your time and consideration.
 

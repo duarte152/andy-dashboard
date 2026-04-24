@@ -176,6 +176,43 @@ linkedin.com/in/thiago-rocha-duarte-6982341b1
 
 ---
 
+## EMAIL 6 - Dr. Ann Carrigan (U Sydney) - Indicada pela Baysari 🔥
+
+**Para:** ann.carrigan@sydney.edu.au
+**Assunto:** Prospective MRes Student - Clinical AI Adoption & Human Factors | USyd 2027
+
+*[Redigido em 23/04/2026 - referral de Prof. Baysari]*
+
+---
+
+Dear Dr Carrigan,
+
+I hope this message finds you well. I am writing following a suggestion from Professor Melissa Baysari - I had reached out to her about the possibility of MRes supervision, and she kindly mentioned that you may have capacity and interest in this area. I am grateful for the introduction.
+
+My name is Thiago Rocha Duarte - a Brazilian and Portuguese national, currently Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting. Laudite's core product uses a large language model pipeline to generate structured clinical reports from dictation and prior data, and is currently used by over 3,500 clinicians across radiology, pathology, and endoscopy. Over four years in this role, I have worked directly with clinicians as they navigate new AI-assisted workflows - building and iterating on the onboarding systems, training programmes, and enablement interventions that determine whether those tools actually get used.
+
+Your work at the Digital Health Human Factors Research Group resonates directly with what I observe in practice. Your 2023 scoping review in Heart, Lung and Circulation on how technology is transforming cardiopulmonary care - particularly the sections on AI, NLP, and clinical decision support integration - maps closely to questions I encounter daily: not whether the technology works, but whether clinicians trust it, adapt to it, and sustain its use over time. The NHMRC Centre of Research Excellence in Human Factors and AI-enabled Clinical Decision Support that your group has just secured strikes me as exactly the right framing for this problem - the bottleneck in clinical AI is rarely the model; it is the human and organisational layer around it.
+
+What I believe I could bring to your group is four years of direct, longitudinal observation of AI adoption in clinical settings - with the same clinicians at month one, month six, and year two of using the same system. I have watched first-hand how mandated versus self-directed adoption produces completely different trajectories; how a single moment of "first value" - the first time a clinician completes a real workflow cycle and discovers the tool genuinely works - can dissolve months of resistance; and how clinicians who have accumulated intellectual capital in a previous system (templates, macros, structured content) face switching costs that purely technical adoption evaluations almost never account for. These are patterns I have been building interventions around in practice - and I believe they deserve rigorous examination in research.
+
+I have been thinking around questions of how structured enablement interventions shape the long-term adoption trajectory of generative AI tools in clinical settings, and where human factors methodology could bring theoretical rigour to patterns currently understood only anecdotally. I would be grateful to be guided by your perspective on where these questions sit within your group's current priorities - and within the CRE's agenda specifically.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I co-founded Dream Bots (a technology automation startup) and participated in the START Global Fellowship at the University of St. Gallen. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian, which simplifies the visa pathway to Australia.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation - even informally - to hear your perspective on whether there might be a fit between my background and the directions your group is pursuing.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time and consideration.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+thiago.duarte152@gmail.com
+linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+---
+
 ## INSTRUÇÕES DE ENVIO
 
 > Atualizado em 22/04/2026 após verificação de disponibilidade.

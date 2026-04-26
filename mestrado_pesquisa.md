@@ -56,6 +56,31 @@
 - **Áreas:** Health informatics, information systems
 - **Fit:** MÉDIO
 
+### Supervisores no Canadá — Digital Health / CDSS Adoption
+*Pesquisados em 25/04/2026 | Arquivo completo: canada_pesquisa.md*
+
+**Estratégia real para Canadá (além do McCall MacBain):**
+1. Identificar professores com grants CIHR/NSERC ativos que financiam próprios alunos
+2. Negociar pacote de financiamento na admissão (~$20-25k/ano via RA/TA + grants)
+3. Aplicar ao OGS (Ontario Graduate Scholarship) como suplemento
+
+| Supervisor | Universidade | Programa | H-index | Fit | Financiamento |
+|-----------|--------------|---------|---------|-----|---------------|
+| **Prof. Joseph Cafazzo** | UofT IHPME | MSc Health Systems Research | 47 | Muito alto | OGS + supervisor (~$18-25k) |
+| **Profa. Zahra Shakeri** | UofT IHPME | MSc Health Systems Research | 25 | Muito alto | OGS + supervisor |
+| **Prof. Plinio Morita** | Waterloo SPHS | MSc Public Health Sciences | — | Alto | **$14k/ano garantido** + OGS |
+| **Profa. Laura Rosella** | UofT DLSPH | MSc Epidemiology / Public Health | Alto | Alto | Moderado |
+| **Prof. Kendall Ho** | UBC | MSc Interdisciplinary (Health Inf.) | — | Muito alto | Baixo (ITA $3.2k + supervisor) |
+
+**Recomendação:** Contactar **Morita (Waterloo)** e **Cafazzo/Shakeri (UofT IHPME)** em primeiro lugar.
+- Waterloo: financiamento mínimo garantido, fit alto, menos competitivo que UofT
+- IHPME: melhor programa de health systems research no Canadá, mas mais competitivo
+
+**Próximos passos Canadá:**
+- [ ] Escrever emails para Cafazzo e Morita (além do McCall MacBain)
+- [ ] Verificar grants CIHR ativos (indica capacidade de financiar alunos)
+- [ ] Ver canada_pesquisa.md para perfis completos + papers de cada supervisor
+
 ---
 
 ## 3. EUA
@@ -78,6 +103,7 @@
 - **Prazo:** Ciclo 2026 abre abril–agosto de 2026
 - **Fit:** MÉDIO-ALTO
 - **Fonte:** fulbright.org.br
+- **⚠️ Status abril/2026:** Não há programa Fulbright de mestrado geral aberto para brasileiros em tecnologia/gestão/saúde agora. O programa mais próximo seria o Humphrey Fellowship (mid-career, setor público/ONGs, exige 5 anos de experiência). **Monitorar fulbright.org.br a partir de junho/2026.** Ver fulbright_research.md para detalhes.
 
 ---
 

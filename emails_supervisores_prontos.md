@@ -129,7 +129,7 @@ Your recently published Research Handbook on Health Information Systems (2025) a
 
 I have been thinking around questions of how enablement programs and workforce development initiatives shape whether digital health tools create genuine, lasting value in practice - and I would be grateful to be guided by your perspective on where you see the most relevant directions within your current research.
 
-Beyond Laudite, I participated in the START Global Fellowship at the University of St. Gallen in Switzerland - a competitive program focused on scaling startups and impactful entrepreneurship - and hold a Bachelor's in Social Communication with a Minor in Entrepreneurship from PUC-Rio.
+Beyond Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship - and hold a Bachelor's in Social Communication with a Minor in Entrepreneurship from PUC-Rio.
 
 I have attached a brief CV. I would greatly appreciate the opportunity to speak briefly about your current research directions and whether my profile might be a fit for your group.
 

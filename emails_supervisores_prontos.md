@@ -123,13 +123,13 @@ Dear Professor Gray,
 
 I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at the University of Melbourne, with a potential start in 2027.
 
-My name is Thiago Rocha Duarte - a Brazilian and Portuguese national currently serving as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS platform in the clinical reporting space. A central question in my current work is: how do you design the conditions under which clinicians actually derive value from digital health technology?
+My name is Thiago Rocha Duarte, currently serving as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS platform in the clinical reporting space. A central question in my current work is: how do you design the conditions under which clinicians actually derive value from digital health technology?
 
 Your recently published Research Handbook on Health Information Systems (2025) and your work on co-designing patient engagement tools for EMR systems reflect a perspective I deeply recognise from practice - that health IT only creates value when it is designed with and for the people who must use it, not just at them.
 
 I have been thinking around questions of how enablement programs and workforce development initiatives shape whether digital health tools create genuine, lasting value in practice - and I would be grateful to be guided by your perspective on where you see the most relevant directions within your current research.
 
-Beyond Laudite, I co-founded Dream Bots (a technology automation startup) and participated in the START Global Fellowship program at the University of St. Gallen in Switzerland - a remote program focused on scaling startups and impactful entrepreneurship. I hold a Bachelor's in Social Communication and a Minor in Entrepreneurship from PUC-Rio, and I am a citizen of both Brazil and Portugal.
+Beyond Laudite, I participated in the START Global Fellowship at the University of St. Gallen in Switzerland - a competitive program focused on scaling startups and impactful entrepreneurship - and hold a Bachelor's in Social Communication with a Minor in Entrepreneurship from PUC-Rio.
 
 I have attached a brief CV. I would greatly appreciate the opportunity to speak briefly about your current research directions and whether my profile might be a fit for your group.
 

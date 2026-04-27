@@ -10,13 +10,13 @@
 ## EMAIL 1 - Prof. Brendan Delaney (Imperial College London) 🔥 PRIORIDADE MÁXIMA
 
 **Para:** brendan.delaney@imperial.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant - Clinical AI Implementation & Learning Health Systems | Imperial 2027
+**Assunto:** Prospective MRes Student - Clinical AI Implementation & Learning Health Systems | Imperial 2027
 
 ---
 
 Dear Professor Delaney,
 
-I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at Imperial College London, with a potential start in 2027.
+I am writing to inquire about the possibility of pursuing an MRes under your supervision at Imperial College London, with a potential start in 2027.
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company in the medical imaging and clinical reporting space. Over four years, I have worked directly with radiologists, pathologists, and endoscopists as they navigate new digital workflows, sitting at the junction between clinical need, product capability, and the organisational realities of healthcare delivery.
 
@@ -43,13 +43,13 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 ## EMAIL 2 - Dr. Ana Luisa Neves (Imperial College London) 🔥
 
 **Para:** ana.luisa.neves14@imperial.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant - Digital Health Implementation in Clinical Settings | Imperial 2027
+**Assunto:** Prospective MRes Student - Digital Health Implementation in Clinical Settings | Imperial 2027
 
 ---
 
 Dear Dr. Neves,
 
-I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at Imperial College London, with a potential start in 2027.
+I am writing to inquire about the possibility of pursuing an MRes under your supervision at Imperial College London, with a potential start in 2027.
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company in the medical imaging and clinical reporting space. Over four years, I have developed a practitioner's understanding of what it takes for digital health tools to actually work in clinical environments - not just to function technically, but to change behaviour, integrate into workflows, and deliver the outcomes they were designed to produce.
 
@@ -76,13 +76,13 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 ## EMAIL 3 - Prof. Kathrin Cresswell (University of Edinburgh) 🔥
 
 **Para:** kathrin.cresswell@ed.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant - Sociotechnical Approaches to Health IT Adoption | Edinburgh 2027
+**Assunto:** Prospective MRes Student - Sociotechnical Approaches to Health IT Adoption | Edinburgh 2027
 
 ---
 
 Dear Professor Cresswell,
 
-I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at the University of Edinburgh, with a potential start in 2027.
+I am writing to inquire about the possibility of pursuing an MRes under your supervision at the University of Edinburgh, with a potential start in 2027.
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company in the medical imaging and clinical reporting space. My work sits squarely in the territory your research addresses: the messy, socially contingent process by which digital tools either embed into clinical practice or fail to.
 
@@ -109,13 +109,13 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 ## EMAIL 4 - Dr. Watjana Lilaonitkul (UCL) 🔥 MELHOR MATCH UK
 
 **Para:** watjana.lilaonitkul@ucl.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant - Clinical AI Adoption & Responsible Deployment | UCL 2027
+**Assunto:** Prospective MRes Student - Clinical AI Adoption & Responsible Deployment | UCL 2027
 
 ---
 
 Dear Dr. Lilaonitkul,
 
-I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at UCL, with a potential start in 2027.
+I am writing to inquire about the possibility of pursuing an MRes under your supervision at UCL, with a potential start in 2027.
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite - Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports, with the clinician retaining full decision-making authority. Over four years, I have worked directly with those clinicians navigating new AI-assisted workflows - giving me an unusually direct view of how that interface succeeds or fails at the point of use.
 
@@ -142,13 +142,13 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 ## EMAIL 5 - Prof. Paul Taylor (UCL)
 
 **Para:** p.taylor@ucl.ac.uk
-**Assunto:** Prospective MPhil/PhD Applicant - Clinical Decision Support & Health Informatics | UCL 2027
+**Assunto:** Prospective MRes Student - Clinical Decision Support & Health Informatics | UCL 2027
 
 ---
 
 Dear Professor Taylor,
 
-I am writing to inquire about the possibility of pursuing an MPhil or PhD under your supervision at UCL, with a potential start in 2027.
+I am writing to inquire about the possibility of pursuing an MRes under your supervision at UCL, with a potential start in 2027.
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, a HealthTech SaaS company in the medical imaging and clinical reporting space. My day-to-day work involves understanding how clinicians - primarily radiologists and pathologists - receive, interpret, and act on information presented by digital tools. In that sense, your research on the informational needs of clinicians and the design of clinical data presentation systems sits very close to problems I have been working on from the industry side.
 

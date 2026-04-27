@@ -35,8 +35,8 @@ Thank you very much for your time.
 Warmly,
 Thiago Rocha Duarte
 Product Specialists & Product Enablement Lead, Laudite
-thiago.duarte152@gmail.com
-linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
@@ -67,8 +67,9 @@ Thank you for your time.
 
 Warmly,
 Thiago Rocha Duarte
-thiago.duarte152@gmail.com
-linkedin.com/in/thiago-rocha-duarte-6982341b1
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
@@ -99,8 +100,9 @@ Thank you very much for your time.
 
 Warmly,
 Thiago Rocha Duarte
-thiago.duarte152@gmail.com
-linkedin.com/in/thiago-rocha-duarte-6982341b1
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
@@ -131,8 +133,9 @@ Thank you for your time.
 
 Warmly,
 Thiago Rocha Duarte
-thiago.duarte152@gmail.com
-linkedin.com/in/thiago-rocha-duarte-6982341b1
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
@@ -163,8 +166,9 @@ Thank you very much for your time.
 
 Warmly,
 Thiago Rocha Duarte
-thiago.duarte152@gmail.com
-linkedin.com/in/thiago-rocha-duarte-6982341b1
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 

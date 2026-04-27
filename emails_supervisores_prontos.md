@@ -213,13 +213,145 @@ linkedin.com/in/thiago-rocha-duarte-6982341b1
 
 ---
 
+## EMAIL 7 - Prof. Enrico Coiera (Macquarie) 🔥
+
+**Para:** enrico.coiera@mq.edu.au
+**Assunto:** Prospective MRes Student - Clinical AI Governance & Ecosystem Safety | Macquarie 2027
+
+---
+
+Dear Professor Coiera,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at Macquarie University, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite's core product uses a large language model pipeline to generate structured clinical reports from dictation and prior data - one of the few production-scale deployments of GenAI in clinical workflows in Brazil. Over four years, I have moved from marketing intern to leading the product enablement function, designing the onboarding workflows, training programmes, and adoption systems that determine whether clinicians actually integrate AI-generated outputs into their practice.
+
+Your 2025 paper in JMIR Research Protocols, "Developing an AI Governance Framework for Safe and Responsible AI in Health Care Organizations" - co-authored with colleagues at AIHI - captures a problem I encounter at the operational level every day. At Laudite, the question of how to build governance structures that allow a GenAI clinical tool to remain safe and trustworthy as it scales is not abstract: it is a practical constraint on every product decision we make. What strikes me in your framing is the emphasis on the organisational and systemic dimensions of AI safety - not just the technical properties of the model, but the processes, accountability structures, and human oversight mechanisms that must surround it.
+
+I have been thinking around questions of how governance frameworks and accountability structures shape whether clinical AI systems are adopted safely and sustainably in practice - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at the Centre for Health Informatics.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be very grateful for a short conversation to explore whether my background might be relevant to your group's current work.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+thiago.duarte152@gmail.com
+linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+---
+
+## EMAIL 8 - Prof. Farah Magrabi (Macquarie) 🔥
+
+**Para:** farah.magrabi@mq.edu.au
+**Assunto:** Prospective MRes Student - AI Safety & Clinical Technology Evaluation | Macquarie 2027
+
+---
+
+Dear Professor Magrabi,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at Macquarie University, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses a large language model pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority over the final output. Over four years, I have designed and iterated on the onboarding systems, training programmes, and enablement interventions that determine whether those tools actually get used - and used safely.
+
+Your work on AI and patient safety, and your 2025 paper in JMIR Research Protocols on developing an AI governance framework for safe and responsible AI in healthcare organisations, connects directly to a gap I observe in practice. At Laudite, we invest heavily in what the model produces - but significantly less in the systematic evaluation of whether clinicians are using the output in ways that preserve clinical judgment and patient safety. Your research gives that gap the rigour it deserves, and the governance framework your group is developing speaks precisely to the organisational layer that most clinical AI deployments leave underspecified.
+
+I have been thinking around questions of how the evaluation and governance of clinical AI systems shapes whether they are adopted safely in practice, particularly in settings where clinicians interact with AI-generated outputs under production conditions - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would greatly appreciate a short conversation to explore whether there might be a fit between your group's work and my background.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+thiago.duarte152@gmail.com
+linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+---
+
+## EMAIL 9 - Prof. Natalie Taylor (UNSW) 🔥
+
+**Para:** natalie.taylor@unsw.edu.au
+**Assunto:** Prospective MRes Student - Implementation Science & Clinical AI Adoption | UNSW 2027
+
+---
+
+Dear Professor Taylor,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at UNSW Sydney, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Over four years, I have designed and iterated on the onboarding systems, enablement programmes, and adoption interventions that determine whether clinicians integrate AI-assisted workflows into their practice. I have had an unusual vantage point: the same clinicians at month one, month six, and year two of using the same platform - and the trajectory is rarely what anyone predicts.
+
+Your 2025 paper in Implementation Science, "How well are implementation strategies and target healthcare professional behaviours reported?" - which examines the gap between what implementation interventions claim to do and how well they are actually specified and evaluated - speaks directly to a problem I encounter in practice. At Laudite, we have built a range of enablement interventions - structured onboarding sequences, re-engagement touchpoints, peer cohort programmes - but their design has been driven by pragmatic iteration rather than theoretical rigour. Your work makes me aware of how much of what we do would fail a systematic evaluation simply because it is underdescribed.
+
+I have been thinking around questions of how the design and reporting of implementation strategies shapes whether clinical AI tools achieve sustained behaviour change in clinical settings - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at i2i.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to hear your perspective on whether my background and these questions might connect to your group's current priorities.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time and consideration.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+thiago.duarte152@gmail.com
+linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+---
+
+## EMAIL 10 - Dr. Anthony Sunjaya (UNSW) 🔥
+
+**Para:** a.sunjaya@unsw.edu.au
+**Assunto:** Prospective MRes Student - Clinical AI Implementation in Real-World Settings | UNSW 2027
+
+---
+
+Dear Dr. Sunjaya,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at UNSW Sydney, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have built and iterated on the enablement infrastructure - onboarding workflows, training programmes, adoption interventions - that determines whether AI-assisted tools actually change clinical behaviour at the point of care.
+
+Your 2025 paper in NEJM AI on AI-assisted spirometry interpretation in primary care, and the BREATHE trial's implementation across 40 GP practices, captures a challenge I find underexplored in most clinical AI research: what it actually takes to make a decision support tool work in real clinical conditions, not just in controlled evaluations. The gap between a system that performs well in a study and one that clinicians trust and use consistently in daily practice is precisely where I have spent most of my professional energy. The scale and pragmatic design of the BREATHE trial - MRFF-funded, real GP practices, meaningful clinical endpoints - is exactly the kind of rigorous real-world evaluation I would want to contribute to as a researcher.
+
+I have been thinking around questions of how implementation strategies shape the real-world adoption and clinical impact of AI-assisted decision support tools - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be very grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+thiago.duarte152@gmail.com
+linkedin.com/in/thiago-rocha-duarte-6982341b1
+
+---
+
 ## INSTRUÇÕES DE ENVIO
 
-> Atualizado em 22/04/2026 após verificação de disponibilidade.
+> Atualizado em 27/04/2026.
 
 1. **Converter CV para PDF** antes de anexar (cv_english.md → PDF)
 2. **Enviar um por vez**, com 1-2 dias de intervalo
-3. **Ordem recomendada:** Bain → Baysari → Gray → Qureshi (Sullivan removida - indisponível)
-4. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
-5. **Janela ideal:** agora - não esperar
+3. **Ordem original:** Bain → Baysari → Carrigan → Gray → Qureshi (todos enviados)
+4. **Próximos (EMAILS 7-10):** Coiera → Magrabi → Taylor → Sunjaya
+5. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
 6. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente

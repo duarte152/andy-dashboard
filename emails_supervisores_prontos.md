@@ -25,7 +25,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your recent work particularly resonates with me: your 2025 paper in NPJ Digital Medicine on the mixed-methods evaluation of a clinical decision support system for reducing variation in healthcare captures almost exactly the type of problem I encounter in practice. At Laudite, we routinely face the challenge of how to get clinicians to actually use tools that have been shown to work - and I have come to believe that this gap between demonstrated capability and real-world adoption is one of the most consequential open questions in digital health.
 
-I have been thinking around questions of how organizational and behavioral factors shape whether digital health tools achieve sustained adoption in clinical environments - and I would be grateful to be guided by your expertise on where you see the most tractable directions within your current work at QDHeC.
+I have been thinking about how organizational and behavioral factors shape whether digital health tools achieve sustained adoption in clinical environments - and I would be grateful to be guided by your expertise on where you see the most tractable directions within your current work at QDHeC.
 
 I hold a Bachelor's degree in Social Communication from PUC-Rio (Brazil), with a minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I hold both Brazilian and Portuguese citizenship, which simplifies my pathway to a graduate student visa in Australia.
 
@@ -56,7 +56,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your 2025 paper in the Internal Medicine Journal on the challenges of implementing generative AI in clinical healthcare struck a particular chord. The patterns you describe - around governance, communication infrastructure, and the gap between technical deployment and clinical adoption - are exactly what I work with daily. At Laudite, I have seen firsthand that the quality of the LLM output is rarely the limiting factor; what determines whether a clinical AI tool succeeds is whether the human and organisational layer around it is built with the same rigour as the model itself.
 
-I have been thinking around questions of how implementation and governance frameworks shape whether clinical AI tools achieve sustained adoption beyond initial deployment - and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
+I have been thinking about how implementation and governance frameworks shape whether clinical AI tools achieve sustained adoption beyond initial deployment - and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
 
 Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I hold a Bachelor's from PUC-Rio (Social Communication, Minor in Entrepreneurship) and served as a Second Lieutenant in the Brazilian Army. I also hold Portuguese citizenship.
 
@@ -94,7 +94,7 @@ The starting condition matters enormously: when a clinician is the agent of thei
 
 What I find missing in most digital health research - and what I could contribute to your group - is a rigorous examination of what happens in the *human infrastructure* surrounding a clinical AI tool: the onboarding design, the ongoing enablement programs, the moments of re-engagement after early disengagement. I have been building and iterating on exactly these interventions for four years, and I believe the question of how structured enablement programs affect the shape of the long-term adoption curve remains underexplored in the literature - particularly for systems centred around generative AI and other recently developed clinical AI technologies.
 
-I have been thinking around questions of how structured enablement interventions shape the long-term adoption trajectory of AI-assisted clinical tools - but I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+I have been thinking about how structured enablement interventions shape the long-term adoption trajectory of AI-assisted clinical tools - but I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
@@ -127,7 +127,7 @@ My name is Thiago Rocha Duarte, currently serving as Product Specialists & Produ
 
 Your recently published Research Handbook on Health Information Systems (2025) and your work on co-designing patient engagement tools for EMR systems reflect a perspective I deeply recognise from practice - that health IT only creates value when it is designed with and for the people who must use it, not just at them.
 
-I have been thinking around questions of how enablement programs and workforce development initiatives shape whether digital health tools create genuine, lasting value in practice - and I would be grateful to be guided by your perspective on where you see the most relevant directions within your current research.
+I have been thinking about how enablement programs and workforce development initiatives shape whether digital health tools create genuine, lasting value in practice - and I would be grateful to be guided by your perspective on where you see the most relevant directions within your current research.
 
 Beyond Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship - and hold a Bachelor's in Social Communication with a Minor in Entrepreneurship from PUC-Rio.
 
@@ -159,7 +159,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your framework on digital social innovation - particularly the question of how ICT-based platforms and digital ventures create social value in complex institutional settings - connects directly to my experience and questions. In my four years at Laudite, I have observed how a SaaS platform changes not just clinical workflows, but the relationships between healthcare providers, patients, and institutions. I am drawn to your work because it gives academic language and rigour to patterns I have observed empirically but lack the theoretical tools to fully explain.
 
-I have been thinking around questions of how digital health platforms create and distribute value across stakeholder ecosystems - and what enables them to generate both commercial viability and social impact. I would be grateful to be guided by your expertise on where these questions intersect most productively with your current research.
+I have been thinking about how digital health platforms create and distribute value across stakeholder ecosystems - and what enables them to generate both commercial viability and social impact. I would be grateful to be guided by your expertise on where these questions intersect most productively with your current research.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil) with a Minor in Entrepreneurship, and served as a Second Lieutenant in the Brazilian Army before entering the technology sector. I hold both Brazilian and Portuguese citizenship.
 
@@ -195,7 +195,7 @@ Your work at the Digital Health Human Factors Research Group resonates directly 
 
 What I believe I could bring to your group is four years of direct, longitudinal observation of AI adoption in clinical settings - with the same clinicians at month one, month six, and year two of using the same system. I have watched first-hand how mandated versus self-directed adoption produces completely different trajectories; how a single moment of "first value" - the first time a clinician completes a real workflow cycle and discovers the tool genuinely works - can dissolve months of resistance; and how clinicians who have accumulated intellectual capital in a previous system (templates, macros, structured content) face switching costs that purely technical adoption evaluations almost never account for. These are patterns I have been building interventions around in practice - and I believe they deserve rigorous examination in research.
 
-I have been thinking around questions of how structured enablement interventions shape the long-term adoption trajectory of generative AI tools in clinical settings, and where human factors methodology could bring theoretical rigour to patterns currently understood only anecdotally. I would be grateful to be guided by your perspective on where these questions sit within your group's current priorities - and within the CRE's agenda specifically.
+I have been thinking about how structured enablement interventions shape the long-term adoption trajectory of generative AI tools in clinical settings, and where human factors methodology could bring theoretical rigour to patterns currently understood only anecdotally. I would be grateful to be guided by your perspective on where these questions sit within your group's current priorities - and within the CRE's agenda specifically.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian, which simplifies the visa pathway to Australia.
 
@@ -228,7 +228,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your 2025 paper in JMIR Research Protocols, "Developing an AI Governance Framework for Safe and Responsible AI in Health Care Organizations" - co-authored with colleagues at AIHI - captures a problem I encounter at the operational level every day. At Laudite, the question of how to build governance structures that allow a GenAI clinical tool to remain safe and trustworthy as it scales is not abstract: it is a practical constraint on every product decision we make. What strikes me in your framing is the emphasis on the organisational and systemic dimensions of AI safety - not just the technical properties of the model, but the processes, accountability structures, and human oversight mechanisms that must surround it.
 
-I have been thinking around questions of how governance frameworks and accountability structures shape whether clinical AI systems are adopted safely and sustainably in practice - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at the Centre for Health Informatics.
+I have been thinking about how governance frameworks and accountability structures shape whether clinical AI systems are adopted safely and sustainably in practice - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at the Centre for Health Informatics.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
@@ -261,7 +261,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your work on AI and patient safety, and your 2025 paper in JMIR Research Protocols on developing an AI governance framework for safe and responsible AI in healthcare organisations, connects directly to a gap I observe in practice. At Laudite, we invest heavily in what the model produces - but significantly less in the systematic evaluation of whether clinicians are using the output in ways that preserve clinical judgment and patient safety. Your research gives that gap the rigour it deserves, and the governance framework your group is developing speaks precisely to the organisational layer that most clinical AI deployments leave underspecified.
 
-I have been thinking around questions of how the evaluation and governance of clinical AI systems shapes whether they are adopted safely in practice, particularly in settings where clinicians interact with AI-generated outputs under production conditions - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+I have been thinking about how the evaluation and governance of clinical AI systems shapes whether they are adopted safely in practice, particularly in settings where clinicians interact with AI-generated outputs under production conditions - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
@@ -294,7 +294,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your 2025 paper in Implementation Science, "How well are implementation strategies and target healthcare professional behaviours reported?" - which examines the gap between what implementation interventions claim to do and how well they are actually specified and evaluated - speaks directly to a problem I encounter in practice. At Laudite, we have built a range of enablement interventions - structured onboarding sequences, re-engagement touchpoints, peer cohort programmes - but their design has been driven by pragmatic iteration rather than theoretical rigour. Your work makes me aware of how much of what we do would fail a systematic evaluation simply because it is underdescribed.
 
-I have been thinking around questions of how the design and reporting of implementation strategies shapes whether clinical AI tools achieve sustained behaviour change in clinical settings - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at i2i.
+I have been thinking about how the design and reporting of implementation strategies shapes whether clinical AI tools achieve sustained behaviour change in clinical settings - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at i2i.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
@@ -327,7 +327,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your 2025 paper in NEJM AI on AI-assisted spirometry interpretation in primary care, and the BREATHE trial's implementation across 40 GP practices, captures a challenge I find underexplored in most clinical AI research: what it actually takes to make a decision support tool work in real clinical conditions, not just in controlled evaluations. The gap between a system that performs well in a study and one that clinicians trust and use consistently in daily practice is precisely where I have spent most of my professional energy. The scale and pragmatic design of the BREATHE trial - MRFF-funded, real GP practices, meaningful clinical endpoints - is exactly the kind of rigorous real-world evaluation I would want to contribute to as a researcher.
 
-I have been thinking around questions of how implementation strategies shape the real-world adoption and clinical impact of AI-assisted decision support tools - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+I have been thinking about how implementation strategies shape the real-world adoption and clinical impact of AI-assisted decision support tools - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 

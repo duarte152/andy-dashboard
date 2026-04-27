@@ -55,7 +55,7 @@ My name is Thiago Rocha Duarte, currently working as Product Specialists & Produ
 
 Your research on the implementation of digital technologies for safer and more effective care, and the Global Digital Health Unit's focus on evidence-based digital health interventions in clinical settings, speaks directly to the challenge I encounter daily. Your book *Digital Health for Primary Care* and your broader work on bridging the gap between technology design and clinical reality reflect a rigour that I find largely absent in industry - where "implementation" too often means deployment, not the deeper organisational and behavioural change that makes a tool genuinely useful.
 
-I have been thinking about how implementation science frameworks can improve the adoption and sustained use of digital health tools in secondary care settings - and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
+I have been thinking about how implementation science frameworks can improve the adoption and sustained use of digital health tools in clinical settings - and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold both Brazilian and Portuguese citizenship - I came across your profile and was glad to see another Portuguese-speaking researcher working at the intersection of digital health and implementation science at this level.
 
@@ -160,7 +160,7 @@ I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor 
 
 I have attached a brief CV. I would be very grateful for a short conversation to explore whether my background might be relevant to your group's current work.
 
-I am also exploring funding pathways including the Chevening Scholarship - could you advise whether supervised positions are available through the AI-enabled Healthcare CDT for a 2027 start?
+I am also exploring funding pathways including the Chevening Scholarship - could you advise whether supervised positions are available in your group for a 2027 start?
 
 Thank you very much for your time.
 

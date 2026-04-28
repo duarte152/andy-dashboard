@@ -513,6 +513,39 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
+## EMAIL 16 - Prof. Ping Yu (University of Wollongong) 🔥
+
+**Para:** ping_yu@uow.edu.au
+**Assunto:** Prospective MRes Student - Generative AI, Clinical Documentation, and Socio-Technical Adoption | UOW 2027
+
+---
+
+Dear Professor Yu,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at the University of Wollongong, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from voice dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have applied a socio-technical lens to this work in practice - building the enablement infrastructure, onboarding workflows, and adoption interventions that determine whether an AI-generated documentation tool is trusted and used consistently, or quietly set aside.
+
+Your 2024 paper in the Journal of Biomedical Informatics, "Applying generative AI with retrieval augmented generation to summarize and extract key clinical information from electronic health records," addresses the exact technical challenge at the core of what Laudite does: how to make LLM-based clinical documentation outputs accurate, grounded, and clinically meaningful rather than fluent but unreliable. The RAG-based approach to anchoring outputs in verified clinical knowledge is directly relevant to the quality and explainability challenges I encounter in daily practice. Your broader programme of applying socio-technical approaches to the design, adoption, and evaluation of digital health tools is the precise research framing I find most useful for the problems I want to study.
+
+I have been thinking about how the design of AI-generated clinical documentation systems - and the socio-technical conditions around their deployment - shapes clinician trust, adoption, and sustained use in practice - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at UOW.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
 ## INSTRUÇÕES DE ENVIO
 
 > Atualizado em 28/04/2026.
@@ -521,6 +554,6 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 2. **Enviar um por vez**, com 1-2 dias de intervalo
 3. **Ordem original:** Bain → Baysari → Carrigan → Gray → Qureshi (todos enviados)
 4. **EMAILS 7-10 (enviados 27/04):** Coiera → Magrabi → Taylor → Sunjaya
-5. **Próximos (EMAILS 11-15):** Scott → McPhail → Wickramasinghe → Verspoor → McCradden
+5. **Próximos (EMAILS 11-16):** Scott → McPhail → Wickramasinghe → Verspoor → McCradden → Ping Yu
 6. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
 7. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente

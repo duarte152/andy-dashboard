@@ -447,6 +447,72 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
+## EMAIL 14 - Prof. Karin Verspoor (RMIT) 🔥
+
+**Para:** karin.verspoor@rmit.edu.au
+**Assunto:** Prospective MRes Student - Clinical NLP and Real-World AI Implementation in Healthcare | RMIT 2027
+
+---
+
+Dear Professor Verspoor,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at RMIT University, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have worked at the interface between the technical capabilities of this system and its actual use in clinical environments - which has given me a close view of the gap that exists between what a language model can do in isolation and what clinicians actually find reliable and useful in daily practice.
+
+Your 2022 paper in JAMIA, "Tasks as needs: reframing the paradigm of clinical natural language processing research for real-world decision support," articulates this gap more precisely than anything I had read before. The argument that clinical NLP systems should be designed around genuine clinician workflow needs - rather than isolated benchmark performance - captures a problem I encounter constantly from the deployment side. The tools that clinicians trust and use are not always the ones that score highest on standard metrics. The question of how to design and evaluate NLP-based systems that actually fit into clinical work, not just clinical task definitions, is one I find myself working on empirically, without the research scaffolding to systematise it.
+
+I have been thinking about how the alignment between system design and real clinical workflow needs shapes the adoption and sustained value of AI-powered documentation tools in practice - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at RMIT.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
+## EMAIL 15 - A/Prof. Melissa McCradden (University of Adelaide)
+
+**Para:** melissa.mccradden@adelaide.edu.au
+**Assunto:** Prospective MRes Student - Translational AI Evaluation and Clinical Implementation | University of Adelaide 2027
+
+---
+
+Dear Associate Professor McCradden,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at the University of Adelaide, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have worked on the implementation side of this system - onboarding, training, adoption interventions - which has given me a direct view of a challenge that rarely appears in published AI evaluations: the gap between a system validated under study conditions and one that clinicians actually trust and use consistently in daily practice.
+
+Your work establishing CANAIRI - the Collaboration for Translational Artificial Intelligence Trials in healthcare (Nature Medicine, 2025) - addresses the infrastructure side of this gap directly. Building consensus standards for how clinical AI trials should be conducted in real-world settings is, in my view, the foundational step that most current deployment efforts are skipping. The question of what evidence standard should govern the move from AI validation to sustained clinical deployment is one I encounter every day from a practical standpoint, without the systematic research framework that CANAIRI is trying to establish. I find the ambition of the project - building the methodological scaffolding that the field needs - genuinely important.
+
+I have been thinking about how the design of translational evaluation frameworks shapes the trajectory from clinical AI validation to real-world adoption and sustained clinical use - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at AIML.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
 ## INSTRUÇÕES DE ENVIO
 
 > Atualizado em 28/04/2026.
@@ -455,6 +521,6 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 2. **Enviar um por vez**, com 1-2 dias de intervalo
 3. **Ordem original:** Bain → Baysari → Carrigan → Gray → Qureshi (todos enviados)
 4. **EMAILS 7-10 (enviados 27/04):** Coiera → Magrabi → Taylor → Sunjaya
-5. **Próximos (EMAILS 11-13):** Scott → McPhail → Wickramasinghe
+5. **Próximos (EMAILS 11-15):** Scott → McPhail → Wickramasinghe → Verspoor → McCradden
 6. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
 7. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente

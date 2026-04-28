@@ -348,13 +348,113 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ---
 
+## EMAIL 11 - Prof. Ian Scott (UQ) 🔥 PRIORIDADE MÁXIMA
+
+**Para:** i.scott@uq.edu.au
+**Assunto:** Prospective MRes Student - Clinician Adoption of AI-Enabled Decision Support | UQ 2027
+
+---
+
+Dear Professor Scott,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at the University of Queensland, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have built and iterated on the enablement infrastructure - onboarding workflows, training programmes, adoption interventions - that determines whether AI-assisted tools actually change clinical behaviour at the point of care.
+
+Your 2024 paper in BMJ Health and Care Informatics, "Achieving large-scale clinician adoption of AI-enabled decision support," addresses exactly the gap I encounter daily: the distance between a system that performs well technically and one that clinicians actually trust and integrate into their practice. The framework you develop there - drawing on behaviour change theory, workflow integration, and the specific organisational conditions that enable sustained adoption - maps directly onto what I observe from the deployment side at Laudite. The questions you identify as central to large-scale AI adoption are the same questions I work on every day, from a different vantage point.
+
+I have been thinking about how the design of enablement strategies and organisational supports shapes whether clinical AI tools achieve sustained adoption at scale - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at QDHeC.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
+## EMAIL 12 - Prof. Steven McPhail (QUT) 🔥
+
+**Para:** steven.mcphail@qut.edu.au
+**Assunto:** Prospective MRes Student - Implementation Science & Digital Health Adoption | QUT 2027
+
+---
+
+Dear Professor McPhail,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at QUT, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Over four years, I have built and iterated on the infrastructure - onboarding workflows, training programmes, adoption interventions - that determines whether AI-assisted tools actually change clinical behaviour. A recurring observation is that the costs and complexity of sustaining that infrastructure remain poorly understood, even by the organisations deploying these tools.
+
+Your 2024 qualitative study on costing implementation strategies for digital health adoption - "it's the difference between success and failure" - puts a name to something I have observed but lacked the conceptual scaffolding to fully articulate. The invisibility of implementation costs in most digital health evaluations is precisely what allows organisations to underestimate what genuine adoption requires. Your Cost-IS instrument, published in Implementation Science in 2025, offers a systematic way to surface those costs - and I find it a genuinely important contribution to making implementation science actionable for health systems.
+
+I have been thinking about how the systematic measurement and reporting of implementation costs shapes decision-making around digital health adoption in clinical settings - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work at AusHSI.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
+## EMAIL 13 - Prof. Nilmini Wickramasinghe (La Trobe) 🔥
+
+**Para:** n.wickramasinghe@latrobe.edu.au
+**Assunto:** Prospective MRes Student - Health Technology Adoption & Digital Health Implementation | La Trobe 2027
+
+---
+
+Dear Professor Wickramasinghe,
+
+I am writing to inquire about the possibility of pursuing a Research Master's degree under your supervision at La Trobe University, with a potential start in 2027.
+
+My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite, Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have worked directly with those clinicians as they navigate AI-assisted workflows, which has given me a practical understanding of the factors - technical, organisational, and behavioural - that determine whether a health technology is adopted or quietly abandoned.
+
+Your 2025 systematic review and meta-analysis in JMIR on the determinants of healthcare technology adoption, integrating UTAUT and TTF frameworks, provides a rigorous synthesis of theoretical ground I have been working on empirically. The finding that task-technology fit and facilitating conditions interact in ways that standard adoption models underestimate resonates directly with what I observe at Laudite: the same tool, deployed in different clinical environments with different levels of organisational support, can have dramatically different adoption trajectories. Understanding the mechanisms behind that variation is what motivates my interest in graduate research.
+
+I have been thinking about how the interaction between task-technology fit and organisational facilitating conditions shapes the sustained adoption of AI tools in healthcare - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current work.
+
+I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
+
+I have attached a brief CV. I would be genuinely grateful for a short conversation to explore whether my background might connect to your current research directions.
+
+I am also exploring funding pathways including the RTP scholarship - could you advise whether funded HDR candidacies are being considered in your group for a 2027 start?
+
+Thank you very much for your time.
+
+Warmly,
+Thiago Rocha Duarte
+Product Specialists & Product Enablement Lead, Laudite
+
+https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
 ## INSTRUÇÕES DE ENVIO
 
-> Atualizado em 27/04/2026.
+> Atualizado em 28/04/2026.
 
 1. **Converter CV para PDF** antes de anexar (cv_english.md → PDF)
 2. **Enviar um por vez**, com 1-2 dias de intervalo
 3. **Ordem original:** Bain → Baysari → Carrigan → Gray → Qureshi (todos enviados)
-4. **Próximos (EMAILS 7-10):** Coiera → Magrabi → Taylor → Sunjaya
-5. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
-6. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente
+4. **EMAILS 7-10 (enviados 27/04):** Coiera → Magrabi → Taylor → Sunjaya
+5. **Próximos (EMAILS 11-13):** Scott → McPhail → Wickramasinghe
+6. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
+7. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente

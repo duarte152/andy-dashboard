@@ -53,7 +53,7 @@ I am writing to inquire about the possibility of pursuing an MRes under your sup
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite - Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports from voice dictation and prior data, with clinicians retaining full decision-making authority. Over four years, I have developed a practitioner's understanding of what it takes for digital health tools to actually work in clinical environments - not just to function technically, but to change behaviour, integrate into workflows, and deliver the outcomes they were designed to produce.
 
-Your research on the implementation of digital technologies for safer and more effective care, and the Global Digital Health Unit's focus on evidence-based digital health interventions in clinical settings, speaks directly to the challenge I encounter daily. Your book *Digital Health for Primary Care* - co-authored with Lilliana Laranjo - and your broader work on bridging the gap between technology design and clinical reality reflect a rigour that I find largely absent in industry - where "implementation" too often means deployment, not the deeper organisational and behavioural change that makes a tool genuinely useful.
+Your research on the implementation of digital technologies for safer and more effective care, and the Global Digital Health Unit's focus on evidence-based digital health interventions in clinical settings, speaks directly to the challenge I encounter daily. Your book *Digital Health for Primary Care* - co-authored with Liliana Laranjo - and your broader work on bridging the gap between technology design and clinical reality reflect a rigour that I find largely absent in industry - where "implementation" too often means deployment, not the deeper organisational and behavioural change that makes a tool genuinely useful.
 
 I have been thinking about how implementation science frameworks can improve the adoption and sustained use of digital health tools in clinical settings - and I would be grateful to be guided by your expertise on where you see the most relevant directions within your current work.
 
@@ -152,9 +152,9 @@ I am writing to inquire about the possibility of pursuing an MRes under your sup
 
 My name is Thiago Rocha Duarte, currently working as Product Specialists & Product Enablement Lead at Laudite - Brazil's leading generative AI platform for medical reporting, used by over 3,500 clinicians across radiology, pathology, and endoscopy. Laudite uses an LLM pipeline to generate structured clinical reports, with clinicians retaining full decision-making authority. My day-to-day work involves understanding how those clinicians - primarily radiologists and pathologists - receive, interpret, and act on information presented by the system. In that sense, your research on the informational needs of clinicians and the design of clinical data presentation systems sits very close to problems I have been working on from the industry side.
 
-Your book *From Patient Data to Medical Knowledge* and your broader work on clinical decision support address a challenge I encounter constantly at Laudite: the gap between data that exists in a system and information that a clinician can actually use in context. The question of how to present clinical information in ways that reduce cognitive load and support rather than override clinical judgment is one I approach through product design - your work gives it the scientific rigour it deserves.
+Your book *From Patient Data to Medical Knowledge* (2006) and your broader work on clinical decision support address a challenge I encounter constantly at Laudite: the gap between data that exists in a system and information that a clinician can actually use in context. The question of how to present clinical information in ways that reduce cognitive load and support rather than override clinical judgment is one I approach through product design - your work gives it the scientific rigour it deserves.
 
-I have been thinking about how the design of clinical data presentation within decision support systems affects clinician behaviour and adoption over time - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current research and the AI-enabled Healthcare CDT programme.
+I have been thinking about how the design of clinical data presentation within decision support systems affects clinician behaviour and adoption over time - and I would be grateful to be guided by your expertise on where the most relevant directions lie within your current research and the UKRI Centre for Doctoral Training in AI-enabled Healthcare Systems.
 
 I hold a Bachelor's in Social Communication from PUC-Rio (Brazil), with a Minor in Entrepreneurship. Before Laudite, I participated in the START Global Fellowship - a remote program run by the University of St. Gallen in Switzerland focused on scaling startups and impactful entrepreneurship. I also served as a Second Lieutenant in the Brazilian Army. I hold Portuguese citizenship in addition to Brazilian.
 
@@ -169,6 +169,17 @@ Thiago Rocha Duarte
 Product Specialists & Product Enablement Lead, Laudite
 
 https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
+
+---
+
+## STATUS GERAL — REINO UNIDO (11/05/2026)
+- ✅ Todos os 5 emails enviados em 11/05/2026
+- 🟡 Delaney (EMAIL 1): aguardando resposta
+- 🟡 Neves (EMAIL 2): aguardando resposta
+- 🟡 Cresswell (EMAIL 3): aguardando resposta
+- 🟡 Lilaonitkul (EMAIL 4): aguardando resposta
+- 🟡 Taylor (EMAIL 5): aguardando resposta
+- Follow-up: se não houver resposta em 14 dias (a partir de 11/05), enviar follow-up breve
 
 ---
 

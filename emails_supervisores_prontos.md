@@ -548,12 +548,19 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en-US
 
 ## INSTRUÇÕES DE ENVIO
 
-> Atualizado em 28/04/2026.
+> Atualizado em 10/05/2026.
 
 1. **Converter CV para PDF** antes de anexar (cv_english.md → PDF)
 2. **Enviar um por vez**, com 1-2 dias de intervalo
 3. **Ordem original:** Bain → Baysari → Carrigan → Gray → Qureshi (todos enviados)
 4. **EMAILS 7-10 (enviados 27/04):** Coiera → Magrabi → Taylor → Sunjaya
-5. **Próximos (EMAILS 11-16):** Scott → McPhail → Wickramasinghe → Verspoor → McCradden → Ping Yu
+5. **EMAILS 11-16 (enviados 10/05):** Scott → McPhail → Wickramasinghe → Verspoor → McCradden → Ping Yu
 6. **Follow-up:** se não houver resposta em 14 dias, enviar email breve de follow-up
 7. **Sullivan (EMAIL 1):** NÃO enviar agora - monitorar mensalmente
+
+## STATUS GERAL — AUSTRÁLIA (11/05/2026)
+- ✅ Todos os emails 2–16 enviados
+- 🔴 Sullivan (EMAIL 1): aguardar abertura de supervisão
+- 🟡 Carrigan (EMAIL 6): reunião confirmada para 12/05 às 9h Sydney (20h quarta BR)
+- 🟡 Magrabi (EMAIL 8): histórico acadêmico enviado em 08/05, aguardando resposta
+- 🟡 Ping Yu (EMAIL 16): RESPONDEU 11/05 - perguntou sobre fonte de financiamento (self-funded vs. bolsa). Resposta enviada mencionando RTP como pathway principal.

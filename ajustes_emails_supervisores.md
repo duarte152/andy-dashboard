@@ -43,11 +43,27 @@ USAR EXATAMENTE:
 - NÃO mencionar "technology automation startup" no corpo do email
 
 ### 7. Descrição da Laudite (crítico — distinção CDSS vs. GenAI)
-A Laudite NÃO é um CDSS. Descrição correta:
-- É um software de produtividade e controle de qualidade para relatórios médicos
-- Usa modelos de linguagem (LLMs/GenAI) — não recomenda decisões clínicas
-- O médico mantém autoridade decisória total
-- Maior empresa de referência no setor no Brasil, com 3.500+ usuários
+*Atualizado 11/05/2026 com clarificação do Thiago*
+
+**O que a Laudite É:**
+- Uma ferramenta de **produtividade e controle de qualidade para a construção de relatórios médicos**
+- Usa LLMs/GenAI para gerar relatórios clínicos estruturados — foco no documento, não na decisão clínica
+- O médico mantém autoridade decisória total sobre o conteúdo final
+- Maior plataforma do segmento no Brasil, com 3.500+ usuários em radiologia, patologia e endoscopia
+
+**O que a Laudite NÃO é:**
+- NÃO é nativamente uma ferramenta de apoio à decisão clínica (CDSS)
+- NÃO é um sistema de recomendação diagnóstica
+
+**Nuance importante:**
+A Laudite TEM funcionalidades que tocam na decisão diagnóstica — ex: um agente pesquisador que consulta fontes científicas relevantes e retorna respostas com imagens de referência para apoiar hipóteses diagnósticas. Mas esse é um recurso secundário, não o foco principal do produto.
+
+**Formulação aprovada para emails:**
+> "Laudite is a generative AI platform for medical reporting - its core function is quality control and productivity in clinical documentation, using an LLM pipeline to generate structured reports from dictation and prior data. The clinician retains full decision-making authority at every step."
+
+**Proibido usar:**
+- "clinical decision support system" ou "CDSS" aplicado à Laudite
+- Qualquer linguagem que implique que a Laudite recomenda diagnósticos ou tratamentos
 
 Conceitos-chave a incluir quando relevante:
 - "First value" — o momento em que o medo da transição se dissolve, quando o médico completa o primeiro ciclo real de fluxo de trabalho
@@ -103,4 +119,73 @@ https://www.linkedin.com/in/thiago-rocha-duarte-6982341b1/?locale=en_US
 
 ---
 
+## REGRA 13 — VERIFICAÇÃO CRÍTICA DA PESQUISA DO PROFESSOR (adicionada 18/05/2026)
+
+**Esta etapa é OBRIGATÓRIA antes de gerar qualquer email de outreach.**
+
+Antes de citar qualquer paper, projeto ou linha de pesquisa de um professor, é necessário verificar os seguintes pontos via pesquisa web:
+
+### 13.1 Verificar autoria real do paper citado
+- Buscar o título exato do paper no Google Scholar ou PubMed
+- Confirmar se o professor é o **primeiro autor** ou **autor correspondente/sênior**
+- Se for co-autor em posição intermediária (ex: 7º de 10), **NÃO atribuir o trabalho a ele diretamente**
+- Fraseamento correto quando não é autor principal:
+  - ✅ "work from your group/lab"
+  - ✅ "a paper co-authored by you and colleagues"
+  - ✅ "research from your research environment"
+  - ❌ "your paper" / "you developed" / "your 2024 CHI paper" (se ele não é autor principal)
+
+### 13.2 Confirmar afiliação atual
+- Verificar página institucional atual do professor
+- Confirmar se a universidade mencionada é a **afiliação primária** (não apenas honorary/adjunct)
+- Exemplo de erro: descrever professor com honorary appointment como membro pleno do departamento
+- Se a afiliação é honorary/adjunct, mencionar a afiliação **primária** no email
+
+### 13.3 Verificar se é pesquisa PRIMARY ou secundária
+- O paper citado deve ser do **núcleo da pesquisa do professor**, não um trabalho pontual onde ele apareceu como co-autor
+- Verificar 3-5 publicações recentes para confirmar que o tema é consistente na trajetória dele
+- Evitar citar um paper de 2020 se a pesquisa atual dele é em outra direção
+
+### 13.4 Confirmar email institucional
+- Verificar email na página do departamento ou perfil pessoal do professor
+- Nunca usar formato de email "deduzido" sem verificação, especialmente para professores em universidades com formatos não padronizados
+- Se email não for verificável, inserir nota no rascunho: `[Email não confirmado — verificar antes de enviar]`
+- Atenção especial: GWU ≠ Georgetown (universidades diferentes em Washington DC)
+
+### 13.5 Erros encontrados na verificação de 18/05/2026 (aprendizados)
+Os seguintes erros foram corrigidos após fact-check dos rascunhos:
+
+| Professor | Erro | Correção |
+|---|---|---|
+| Adam Perer (CMU) | "your 2024 CHI paper" — ele era 14º autor de 17 | → "your group's 2024 CHI paper" |
+| Leo Celi (MIT) | "your paper" — ele era 3º autor | → "a 2025 npj paper co-authored by you" |
+| Jessica Ancker | "your 2026 JAMIA paper" — ela era última autora | → "your lab's recent JAMIA paper" |
+| Karandeep Singh | paper de sepsis — ele era 7º de 9 autores | → referência removida, foco no cargo atual |
+| Raj Ratwani | GWU = George Washington University (errado) | → Georgetown University School of Medicine |
+| Raj Ratwani | Email rratwani@gwu.edu (errado) | → raj.ratwani@georgetown.edu |
+| Xiaoxuan Liu | Descrita como professora de Birmingham | → Primary role: Microsoft AI Health; Birmingham é honorary |
+| Kim Unertl | "chairs AMIA WG" (errado, é past chair) | → "former chair of AMIA's POI Working Group" |
+
+---
+
+## CHECKLIST ANTES DE ENVIAR QUALQUER EMAIL
+
+- [ ] Nenhum em dash (—) no texto inteiro
+- [ ] Nacionalidade não aparece no primeiro parágrafo
+- [ ] Laudite descrita como GenAI/produtividade, não como CDSS
+- [ ] START Global: descrição correta sem Dream Bots
+- [ ] Tom: professor é o especialista
+- [ ] LinkedIn com `?locale=en_US`
+- [ ] Assinatura no formato padrão
+- [ ] Pelo menos 1 paper específico do professor citado
+- [ ] "MRes" para Austrália (não MPhil/PhD)
+- [ ] Sem duplicação da menção de cidadania portuguesa
+- [ ] **[NOVO] Paper citado verificado: professor é autor principal ou fraseado como "group's paper"**
+- [ ] **[NOVO] Afiliação atual confirmada via página institucional**
+- [ ] **[NOVO] Pesquisa citada é o núcleo da agenda do professor, não trabalho pontual**
+- [ ] **[NOVO] Email verificado diretamente da página do departamento**
+
+---
+
 *Arquivo criado por Andy com base em todas as sessões de ajuste de abril/2026*
+*Regra 13 adicionada em 18/05/2026 após fact-check crítico dos primeiros 25 rascunhos*

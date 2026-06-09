@@ -1,6 +1,6 @@
-# Ajustes e Regras para Emails de Supervisores Acadêmicos
-*Consolidado em: 2026-05-09 | Baseado em todas as sessões de abril/2026*
-*Aplicar a TODOS os novos emails de outreach para professores (Austrália, UK, e outros países)*
+# Ajustes e Regras para Emails Acadêmicos e Profissionais
+*Consolidado em: 2026-05-09 | Atualizado: 2026-06-08*
+*Aplicar a TODOS os emails redigidos para Thiago - outreach para professores, emails para supervisores, emails institucionais, qualquer contexto formal*
 
 ---
 

@@ -73,6 +73,14 @@
 | `linkedin_strategy.md` | Estratégia para LinkedIn |
 | `metricas_impacto_khs.md` | Métricas de impacto (Knight-Hennessy) |
 
+## MPhil USyd — Plano de Ação
+
+| Arquivo | Conteúdo |
+|---------|----------|
+| `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) até 5/Jul |
+| `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
+| `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
+
 ## Outros
 
 | Arquivo | Conteúdo |

@@ -1,6 +1,6 @@
 # Thiago — Profile & Memory
 
-Last updated: 2026-04-16
+Last updated: 2026-06-17
 
 ## Identity
 - **Nome:** Thiago
@@ -58,7 +58,15 @@ Business Model Design · Go-to-Market Strategy · Product Management · RevOps �
 - Technology Entrepreneurship: Lab to Market
 
 ## Projetos Ativos
-- **Mestrado no exterior** — quer aplicar para programas com 100% de bolsa, no exterior, preferencialmente em inglês (interesse em Canadá entre outros). Tem dupla cidadania BR+PT.
+- **Mestrado no exterior** — quer aplicar para programas com 100% de bolsa, no exterior, preferencialmente em inglês. Tem dupla cidadania BR+PT.
+  - **Status atual (jun/2026):** Foco principal em MPhil na USyd com Dr. Ann Carrigan
+  - **Tema proposto pela Carrigan:** Experiências qualitativas de diagnosticistas (radiologistas/patologistas) usando ferramentas de IA de suporte diagnóstico - lente de human factors/sociotechnical systems
+  - **Metodologia:** Scoping review (JBI methodology, PRISMA-ScR)
+  - **Prazo crítico:** Enviar summary de 2-3 páginas para Carrigan até 5 de julho de 2026
+  - **Arquivo de plano:** `plano_mphil_usyd.md` - cronograma completo com fases, search terms, estrutura de escrita
+  - **Email mais recente:** Carrigan respondeu positivamente em jun/2026, pediu para começar a trabalhar na proposta
+  - **IELTS:** 8.0 (já tem)
+  - Ver também: `carrigan_scoping_review_notes.md` para metodologia extraída do review dela
 - **Laudite** — produção contínua de conteúdo
 - **Onda Produções** — produtora musical, sociedade com Thedy, JayB (João Marcello) e Tobias (primo do João)
 - **Aprender espanhol** — quer praticar espanhol, ser corrigido sempre que errar, e falar só em espanhol durante as sessões de prática

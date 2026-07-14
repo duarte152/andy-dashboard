@@ -51,12 +51,24 @@ Resumo dos pontos críticos (aplicar a QUALQUER email redigido):
 
 ---
 
+## Groq API (Transcrição de Voz)
+
+- API Key salva em: `/workspace/group/.groq_key`
+- Modelo: `whisper-large-v3-turbo` (grátis, multilíngue: PT, EN, ES, etc.)
+- Script: `python3 /workspace/group/transcribe.py <arquivo.oga>`
+- Funciona via curl (Python urllib bloqueado pelo Cloudflare)
+
+---
+
 ## Gmail
 
 - Acesso via IMAP: `imaplib.IMAP4_SSL("imap.gmail.com", 993)`
 - Usuário: `thiago.duarte152@gmail.com`
 - App Password: `cxjv nooh nwmw hctf`
 - Pasta de rascunhos: `[Gmail]/Rascunhos`
+- Pasta com todos os emails (inbox + enviados + tudo): `[Gmail]/Todos os e-mails` — usar essa para buscar por remetente/assunto, não a INBOX sozinha
+- **IMPORTANTE:** Antes de dizer "não tenho acesso ao Gmail" ou tentar `ToolSearch` por ferramentas externas, SEMPRE usar IMAP diretamente via Bash/Python com as credenciais acima. Não é preciso pedir ao Thiago o conteúdo de emails — eu já tenho acesso.
+- Exemplo de busca: `M.select('"[Gmail]/Todos os e-mails"'); M.search(None, '(FROM "nome")')` depois `M.fetch(id, '(RFC822)')` e parsear com `email.message_from_bytes`.
 
 ---
 

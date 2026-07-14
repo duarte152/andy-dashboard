@@ -77,9 +77,20 @@
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) até 5/Jul |
+| `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) — deadline RTP: 18/Dez/2026 |
 | `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
 | `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
+
+## Candidatura UK — CDTs e Chevening
+
+| Arquivo | Conteúdo |
+|---------|----------|
+| `plano_candidatura_uk_cdt.md` | **PLANO PRINCIPAL UK** — programas CDT/DTP mapeados, prereqs, estratégia de entrevistas com alunos, personal statement, calendário de aplicações |
+| `waty_call_notes.md` | Notas brutas da call com Dr. Waty Lilaonitkul (27/05/2026) — estratégia de candidatura, dicas de personal statement, orientação sobre CDTs |
+| `supervisores_uk.md` | Supervisores identificados (UCL, Imperial, Edinburgh) — Dr. Waty é contato ativo |
+| `chevening_pesquisa.md` | Pesquisa completa sobre a Chevening scholarship — portal abre agosto 2026 |
+| `chevening_essay_lideranca.md` | Essay de liderança Chevening (redigido) |
+| `chevening_essays_restantes.md` | Demais 3 essays Chevening (redigidos) |
 
 ## Outros
 

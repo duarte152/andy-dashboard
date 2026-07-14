@@ -21,11 +21,11 @@
 - Submeter candidatura até ~novembro 2026
 
 ### 3. USyd / Carrigan — MPhil + RTP
-**Status:** Email enviado 13/07 (rascunho no Gmail, Thiago vai revisar e enviar).
+**Status:** ✅ Email enviado 14/07 e Carrigan já respondeu (13/07 23:50 UTC): "Great and many thanks for the update." — confirmação simples, sem novas exigências. Timeline (Sem 2 2027, deadline RTP 18/dez/2026) está validada por ela.
 **Deadline crítico:** RTP = 18 dezembro 2026
 **Próximos passos:**
-- Thiago envia o email para Carrigan
-- Preparar research summary (2-3 páginas) antes de dezembro
+- Preparar research summary (2-3 páginas, 7 elementos, Vancouver style) nos próximos meses — entregar bem antes do deadline
+- Continuar acompanhando espaço de ambient scribes (mencionado no email como relevante ao trabalho na Laudite)
 - Plano detalhado em `plano_mphil_usyd.md`
 
 ---
@@ -34,7 +34,7 @@
 
 | Contato | Status | Última interação | Próxima ação |
 |---|---|---|---|
-| Dr. Ann Carrigan (USyd) | Email redigido, pendente envio | 28-29/jun (ela: "Sounds good") | Thiago envia o rascunho |
+| Dr. Ann Carrigan (USyd) | Email enviado, ela confirmou recebimento | 13/07/2026 (ela: "Great and many thanks for the update") | Preparar research summary antes de dez/2026 |
 | Dr. Waty Lilaonitkul (UCL) | Call feita 27/05 — silêncio desde | 27/mai/2026 | Reativar set/2026 quando CDT escolhido |
 | Prof. Paul Taylor (UCL) | Respondeu positivo, mencionou Sparck AI scholarship | 11/mai/2026 | Follow-up quando CDT definido |
 
@@ -58,7 +58,9 @@
 - Transcription de voz implementada via Groq API (`transcribe.py`) ✅
 - Call da Waty (27/05) documentada em `waty_call_notes.md`
 - Plano CDTs UK criado: `plano_candidatura_uk_cdt.md`
-- Email para Carrigan (delay para Sem 2 2027 + deadline RTP) salvo como rascunho no Gmail
+- Email para Carrigan (delay para Sem 2 2027 + deadline RTP) enviado e respondido — ela confirmou recebimento, sem novas exigências
+- Dashboard reformulado com tabs por frente (UK CDTs, Chevening, USyd/Carrigan) + versão antiga preservada em link escondido
+- Modelo padrão do Andy trocado para Claude Sonnet 5
 - Estrutura de memória (NOW.md) criada
 
 ---

@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Thiago — Dashboard de Metas</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --card2: #21253a;
+    --border: #2e3348;
+    --accent: #4f8ef7;
+    --accent2: #7c5cfc;
+    --green: #22c55e;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --orange: #f97316;
+    --text: #e8eaf0;
+    --muted: #8b90a7;
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a1d27 0%, #21253a 100%);
+    padding: 28px 20px 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+  .header-top { display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.3px; }
+  .header h1 span { color: var(--accent); }
+  .date-badge {
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .header-sub { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+
+  /* NAV TABS */
+  .tabs {
+    display: flex; gap: 8px; overflow-x: auto;
+    padding: 14px 20px 0; scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex-shrink: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all .2s;
+    white-space: nowrap;
+  }
+  .tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* MAIN */
+  .main { padding: 20px; max-width: 600px; margin: 0 auto; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+  .card-title { font-size: 0.95rem; font-weight: 700; line-height: 1.3; }
+  .card-sub { font-size: 0.75rem; color: var(--muted); margin-top: 3px; }
+
+  /* BADGES */
+  .badge {
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .badge-green  { background: #16532840; color: var(--green); border: 1px solid #22c55e30; }
+  .badge-yellow { background: #78350f40; color: var(--yellow); border: 1px solid #f59e0b30; }
+  .badge-red    { background: #7f1d1d40; color: var(--red); border: 1px solid #ef444430; }
+  .badge-blue   { background: #1e3a5f40; color: var(--accent); border: 1px solid #4f8ef730; }
+  .badge-purple { background: #3b1f6040; color: #a78bfa; border: 1px solid #7c5cfc30; }
+  .badge-gray   { background: #1f243640; color: var(--muted); border: 1px solid var(--border); }
+
+  /* DEADLINE */
+  .deadline-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .deadline-icon { font-size: 0.85rem; }
+  .deadline-text { font-size: 0.78rem; color: var(--muted); }
+  .deadline-text strong { color: var(--text); }
+
+  /* PROGRESS BAR */
+  .progress-wrap { margin-top: 10px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--muted); margin-bottom: 6px; }
+  .progress-label span:last-child { color: var(--text); font-weight: 600; }
+  .progress-bar { background: var(--card2); border-radius: 6px; height: 6px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 6px; transition: width 0.5s ease; }
+  .fill-green  { background: linear-gradient(90deg, #16a34a, #22c55e); }
+  .fill-blue   { background: linear-gradient(90deg, #2563eb, #4f8ef7); }
+  .fill-yellow { background: linear-gradient(90deg, #d97706, #f59e0b); }
+  .fill-red    { background: linear-gradient(90deg, #dc2626, #ef4444); }
+  .fill-purple { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag {
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px 9px;
+    font-size: 0.69rem;
+    color: var(--muted);
+  }
+
+  /* CHECKLIST */
+  .checklist { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+  .check-item { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; }
+  .check-item.done { color: var(--muted); text-decoration: line-through; }
+  .check-box {
+    width: 18px; height: 18px; border-radius: 5px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; font-size: 0.7rem;
+  }
+  .check-box.done { background: var(--green); }
+  .check-box.todo { background: var(--card2); border: 1px solid var(--border); }
+  .check-box.urgent { background: var(--red); }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+  /* STAT ROW */
+  .stat-row { display: flex; gap: 10px; margin-bottom: 12px; }
+  .stat-box {
+    flex: 1;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 12px;
+    text-align: center;
+  }
+  .stat-number { font-size: 1.6rem; font-weight: 800; }
+  .stat-label { font-size: 0.68rem; color: var(--muted); margin-top: 2px; }
+
+  /* TIMELINE */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .tl-item { display: flex; gap: 14px; }
+  .tl-left { display: flex; flex-direction: column; align-items: center; }
+  .tl-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .tl-line { width: 2px; background: var(--border); flex: 1; margin: 4px 0; min-height: 20px; }
+  .tl-item:last-child .tl-line { display: none; }
+  .tl-content { padding-bottom: 18px; flex: 1; }
+  .tl-date { font-size: 0.68rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .tl-text { font-size: 0.82rem; margin-top: 2px; line-height: 1.4; }
+  .tl-sub { font-size: 0.73rem; color: var(--muted); margin-top: 2px; }
+
+  /* COUNTRY FLAG HEADER */
+  .country-header {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; color: var(--muted);
+    margin: 18px 0 10px;
+  }
+  .country-header:first-of-type { margin-top: 0; }
+  .country-header::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+
+  /* URGENCY STRIP */
+  .urgency-strip {
+    background: linear-gradient(135deg, #1e1b2e, #1e2538);
+    border: 1px solid #4f8ef740;
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .urgency-icon { font-size: 1.3rem; }
+  .urgency-text { font-size: 0.8rem; line-height: 1.5; }
+  .urgency-text strong { color: var(--accent); }
+
+  /* INTERVIEW COUNTER */
+  .interview-big {
+    text-align: center; padding: 20px 0 10px;
+  }
+  .interview-big .num {
+    font-size: 4rem; font-weight: 900; line-height: 1;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .interview-big .denom { font-size: 1.4rem; color: var(--muted); font-weight: 300; }
+  .interview-big .label { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+
+  /* SCROLL TO TOP */
+  .fab {
+    position: fixed; bottom: 24px; right: 20px;
+    width: 44px; height: 44px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 16px #4f8ef740;
+    cursor: pointer;
+    transition: transform .2s;
+    border: none; color: white;
+  }
+  .fab:active { transform: scale(0.92); }
+
+  /* LAST UPDATED */
+  .last-updated {
+    text-align: center; font-size: 0.68rem; color: #ffffff20;
+    margin-top: 30px;
+  }
+
+  /* FILE CARDS */
+  .file-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: border-color .2s, background .2s;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  .file-card:active { background: var(--card2); border-color: var(--accent); }
+  .file-card-icon { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
+  .file-card-info { flex: 1; min-width: 0; }
+  .file-card-title { font-size: 0.88rem; font-weight: 700; }
+  .file-card-desc { font-size: 0.72rem; color: var(--muted); margin-top: 3px; }
+  .file-card-arrow { color: var(--muted); font-size: 1.1rem; flex-shrink: 0; }
+
+  /* MODAL */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.82);
+    align-items: flex-end;
+  }
+  .modal-box {
+    background: var(--bg);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slideUp .28s cubic-bezier(.22,1,.36,1);
+  }
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: .5; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+  .modal-handle {
+    width: 36px; height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 10px auto 0;
+    flex-shrink: 0;
+  }
+  .modal-header-bar {
+    display: flex; align-items: center;
+    padding: 12px 18px 10px;
+    border-bottom: 1px solid var(--border);
+    gap: 10px; flex-shrink: 0;
+  }
+  .modal-header-bar h3 {
+    flex: 1; font-size: 0.92rem; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .modal-close-btn {
+    width: 30px; height: 30px;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--muted);
+    font-size: 0.88rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 18px 40px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* RENDERED MARKDOWN */
+  .md-content h2 { font-size: 1.05rem; font-weight: 800; color: var(--accent); margin: 20px 0 7px; line-height: 1.3; }
+  .md-content h3 { font-size: 0.9rem; font-weight: 700; color: var(--text); margin: 16px 0 5px; }
+  .md-content h4 { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin: 12px 0 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .md-content p { font-size: 0.81rem; line-height: 1.65; color: var(--text); margin-bottom: 4px; }
+  .md-content ul { padding-left: 18px; margin: 5px 0 10px; }
+  .md-content li { font-size: 0.81rem; line-height: 1.6; color: var(--text); margin-bottom: 3px; }
+  .md-content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+  .md-content strong { color: #ffffff; font-weight: 700; }
+  .md-content em { color: var(--yellow); font-style: italic; }
+  .md-content code { background: var(--card2); color: var(--accent); padding: 1px 5px; border-radius: 4px; font-size: 0.76rem; font-family: monospace; }
+  .md-content table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.74rem; }
+  .md-content th { background: var(--card2); color: var(--accent); text-align: left; padding: 6px 8px; border: 1px solid var(--border); font-weight: 700; }
+  .md-content td { padding: 5px 8px; border: 1px solid var(--border); color: var(--text); vertical-align: top; line-height: 1.4; }
+  .md-content tr:nth-child(even) td { background: #ffffff04; }
+  .md-content a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <h1>Thiago <span>Duarte</span></h1>
+    <div class="date-badge" id="today-date"></div>
+  </div>
+  <div class="header-sub">Dashboard de Metas — 2026</div>
+</div>
+
+<div class="tabs" id="tabs">
+  <div class="tab active" onclick="switchTab('mestrado')">🎓 Mestrado</div>
+  <div class="tab" onclick="switchTab('entrevistas')">💼 Entrevistas</div>
+  <div class="tab" onclick="switchTab('financeiro')">💰 Financeiro</div>
+  <div class="tab" onclick="switchTab('vida')">🌱 Vida</div>
+  <div class="tab" onclick="switchTab('timeline')">📅 Timeline</div>
+  <div class="tab" onclick="switchTab('arquivos')">📁 Arquivos</div>
+  <div class="tab" onclick="switchTab('relatos')">💬 Relatos</div>
+  <div class="tab" onclick="switchTab('mphil')">🔬 MPhil Plan</div>
+</div>
+
+<!-- ===================== MESTRADO ===================== -->
+<div class="main">
+<div class="section active" id="mestrado">
+
+  <div class="urgency-strip">
+    <div class="urgency-icon">🚀</div>
+    <div class="urgency-text">
+      ✅ <strong>IELTS 8.0</strong> (16/05) · 🎉 <strong>Call Carrigan Qui 21/05 10h</strong> · 🎉 <strong>Teams Lilaonitkul Qua 27/05 10h BRT</strong> · 🔥 <strong>Taylor (UCL) + Magrabi (MQ): respostas positivas</strong> · 6 emails AU + 7 UK + 11 EUA prontos para enviar
+    </div>
+  </div>
+
+  <div class="urgency-strip" style="border-color:#f59e0b40; background:linear-gradient(135deg,#1a1200,#1a1505);">
+    <div class="urgency-icon">⚠️</div>
+    <div class="urgency-text">
+      <strong>McCall MacBain — Ação Urgente:</strong> Avisar recomendadores em abril/maio (3 meses antes do prazo). Portal abre junho/2026, prazo 19/ago. <strong>Ver mccallmacbain_recomendadores.md →</strong>
+    </div>
+  </div>
+
+  <!-- TRACKER DE EMAILS -->
+  <div class="section-title">📬 Status dos Emails — Supervisores</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Austrália — RTP 2027</div>
+        <div class="card-sub">9 enviados · 5 respostas recebidas · 1 call agendada 🎉</div>
+      </div>
+      <div class="badge badge-green">Em andamento</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Chris Bain — Monash · enviado 23/04 · sem resposta · follow-up devido</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Melissa Baysari — USyd · enviado 23/04 · respondeu: no capacity, indicou Ann Carrigan</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Dr. Ann Carrigan — USyd · indicada pela Baysari · <strong>call agendada Qui 21/05 às 10h BRT 🎉</strong></span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Kathleen Gray — Melbourne · enviado 26/04 · sem resposta · follow-up devido</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Israr Qureshi — ANU (agora Queen's Belfast) · respondeu 16/05: enviou 22 papers · fit baixo · rascunho de agradecimento no Gmail</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Enrico Coiera — Macquarie · respondeu 27/04: supervisor só escolhido no ano 2 do MRes · sem ação imediata</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Farah Magrabi — Macquarie · respondeu 04/05: "background highly relevant" · pediu transcritos · <strong>transcritos enviados 08/05 ✅</strong> · aguardando retorno</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Natalie Taylor — UNSW · enviado 27/04 · sem resposta</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Dr. Anthony Sunjaya — UNSW · respondeu 11/05: pediu experiência em pesquisa · <strong>respondido 17/05 com histórico ✅</strong> · aguardando retorno</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>Prof. Ian Scott — UQ · pronto para enviar (EMAIL 11) 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>Prof. Steven McPhail — QUT · pronto para enviar (EMAIL 12)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>Prof. Nilmini Wickramasinghe — La Trobe · pronto para enviar (EMAIL 13)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>Prof. Karin Verspoor — RMIT · pronto para enviar (EMAIL 14) 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>A/Prof. Melissa McCradden — U. Adelaide · pronto para enviar (EMAIL 15)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <span>Prof. Ping Yu — U. Wollongong · pronto para enviar (EMAIL 16)</span>
+      </div>
+    </div>
+    <div class="deadline-row" style="margin-top:10px">
+      <span class="deadline-icon">🚨</span>
+      <span class="deadline-text"><strong>Magrabi:</strong> enviar transcritos o quanto antes · <strong>Sunjaya:</strong> responder com histórico de pesquisa · <strong>Bain/Gray:</strong> follow-up devido (enviado 23/26 abr)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Reino Unido — Batch 1 · Chevening 2027</div>
+        <div class="card-sub">5 enviados 11/05 · 3 respostas recebidas 🎉</div>
+      </div>
+      <div class="badge badge-green">Em andamento</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Dr. Waty Lilaonitkul — UCL · respondeu 18/05 — <strong>Teams confirmado Qua 27/05 10h BRT 🎉</strong></span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Brendan Delaney — Imperial · enviado 11/05 · sem resposta · follow-up devido 25/05</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Dr. Ana Luisa Neves — Imperial · respondeu 11/05: redirecionou para página dos programas, sem vaga anunciada para 2027 ainda — acompanhar redes sociais dela</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Kathrin Cresswell — Edinburgh · enviado 11/05 · sem resposta · follow-up devido 25/05</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Prof. Paul Taylor — UCL · respondeu 11/05: <strong>"would be really interesting to host you here" 🔥</strong> · mencionou Sparck AI Scholarship · <strong>Thiago pediu call 17/05</strong> · aguardando resposta de Taylor</span>
+      </div>
+    </div>
+    <div class="deadline-row" style="margin-top:10px">
+      <span class="deadline-icon">⏰</span>
+      <span class="deadline-text">Follow-up Delaney + Cresswell: <strong>25/05</strong> · Sparck AI Scholarship (UCL): monitorar abertura · <strong>Lilaonitkul: Teams Qua 27/05 10h BRT ✅</strong></span>
+    </div>
+    <div class="deadline-row" style="margin-top:6px">
+      <span class="deadline-icon">💡</span>
+      <span class="deadline-text"><strong>UCL Sparck AI Scholarship:</strong> ucl.ac.uk/scholarships/sparck-ai-scholarship — 8 vagas para 14 programas (~350 candidatos). Muito competitivo mas relevante.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Reino Unido — Batch 2 · Rascunhos prontos</div>
+        <div class="card-sub">7 rascunhos no Gmail — enviar na semana de 19/05</div>
+      </div>
+      <div class="badge badge-yellow">Rascunhos</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Frances Mair — Glasgow · Frances.Mair@glasgow.ac.uk · NASSS / eHealth adoption 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Chrysanthi Papoutsi — Oxford · chrysanthi.papoutsi@phc.ox.ac.uk · digital health ethnography / NHS App</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Carl May — LSHTM · carl.may@lshtm.ac.uk · NPT / I-STEM ⚠️ verificar email</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Deborah Swinglehurst — QMUL · d.swinglehurst@qmul.ac.uk · EHR qualitativo</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Niels Peek — Manchester · niels.peek@manchester.ac.uk · CDSS adoption</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Peter Bath — Sheffield · p.a.bath@sheffield.ac.uk · digital health &amp; health informatics</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Iain Buchan — Manchester · iain.buchan@manchester.ac.uk · population digital health</span>
+      </div>
+    </div>
+    <div class="deadline-row" style="margin-top:10px">
+      <span class="deadline-icon">⚠️</span>
+      <span class="deadline-text">Verificar email de Carl May antes de enviar (carl.may@lshtm.ac.uk é best-guess)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">EUA — Batch 1 · Rascunhos prontos</div>
+        <div class="card-sub">5 rascunhos no Gmail — Fulbright 2027</div>
+      </div>
+      <div class="badge badge-yellow">Rascunhos</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Adam Perer — CMU HCII · adamperer@cmu.edu · human factors of clinical AI 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Leo Anthony Celi — MIT/Harvard · lceli@mit.edu · clinical AI governance</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Jessica Ancker — Vanderbilt · jessica.s.ancker@vumc.org · human factors / overreliance</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Karandeep Singh — UCSD · [verificar email] · clinical AI governance 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Raj Ratwani — MedStar Health · [verificar email] · human factors / patient safety</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">EUA — Batch 2 · Rascunhos prontos</div>
+        <div class="card-sub">7 rascunhos no Gmail · implementation science / human factors</div>
+      </div>
+      <div class="badge badge-yellow">Rascunhos</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Kim Unertl — Vanderbilt · [verificar email] · clinical AI implementation 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Ron Li — Stanford · ronli@stanford.edu · SEAL Lab / clinician-centered design 🔥</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Joan Ash — OHSU · ashj@ohsu.edu · unintended EHR consequences ⚠️ verificar email</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Rupa Valdez — UVA · rsv3g@virginia.edu · human factors / participatory design ⚠️ verificar email</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Patricia Dykes — Harvard/BWH · pdykes@bwh.harvard.edu · CONCERN EWS implementation ⚠️ verificar email</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Dr. Adam Wright — Vanderbilt · adam.wright@vumc.org · alert fatigue / CDS override ⚠️ verificar email</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Prof. Mark Dredze → substituído por Dr. Kim Unertl (Dredze: NLP/CS, fora do perfil)</span>
+      </div>
+    </div>
+    <div class="deadline-row" style="margin-top:10px">
+      <span class="deadline-icon">⚠️</span>
+      <span class="deadline-text">Verificar emails de Ash · Valdez · Dykes · Wright · Unertl antes de enviar</span>
+    </div>
+  </div>
+
+  <!-- H-INDEX SUPERVISORES -->
+  <div class="section-title">📊 Fator H — Supervisores em Contato</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Reino Unido</div>
+        <div class="card-sub">Ordenado por h-index · fonte: Google Scholar (abr/2026)</div>
+      </div>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:0.85rem;margin-top:8px">
+      <thead>
+        <tr style="color:var(--muted);border-bottom:1px solid var(--border)">
+          <th style="text-align:left;padding:6px 4px">Professor</th>
+          <th style="text-align:left;padding:6px 4px">Inst.</th>
+          <th style="text-align:right;padding:6px 4px">H-index</th>
+          <th style="text-align:right;padding:6px 4px">Citações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Brendan Delaney</td>
+          <td style="padding:7px 4px;color:var(--muted)">Imperial</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">63</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">14.495</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Kathrin Cresswell</td>
+          <td style="padding:7px 4px;color:var(--muted)">Edinburgh</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">49</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">12.410</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Dr. Ana Luisa Neves</td>
+          <td style="padding:7px 4px;color:var(--muted)">Imperial</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">35</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">8.205</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Paul Taylor</td>
+          <td style="padding:7px 4px;color:var(--muted)">UCL</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">35</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">5.005</td>
+        </tr>
+        <tr>
+          <td style="padding:7px 4px">Dr. Watjana Lilaonitkul</td>
+          <td style="padding:7px 4px;color:var(--muted)">UCL</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">15</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">1.568</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Austrália</div>
+        <div class="card-sub">Ordenado por h-index · fonte: Google Scholar (abr/2026)</div>
+      </div>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:0.85rem;margin-top:8px">
+      <thead>
+        <tr style="color:var(--muted);border-bottom:1px solid var(--border)">
+          <th style="text-align:left;padding:6px 4px">Professor</th>
+          <th style="text-align:left;padding:6px 4px">Inst.</th>
+          <th style="text-align:right;padding:6px 4px">H-index</th>
+          <th style="text-align:right;padding:6px 4px">Citações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Enrico Coiera</td>
+          <td style="padding:7px 4px;color:var(--muted)">Macquarie</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">65</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">30.808</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Kathleen Gray</td>
+          <td style="padding:7px 4px;color:var(--muted)">Melbourne</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">42</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">10.229</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Israr Qureshi</td>
+          <td style="padding:7px 4px;color:var(--muted)">ANU</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">38</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">7.307</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Melissa Baysari</td>
+          <td style="padding:7px 4px;color:var(--muted)">USyd</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">37</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">6.574</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Natalie Taylor</td>
+          <td style="padding:7px 4px;color:var(--muted)">UNSW</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">~35</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">8.819</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Clair Sullivan</td>
+          <td style="padding:7px 4px;color:var(--muted)">UQ</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">35</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">4.117</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Farah Magrabi</td>
+          <td style="padding:7px 4px;color:var(--muted)">Macquarie</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">~30</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">8.093</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Chris Bain</td>
+          <td style="padding:7px 4px;color:var(--muted)">Monash</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">~18</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">~1.131</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Dr. Ann Carrigan</td>
+          <td style="padding:7px 4px;color:var(--muted)">USyd</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">17</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">920</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Dr. Anthony Sunjaya</td>
+          <td style="padding:7px 4px;color:var(--muted)">UNSW</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">~12</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">-</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Ian Scott ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">UQ</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">~30</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">-</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Nilmini Wickramasinghe ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">La Trobe</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--yellow);font-weight:700">~28</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">-</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Steven McPhail ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">QUT</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">~20</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">-</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 4px">Prof. Karin Verspoor ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">RMIT</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--green);font-weight:700">57</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">15.313</td>
+        </tr>
+        <tr>
+          <td style="padding:7px 4px">A/Prof. Melissa McCradden ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">U. Adelaide</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">~18</td>
+        </tr>
+        <tr>
+          <td style="padding:7px 4px">Prof. Ping Yu ✉</td>
+          <td style="padding:7px 4px;color:var(--muted)">U. Wollongong</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted);font-weight:700">~30</td>
+          <td style="padding:7px 4px;text-align:right;color:var(--muted)">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:0.75rem;color:var(--muted)">* Bain: perfil Scholar privado — dados via espelho. Taylor, Magrabi, Sunjaya, Scott, Wickramasinghe, McPhail, McCradden, Ping Yu: h-index estimado. ✉ = ainda não enviado.</div>
+  </div>
+
+  <!-- CHECKLIST PRÉ-REQUISITOS -->
+  <div class="section-title">Pré-requisitos</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Kit de Aplicação</div>
+        <div class="card-sub">Materiais necessários para todos os programas</div>
+      </div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">IELTS Academic — realizado 16/05/2026 · <strong>resultado: 8.0 🎉</strong> (L:8.5 · R:8.5 · W:7.0 · S:7.5) · meta 7.0+ superada</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">CV em inglês (formato internacional) — pronto</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Statement of Purpose (versão base) — pronto</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Email template para supervisores — pronto</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>3 cartas de recomendação (líderes da indústria)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Perfil/currículo em português</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCUMENTOS PRONTOS -->
+  <div class="section-title" style="margin-top:18px">📁 Documentos Prontos (Andy preparou)</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Arquivos gerados em 17/04/2026</div>
+        <div class="card-sub">Salvos em /workspace/group/ — prontos para usar</div>
+      </div>
+      <div class="badge badge-green">Novo</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>cv_english.md</strong> — CV completo em inglês, formato internacional</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>statement_of_purpose.md</strong> — Carta de intenção base (~800 palavras), forte e personalizada</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>supervisor_email_template.md</strong> — Template de email para contato com supervisores (RTP Austrália)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>supervisores_australia.md</strong> — 12 supervisores mapeados em Melbourne, Monash, UQ, Sydney e ANU com emails e fit analysis</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>emails_supervisores_prontos.md</strong> — 5 emails personalizados prontos para enviar (Sullivan, Bain, Baysari, Gray, Qureshi)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>emails_supervisores_uk.md</strong> — 5 emails UK prontos (Lilaonitkul, Delaney, Neves, Cresswell, Taylor) · 23/04/2026</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>emails_followup.md</strong> — Templates de follow-up para 14 dias sem resposta (AU + UK)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>fulbright_research.md</strong> — Status Fulbright Brasil 2026 (sem janela geral aberta agora; monitorar junho/2026)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>mestrado_pesquisa.md</strong> — Pesquisa completa de programas com bolsa integral</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span><strong>thiago_profile.md</strong> — Perfil completo salvo em memória</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUSTRÁLIA -->
+  <div class="country-header">🇦🇺 Austrália</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Research Training Program (RTP)</div>
+        <div class="card-sub">Melbourne · Monash · ANU · UNSW · UQ</div>
+      </div>
+      <div class="badge badge-blue">Rolling</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">Mensalidade + <strong>AUD $39.500/ano</strong> de estipêndio</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Janelas abertas meados de <strong>2026 para entrada 2027</strong></span>
+    </div>
+    <div class="checklist" style="margin-top:10px">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">12 supervisores identificados (Melbourne, Monash, UQ, Sydney, ANU)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">5 emails personalizados prontos (Sullivan indisponível — 4 para enviar)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Research proposal base escrita (research_proposal_australia.md)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">SOP base + versões UK personalizadas prontas</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box urgent">!</div>
+        <span>Enviar emails agora — ver tracker acima</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Aguardar resposta → adaptar proposal por supervisor</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Aplicar com endorsement do supervisor confirmado</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>35%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-blue" style="width:35%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">Master by Research</span>
+      <span class="tag">Digital Health</span>
+      <span class="tag">Proposal pronta ✅</span>
+      <span class="tag">Fit: ALTO</span>
+    </div>
+  </div>
+
+  <!-- CANADÁ -->
+  <div class="country-header">🇨🇦 Canadá</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">McCall MacBain Scholarship</div>
+        <div class="card-sub">McGill University — qualquer mestrado</div>
+      </div>
+      <div class="badge badge-yellow">Jun–Ago/26</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">Mensalidade integral + <strong>CAD $2.000/mês</strong></span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Portal abre <strong>1/jun/2026</strong> · Prazo internacional: <strong>19/ago/2026</strong></span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⭐</span>
+      <span class="deadline-text"><strong>GPA pesa pouco</strong> — foco em liderança e impacto</span>
+    </div>
+    <div class="checklist" style="margin-top:10px">
+      <div class="check-item">
+        <div class="check-box todo" style="border-color:#f59e0b;background:#78350f40;color:#f59e0b">!</div>
+        <span style="color:#f59e0b"><strong>AGORA:</strong> Contatar recomendadores (CEO Laudite + Dream Bots) — ver briefing</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Pesquisa completa + estratégia de narrativa pronta</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Narrativa 5 pilares escrita (mccallmacbain_narrativa.md)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span class="done">IELTS 8.0 ✓ — realizado 16/05/2026 (L:8.5 · R:8.5 · W:7.0 · S:7.5)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Portal abrir em junho → preencher candidatura</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>20%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-yellow" style="width:20%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">Liderança</span>
+      <span class="tag">Fit: ALTO 🔥</span>
+      <span class="tag">Todas as nac.</span>
+      <span class="tag" style="color:#f59e0b;border-color:#f59e0b40">⚠️ Recomendadores agora</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Supervisores — Canadá (RTP)</div>
+        <div class="card-sub">UofT IHPME · Waterloo · UBC · Digital Health / CDSS</div>
+      </div>
+      <div class="badge badge-green">Pesquisado ✓</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">🎓</span>
+      <span class="deadline-text"><strong>Top 2 para contato:</strong> Prof. Morita (Waterloo · $14k garantido) · Prof. Cafazzo (UofT IHPME · H47)</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💡</span>
+      <span class="deadline-text">Rota mais confiável: financiamento via grants do supervisor (CIHR/NSERC) + OGS · Além do McCall MacBain</span>
+    </div>
+    <div class="checklist" style="margin-top:10px">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">5 supervisores mapeados — ver canada_pesquisa.md</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Escrever emails para Morita + Cafazzo</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Verificar grants CIHR ativos para confirmar capacidade de financiar</span>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag">Health Systems Research</span>
+      <span class="tag">mHealth · CDSS · AI clínica</span>
+      <span class="tag">Fit: ALTO</span>
+    </div>
+  </div>
+
+  <!-- EUA -->
+  <div class="country-header">🇺🇸 EUA</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Knight-Hennessy Scholars</div>
+        <div class="card-sub">Stanford University — qualquer programa (incl. MBA)</div>
+      </div>
+      <div class="badge badge-purple">Verão/26</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text"><strong>Tudo coberto:</strong> mensalidade + moradia + viagem (3 anos)</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Abre <strong>verão 2026</strong> para coorte 2027</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⭐</span>
+      <span class="deadline-text"><strong>GPA não é decisivo</strong> — liderança e propósito cívico</span>
+    </div>
+    <div class="checklist" style="margin-top:10px">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Pesquisa completa + análise de fit (knighthennessy_pesquisa.md)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Narrativa base disponível (mccallmacbain_narrativa.md — adaptar para KHS)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Essay de liderança KHS escrito — ver knighthennessy_essay_lideranca.md (~580 palavras)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Métricas de impacto estruturadas — ver metricas_impacto_khs.md (⚠️ Thiago: preencher números reais)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">SOP Stanford MS&E escrito — sop_stanford_mse.md (~870 palavras · CDSS adoption · Scheinker + Milstein)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box urgent">!</div>
+        <span>Preencher métricas reais (hospitais, clínicos, adoção) em metricas_impacto_khs.md</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Contatar Scheinker + Milstein por email antes de out/2026</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Recomendadores: avisar em setembro/2026</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Submeter candidatura KHS + MS&E antes de outubro/2026</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>25%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-purple" style="width:25%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">MS Mgmt Science & Eng</span>
+      <span class="tag">MBA possível</span>
+      <span class="tag">Fit: ALTO 🔥</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fulbright Foreign Student Program</div>
+        <div class="card-sub">Brasil (via CAPES) — qualquer universidade americana</div>
+      </div>
+      <div class="badge badge-gray">Monitorar jun/26</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">Mensalidade + estipêndio + seguro + passagem</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⚠️</span>
+      <span class="deadline-text"><strong>Status abr/2026:</strong> sem programa de mestrado geral aberto para tech/saúde — monitorar <strong>junho/2026</strong></span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📋</span>
+      <span class="deadline-text">Obrigação de retornar ao Brasil por 2 anos · Ver fulbright_research.md</span>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>0%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-yellow" style="width:0%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">fulbright.org.br</span>
+      <span class="tag">MBA elegível</span>
+      <span class="tag">Fit: MÉDIO-ALTO</span>
+    </div>
+  </div>
+
+  <!-- EUROPA -->
+  <div class="country-header">🇪🇺 Europa</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🇬🇧 Chevening Scholarship</div>
+        <div class="card-sub">UK Gov — 1 ano em universidade britânica · Pesquisado 22/04/2026</div>
+      </div>
+      <div class="badge badge-blue">Ago/26</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">100% funded: mensalidade (sem teto) + <strong>£1.690/mês Londres</strong> + passagem + visto + grants · Valor total: <strong>£35k–£52k+</strong></span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Portal abre <strong>agosto 2026</strong> · Deadline <strong>~1ª semana nov 2026</strong> · Entrevistas fev–abr 2027 · Resultado jun 2027</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">✅</span>
+      <span class="deadline-text"><strong>20+ bolsas para brasileiros</strong>/ano · Thiago tem 7 anos de experiência (mín: 2.800h) · GPA não decisivo · Dupla cidadania OK</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">🎯</span>
+      <span class="deadline-text"><strong>3 programas recomendados:</strong> (1) UCL MSc Digital Health &amp; Entrepreneurship · (2) Imperial MSc Global Health Management · (3) Manchester MSc Innovation &amp; Entrepreneurship</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📝</span>
+      <span class="deadline-text"><strong>4 essays:</strong> Leadership &amp; Influence · Networking · Why UK · Career Plans · Estrutura STAR obrigatória · Mín. 7 rascunhos · Texto AI é detectado</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💡</span>
+      <span class="deadline-text">Bonus: <strong>Fundação Lemann</strong> co-financia 3 vagas extras (Oxford/Cambridge/LSE) para brasileiros em saúde pública — vale aplicar em paralelo</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⚠️</span>
+      <span class="deadline-text">Obrigação legal: retornar ao Brasil por <strong>2 anos</strong> após a bolsa · ✅ IELTS 8.0 concluído (16/05/2026)</span>
+    </div>
+    <div class="checklist" style="margin-top:10px">
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">12 supervisores UK identificados (UCL, Imperial, Edinburgh)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">5 emails personalizados prontos (Lilaonitkul, Delaney, Neves, Cresswell, Taylor)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Essay Liderança escrito — ver chevening_essay_lideranca.md</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">Essays Networking · Why UK · Career Plans escritos — ver chevening_essays_restantes.md</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">SOPs personalizados prontos — UCL · Imperial · Manchester (sop_uk_personalizados.md)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box done">✓</div>
+        <span class="done">5 emails UK enviados 11/05 — Lilaonitkul já respondeu! (Teams Qua 27/05 10h BRT 🎉)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Revisar e personalizar os 4 essays com detalhes seus</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Aplicar no portal Chevening (agosto 2026)</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>65%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-blue" style="width:65%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">UCL · Imperial · Manchester</span>
+      <span class="tag">Fit: MUITO ALTO 🔥🔥</span>
+      <span class="tag">4 essays prontos ✅</span>
+      <span class="tag">Lilaonitkul: Teams Qua 27/05 10h BRT 🎉</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Swedish Institute Scholarship</div>
+        <div class="card-sub">Lund University · KTH — Entrepreneurship & Innovation</div>
+      </div>
+      <div class="badge badge-gray">Fev/27</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">Tuition-free + <strong>SEK 12.000/mês</strong> (~€1.060) + viagem</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Aplicar às universidades: <strong>out/2026–jan/2027</strong> · Bolsa SI: fev/2027</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">✅</span>
+      <span class="deadline-text">Brasil elegível · Exige 3.000h de trabalho — <strong>Thiago OK</strong></span>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>0%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-green" style="width:0%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">Entrepreneurship</span>
+      <span class="tag">Fit: MUITO ALTO 🔥</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🇭🇷🇱🇹🇧🇪 Erasmus Mundus EMMIE</div>
+        <div class="card-sub">Impact Entrepreneurship · 18 meses · 90 ECTS</div>
+      </div>
+      <div class="badge badge-green">Pesquisado ✓</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">100% bolsa + <strong>€1.400/mês × 18 meses (~€25.200)</strong> + viagem + visto</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📅</span>
+      <span class="deadline-text">Aplics 2027 abrem <strong>~out/2026</strong>, deadline <strong>~jan/2027</strong></span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">🏛️</span>
+      <span class="deadline-text">Zagreb → Vilnius → Liège (HEC) · Tese vinculada a ODS</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📝</span>
+      <span class="deadline-text">Docs: Carta motivação (2 pág. + ideia de startup) · CV · 2 recs · IELTS · entrevista</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⭐</span>
+      <span class="deadline-text">Diferencial Thiago: <strong>Dream Bots + Laudite + START Global + Exército</strong> = fit perfeito para SDG 3+9</span>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Preparação</span><span>10%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-green" style="width:10%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">🔥 Fit: MUITO ALTO</span>
+      <span class="tag">Dream Bots → startup de impacto</span>
+      <span class="tag">Qualquer background</span>
+      <span class="tag">Prazo: Jan/2027</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🇪🇸🇵🇱🇦🇹 Erasmus Mundus CLIDE</div>
+        <div class="card-sub">Intercultural Leadership in Digital Era · 24 meses · 120 ECTS</div>
+      </div>
+      <div class="badge badge-green">Pesquisado ✓</div>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">💰</span>
+      <span class="deadline-text">100% bolsa + <strong>€1.400/mês × 24 meses = €33.600</strong> + seguro saúde</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⚠️</span>
+      <span class="deadline-text"><strong>JANELA CURTA:</strong> Portal abre ~29/mar/2027 · Fecha ~15/abr/2027 (17 dias!)</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">🏛️</span>
+      <span class="deadline-text">Granada (Sem.1) → trilha especializ. → Toruń/tese · Max 5 bolsas/país/edição</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">🎬</span>
+      <span class="deadline-text">Exige <strong>Video Business Card</strong> — apresentação em vídeo avaliando comunicação</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">📝</span>
+      <span class="deadline-text">Carta motivação (3.000 caracteres!) · CV Europass · 2 recs (1 acadêmica + 1 profissional)</span>
+    </div>
+    <div class="deadline-row">
+      <span class="deadline-icon">⭐</span>
+      <span class="deadline-text">Diferencial Thiago: <strong>Comunicação + Tech + Liderança + Vídeo + Cidadania PT</strong></span>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Preparação</span><span>10%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-green" style="width:10%"></div></div>
+    </div>
+    <div class="tags">
+      <span class="tag">🔥 Fit: MUITO ALTO</span>
+      <span class="tag">Maior bolsa: €33.600</span>
+      <span class="tag">Exige Comunicação/TI/Gestão</span>
+      <span class="tag">Prazo: Abr/2027 (17 dias!)</span>
+    </div>
+  </div>
+
+  <div class="last-updated">Atualizado por Andy em 28/04/2026 — 6 novos emails AU: Scott · McPhail · Wickramasinghe · Verspoor (RMIT) · McCradden (Adelaide) · Ping Yu (UOW) · total: 15 AU + 5 UK</div>
+</div>
+
+<!-- ===================== ENTREVISTAS ===================== -->
+<div class="section" id="entrevistas">
+  <div class="interview-big">
+    <div class="num" id="interview-count">0</div>
+    <div class="denom">/ 15</div>
+    <div class="label">entrevistas realizadas — meta 3 meses</div>
+  </div>
+
+  <div class="progress-wrap" style="margin-bottom:20px">
+    <div class="progress-label"><span>Meta Q2 2026</span><span id="interview-pct">0%</span></div>
+    <div class="progress-bar" style="height:10px"><div class="progress-fill fill-blue" id="interview-bar" style="width:0%"></div></div>
+  </div>
+
+  <div class="section-title">Status</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Entrevistas de Emprego</div>
+        <div class="card-sub">Meta: 15+ nos próximos 3 meses</div>
+      </div>
+      <div class="badge badge-yellow">Em andamento</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Atualizar CV em inglês e português</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Atualizar LinkedIn com conquistas recentes</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Definir setores-alvo e cargos</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Aplicar para 5 vagas esta semana</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Histórico de Entrevistas</div>
+        <div class="card-sub">Peça ao Andy para registrar quando acontecerem</div>
+      </div>
+    </div>
+    <div style="text-align:center; padding: 20px 0; color: var(--muted); font-size:0.82rem;">
+      Nenhuma entrevista registrada ainda.<br>Me avise quando tiver a primeira! 🚀
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FINANCEIRO ===================== -->
+<div class="section" id="financeiro">
+
+  <div class="section-title">Meta Q2 2026</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Organização Financeira</div>
+        <div class="card-sub">Melhorar controle e planejamento financeiro</div>
+      </div>
+      <div class="badge badge-yellow">Iniciando</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Mapear todas as receitas mensais</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Mapear todas as despesas fixas</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Definir orçamento mensal por categoria</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Criar fundo de reserva (emergência)</span>
+      </div>
+      <div class="check-item">
+        <div class="check-box todo"></div>
+        <span>Orçamento para o mestrado (taxa IELTS, inscrições, etc.)</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>0%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-yellow" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:16px">Projetos com receita</div>
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-number" style="color:var(--accent)">3</div>
+      <div class="stat-label">Fontes de renda</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number" style="color:var(--green)">2</div>
+      <div class="stat-label">Empresas ativas</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Laudite</div><div class="card-sub">Renda principal — Product Enablement Lead</div></div>
+      <div class="badge badge-green">Ativo</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">DB Saúde</div><div class="card-sub">Sócio com Borgon — licitações governo · sem receita ainda</div></div>
+      <div class="badge badge-yellow">Em desenvolvimento</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Onda Produções</div><div class="card-sub">Produtora musical — Thedy, JayB, Tobias</div></div>
+      <div class="badge badge-blue">Projeto</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== VIDA ===================== -->
+<div class="section" id="vida">
+
+  <div class="section-title">Metas Q2 2026</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Reforma do Banheiro</div><div class="card-sub">Projeto casa</div></div>
+      <div class="badge badge-yellow">Planejando</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div><span>Obter orçamentos (mínimo 3)</span></div>
+      <div class="check-item"><div class="check-box todo"></div><span>Definir cronograma</span></div>
+      <div class="check-item"><div class="check-box todo"></div><span>Reservar verba</span></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progresso</span><span>0%</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-yellow" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:16px">Desenvolvimento Pessoal</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Espanhol</div><div class="card-sub">Prática diária — corrigir erros sempre</div></div>
+      <div class="badge badge-blue">Em andamento</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box done">✓</div><span class="done">Definir modo de prática com Andy</span></div>
+      <div class="check-item"><div class="check-box todo"></div><span>Sessão de prática esta semana</span></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Consistência</span><span>—</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-blue" style="width:20%"></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Rotina Matinal</div><div class="card-sub">6h · Exercício · Meditação 20min · Escrita 12min</div></div>
+      <div class="badge badge-green">Ativo</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box done">✓</div><span class="done">Acordar 6h</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span class="done">Exercício (corrida 40min ou Jiu Jitsu)</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span class="done">Meditação 20min</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span class="done">Escrita diária 12min</span></div>
+      <div class="check-item"><div class="check-box todo"></div><span>Melhorar planejamento semanal (não só noturno)</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Nutrição</div><div class="card-sub">Controle de calorias e proteínas</div></div>
+      <div class="badge badge-blue">Monitorando</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:4px">
+      Whey: 127 cal · 23g proteína / porção<br>
+      Me mande o que comeu e eu vou somando o dia.
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TIMELINE ===================== -->
+<div class="section" id="timeline">
+
+  <div class="section-title">Próximos 12 meses — Mestrado</div>
+  <div class="card">
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--red)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Abril 2026 — CONCLUÍDO ✅</div>
+          <div class="tl-text">✅ IELTS Academic realizado — 16/05/2026 · <strong>8.0</strong> 🎉</div>
+          <div class="tl-sub">L:8.5 · R:8.5 · W:7.0 · S:7.5 · Meta 7.0+ superada</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--orange)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Abril–Maio 2026</div>
+          <div class="tl-text">📝 Montar kit de aplicação + verificar Fulbright</div>
+          <div class="tl-sub">CV inglês · Statement of Purpose · Cartas de recomendação</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--yellow)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Maio 2026</div>
+          <div class="tl-text">🇦🇺 Contatar supervisores RTP (Austrália)</div>
+          <div class="tl-sub">Melbourne · Monash · UNSW · ANU</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--yellow)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">1 Junho 2026</div>
+          <div class="tl-text">🇨🇦 McCall MacBain (McGill) — portal abre</div>
+          <div class="tl-sub">Prazo internacional: 19/agosto/2026</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--accent2)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Verão 2026</div>
+          <div class="tl-text">🇺🇸 Knight-Hennessy (Stanford) — portal abre</div>
+          <div class="tl-sub">Aplicar ao programa Stanford simultaneamente</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--accent)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Agosto 2026</div>
+          <div class="tl-text">🇬🇧 Chevening — abre inscrições</div>
+          <div class="tl-sub">Prazo: ~out/nov/2026 · Pesquisar universidades UK agora</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--green)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Outubro 2026</div>
+          <div class="tl-text">🇪🇺 Erasmus Mundus EMMIE + CLIDE — aplicações 2027</div>
+          <div class="tl-sub">€1.400/mês · 18–24 meses na Europa</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--green)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Out/2026 – Jan/2027</div>
+          <div class="tl-text">🇸🇪 Aplicar às universidades suecas (Lund/KTH)</div>
+          <div class="tl-sub">via universityadmissions.se</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-dot" style="background:var(--green)"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Fevereiro 2027</div>
+          <div class="tl-text">🇸🇪 Swedish Institute Scholarship — portal abre</div>
+          <div class="tl-sub">SEK 12.000/mês + tuition-free · Brasil elegível ✓</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="last-updated">Atualizado por Andy em 17/04/2026 às 10h</div>
+</div>
+
+<!-- ===================== ARQUIVOS ===================== -->
+<div class="section" id="arquivos">
+
+  <div class="urgency-strip" style="border-color:#22c55e40; background:linear-gradient(135deg,#0d1f13,#0f1a1f);">
+    <div class="urgency-icon">📱</div>
+    <div class="urgency-text">
+      <strong>Toque em qualquer arquivo</strong> para ler aqui no celular. Última atualização: 09/05/2026 — +Emails Supervisores Canadá (Cafazzo · Morita · Shakeri · Ho · Rosella).
+    </div>
+  </div>
+
+  <div class="section-title">📧 Para Enviar Agora</div>
+
+  <div class="file-card" onclick="openFile('emails_supervisores_uk.md','📧 Emails Supervisores — UK')">
+    <div class="file-card-icon">🇬🇧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Emails Supervisores — Reino Unido</div>
+      <div class="file-card-desc">5 emails prontos · Delaney · Neves · Cresswell · Lilaonitkul · Taylor</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('emails_supervisores_prontos.md','📧 Emails Supervisores Prontos')">
+    <div class="file-card-icon">🇦🇺</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Emails Supervisores — Austrália</div>
+      <div class="file-card-desc">16 emails personalizados · 9 enviados · 6 prontos: Scott · McPhail · Wickramasinghe · Verspoor · McCradden · Ping Yu (Sullivan: aguardar)</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('supervisor_email_template.md','📝 Template de Email')">
+    <div class="file-card-icon">📝</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Template de Email (Supervisores)</div>
+      <div class="file-card-desc">Template longo + curto + dicas + checklist pré-envio</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">📄 Documentos Base</div>
+
+  <a href="attachments/Thiago_Rocha_Duarte_CV_Academic.pdf" download style="text-decoration:none">
+    <div class="file-card">
+      <div class="file-card-icon">📥</div>
+      <div class="file-card-info">
+        <div class="file-card-title">CV Acadêmico — PDF</div>
+        <div class="file-card-desc">Toque para baixar · Pronto para anexar e enviar</div>
+      </div>
+      <div class="file-card-arrow">↓</div>
+    </div>
+  </a>
+
+  <div class="file-card" onclick="openFile('cv_english.md','📄 CV em Inglês')">
+    <div class="file-card-icon">📄</div>
+    <div class="file-card-info">
+      <div class="file-card-title">CV em Inglês — Markdown</div>
+      <div class="file-card-desc">Versão texto · Ler e copiar trechos</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('statement_of_purpose.md','✍️ Statement of Purpose')">
+    <div class="file-card-icon">✍️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Statement of Purpose</div>
+      <div class="file-card-desc">~800 palavras · Versão base adaptável por universidade</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('sop_uk_personalizados.md','🇬🇧 SOPs UK — UCL · Imperial · Manchester')">
+    <div class="file-card-icon">🇬🇧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">SOPs UK Personalizados</div>
+      <div class="file-card-desc">3 versões prontas · UCL · Imperial · Manchester · Cita professores contactados</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('thiago_profile.md','👤 Perfil Completo')">
+    <div class="file-card-icon">👤</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Perfil Completo</div>
+      <div class="file-card-desc">Identidade · Carreira · Metas · Preferências · Rotina</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">💼 Estratégia</div>
+
+  <div class="file-card" onclick="openFile('linkedin_strategy.md','💼 LinkedIn Strategy')">
+    <div class="file-card-icon">💼</div>
+    <div class="file-card-info">
+      <div class="file-card-title">LinkedIn — Estratégia Completa</div>
+      <div class="file-card-desc">Headline · About · Experiências · Para recrutadores e committees</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('baysari_email_v2.md','📧 Email Baysari v2')">
+    <div class="file-card-icon">📧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Email Baysari — Versão Reforçada</div>
+      <div class="file-card-desc">USyd 2027 · CDSS adoption · Ângulo longitudinal</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('emails_followup.md','⏰ Follow-up Emails')">
+    <div class="file-card-icon">⏰</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Emails de Follow-Up</div>
+      <div class="file-card-desc">9 templates · usar 14 dias após envio sem resposta · AU + UK</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🔍 Pesquisa</div>
+
+  <div class="file-card" onclick="openFile('supervisores_uk.md','🇬🇧 Supervisores — Reino Unido')">
+    <div class="file-card-icon">🇬🇧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Supervisores — Reino Unido</div>
+      <div class="file-card-desc">12 supervisores · UCL · Imperial · Edinburgh · Top 5 + emails · CDSS/HealthTech</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('chevening_essay_lideranca.md','✍️ Chevening Essay — Liderança')">
+    <div class="file-card-icon">✍️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Chevening Essay — Liderança</div>
+      <div class="file-card-desc">497 palavras · Army → Dream Bots → Laudite → St. Gallen · Pronto para editar</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('supervisores_australia.md','🇦🇺 Supervisores — Austrália')">
+    <div class="file-card-icon">🇦🇺</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Supervisores — Austrália</div>
+      <div class="file-card-desc">12 supervisores mapeados · Emails · Fit analysis · Top 5</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('research_proposal_australia.md','🇦🇺 Research Proposal — RTP')">
+    <div class="file-card-icon">🔬</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Research Proposal — Australia RTP</div>
+      <div class="file-card-desc">~1.400 palavras · CDSS adoption · Enablement interventions · Adapt por supervisor</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('rtp_pesquisa.md','🇦🇺 RTP — Guia Completo')">
+    <div class="file-card-icon">🇦🇺</div>
+    <div class="file-card-info">
+      <div class="file-card-title">RTP — Guia Completo (Austrália)</div>
+      <div class="file-card-desc">O que cobre · Elegibilidade · Por universidade · Prazos · Critérios · Fontes oficiais · 27/04/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('mestrado_pesquisa.md','🎓 Pesquisa de Programas')">
+    <div class="file-card-icon">🎓</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Pesquisa de Programas com Bolsa</div>
+      <div class="file-card-desc">Austrália · Canadá · EUA · Europa · MBA</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('fulbright_research.md','🇺🇸 Fulbright Brasil 2026')">
+    <div class="file-card-icon">🇺🇸</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Fulbright Brasil — Status 2026</div>
+      <div class="file-card-desc">Sem janela geral aberta agora · Monitorar junho/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('mccallmacbain_pesquisa.md','🍁 McCall MacBain — Pesquisa Completa')">
+    <div class="file-card-icon">🍁</div>
+    <div class="file-card-info">
+      <div class="file-card-title">McCall MacBain — Pesquisa Completa</div>
+      <div class="file-card-desc">McGill · 5 critérios · Programas · Timeline · Relatos brasileiros</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('mccallmacbain_recomendadores.md','🍁 McCall MacBain — Briefing Recomendadores')">
+    <div class="file-card-icon">✉️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">McCall MacBain — Briefing Recomendadores</div>
+      <div class="file-card-desc">⚠️ Urgente abril/maio · Templates de mensagem · O que pedir a cada um</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('mccallmacbain_narrativa.md','🍁 McCall MacBain — Narrativa 5 Pilares')">
+    <div class="file-card-icon">🍁</div>
+    <div class="file-card-info">
+      <div class="file-card-title">McCall MacBain — Narrativa 5 Pilares</div>
+      <div class="file-card-desc">Draft pronto · Exército · Dream Bots · Laudite · Por que McGill</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('chevening_pesquisa.md','🇬🇧 Chevening — Pesquisa Completa')">
+    <div class="file-card-icon">🇬🇧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Chevening UK — Pesquisa Completa</div>
+      <div class="file-card-desc">4 essays · UCL · Imperial · Edinburgh · IELTS · Fit analysis</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('chevening_essays_restantes.md','✍️ Chevening — Essays Prontos')">
+    <div class="file-card-icon">✍️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Chevening — Essays Prontos</div>
+      <div class="file-card-desc">4 essays escritos · Networking · UK Study · Career Plans · Liderança</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('supervisores_stanford_mse.md','🌲 Supervisores Stanford — MS&amp;E / Health Systems')">
+    <div class="file-card-icon">🌲</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Supervisores Stanford — MS&amp;E</div>
+      <div class="file-card-desc">7 professores mapeados · Scheinker · Milstein · Bayati · Shah · Top 4 + proposta de pesquisa · 24/04/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('sop_stanford_mse.md','🌲 SOP — Stanford MS&amp;E PhD')">
+    <div class="file-card-icon">✍️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">SOP — Stanford MS&amp;E PhD</div>
+      <div class="file-card-desc">~870 palavras · CDSS adoption · Brasil como laboratório · Scheinker + Milstein · Pronto para editar · 25/04/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('metricas_impacto_khs.md','📊 Métricas de Impacto — KHS')">
+    <div class="file-card-icon">📊</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Métricas de Impacto — KHS</div>
+      <div class="file-card-desc">Laudite · Dream Bots · Exército · Tabelas para preencher + narrativa + perguntas de entrevista · 25/04/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('canada_pesquisa.md','🍁 Supervisores Canadá — Digital Health')">
+    <div class="file-card-icon">🍁</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Supervisores Canadá — Digital Health</div>
+      <div class="file-card-desc">5 supervisores · UofT IHPME · Waterloo · UBC · Cafazzo · Morita · Top 2 para contato · 25/04/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('emails_supervisores_canada.md','🍁 Emails — Supervisores Canadá')">
+    <div class="file-card-icon">📧</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Emails — Supervisores Canadá</div>
+      <div class="file-card-desc">5 emails prontos · Cafazzo · Morita · Shakeri · Ho · Rosella · Ordem de envio incluída · 09/05/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('knighthennessy_essay_lideranca.md','🌲 Knight-Hennessy — Essay Liderança')">
+    <div class="file-card-icon">✍️</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Knight-Hennessy — Essay Liderança</div>
+      <div class="file-card-desc">~580 palavras · Exército → Dream Bots → Laudite → Stanford · Pronto para editar</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('knighthennessy_pesquisa.md','🌲 Knight-Hennessy Stanford — Pesquisa')">
+    <div class="file-card-icon">🌲</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Knight-Hennessy Stanford — Pesquisa</div>
+      <div class="file-card-desc">MS&amp;E vs MBA · 3 critérios · Immersion Weekend · Narrativa recomendada</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('swedish_pesquisa.md','🇸🇪 Swedish Institute — Pesquisa Completa')">
+    <div class="file-card-icon">🇸🇪</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Swedish Institute — Pesquisa Completa</div>
+      <div class="file-card-desc">SISGP · Lund (1 ano) vs KTH (2 anos) · Timeline 2027/28</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('relatos_brasileiros.md','💬 Relatos de Brasileiros')">
+    <div class="file-card-icon">💬</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Relatos de Brasileiros — Bolsas Integrais</div>
+      <div class="file-card-desc">Chevening · McCall MacBain · KH · Swedish · Histórias reais</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('erasmus_pesquisa.md','🇪🇺 Erasmus Mundus — EMMIE & CLIDE')">
+    <div class="file-card-icon">🇪🇺</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Erasmus Mundus — EMMIE & CLIDE</div>
+      <div class="file-card-desc">Processo completo · Fit analysis · Dicas de ensaio · Timeline 2027</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('bolsas_internacionais_pesquisa.md','🌍 Bolsas Internacionais — 7 Países')">
+    <div class="file-card-icon">🌍</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Bolsas Internacionais — 7 Países</div>
+      <div class="file-card-desc">Canadá · Alemanha · Suíça · Portugal · Itália · Espanha · Holanda + Japão · Coreia · França · Brasileiros confirmados · GPA vs. perfil · 09/05/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="last-updated">Atualizado por Andy em 09/05/2026 às 14h00</div>
+</div>
+
+<!-- ===================== RELATOS ===================== -->
+<div class="section" id="relatos">
+
+  <div class="urgency-strip" style="border-color:#22c55e40; background:linear-gradient(135deg,#0d1f13,#0f1a1f);">
+    <div class="urgency-icon">💡</div>
+    <div class="urgency-text">
+      <strong>Atualizado por Andy em 09/05/2026.</strong> Brasileiros confirmados no McCall MacBain, Chevening, Knight-Hennessy, Swedish Institute, Holanda (TU Delft), Itália (MAECI) e Espanha (Fundación Carolina) — GPA não foi decisivo em nenhum deles.
+    </div>
+  </div>
+
+  <div class="section-title">🔑 Lição central</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">O GPA não é a barreira</div>
+        <div class="card-sub">O que os aprovados têm em comum</div>
+      </div>
+      <div class="badge badge-green">Provado</div>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box done">✓</div><span>Trajetória de liderança clara e comprovada</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>Narrativa coerente que conecta passado → presente → futuro</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>Impacto concreto em algo — não só em si mesmo</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>Espírito empreendedor evidenciado por ações, não intenções</span></div>
+    </div>
+    <div class="tags">
+      <span class="tag">Militar ✓</span>
+      <span class="tag">Startup ✓</span>
+      <span class="tag">Fellowship ✓</span>
+      <span class="tag">HealthTech ✓</span>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇨🇦 McCall MacBain — Brasileiros aprovados</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Giane Mayumi Galhard 🇧🇷</div>
+        <div class="card-sub">São Paulo → MSc Computer Science · McGill · 2025</div>
+      </div>
+      <div class="badge badge-green">Aprovada</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Primeira brasileira aprovada no McCall MacBain. O programa selecionou brasileiros pela primeira vez em 2025 — o pipeline está aberto.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Thiago Magalhães de Aguiar 🇧🇷</div>
+        <div class="card-sub">Belo Horizonte → MSc Dental Sciences · McGill · 2025</div>
+      </div>
+      <div class="badge badge-green">Aprovado</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Parte da primeira coorte com brasileiros (2025). A bolsa valoriza: caráter, engajamento comunitário, potencial de liderança, espírito empreendedor.
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇬🇧 Chevening — Brasileiros aprovados</div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Letícia Bittencourt</div>
+        <div class="card-sub">PUC-Minas · Direito → Human Rights · Queen Mary London</div>
+      </div>
+      <div class="badge badge-blue">1ª tentativa ✓</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      3 meses de preparação. Rascunhou em português, refinou, traduziu. <em>"Nós brasileiros temos dificuldade de falar sobre nossas conquistas — a candidatura exige isso."</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Juliano Froehner</div>
+        <div class="card-sub">HealthTech · Empreendedor social · 20+ anos em saúde digital</div>
+      </div>
+      <div class="badge badge-purple">HealthTech 🔥</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Bolsa Chevening transformou sua carreira em HealthTech. Empreendedor de impacto há mais de 20 anos. <strong>Perfil muito próximo do Thiago.</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Claudia Alves, Cassio Oliveira, Andrew Bonfim</div>
+        <div class="card-sub">Rio de Janeiro, Bahia, RN → Sussex · UCL · Edinburgh</div>
+      </div>
+      <div class="badge badge-blue">20+/ano</div>
+    </div>
+    <div class="checklist" style="margin-top:8px">
+      <div class="check-item"><div class="check-box done">✓</div><span>Use método STAR nas essays (Situação, Tarefa, Ação, Resultado)</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>1-2 exemplos profundos > muitos exemplos rasos</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>Entrevista: ~45 min, tranquila, segue os temas das essays</span></div>
+      <div class="check-item"><div class="check-box done">✓</div><span>Persistência: Claudia foi negada em 2018, aprovada em 2019</span></div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇺🇸 Knight-Hennessy (Stanford)</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Brasileiros em 2024 e 2025</div>
+        <div class="card-sub">89 scholars · 30 países (2024) · 82 scholars · 23 países (2025)</div>
+      </div>
+      <div class="badge badge-purple">Confirmado</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Brasil representado nos dois últimos cohorts. Tudo financiado por até 3 anos. Perfil: liderança cívica + propósito + impacto. GPA: baixo peso.
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇸🇪 Swedish Institute</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">~400 bolsas/ano · Brasil elegível</div>
+        <div class="card-sub">402 aprovados em 2025-26 de 33 países incluindo América Latina</div>
+      </div>
+      <div class="badge badge-blue">Aberto</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Thiago já atende ao requisito de 3.000h de experiência (tem +17.000h). A bolsa valoriza contribuição ao desenvolvimento sustentável do país de origem.
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Experiência profissional exigida (3.000h)</span><span style="color:var(--green)">✓ +17.000h</span></div>
+      <div class="progress-bar"><div class="progress-fill fill-green" style="width:100%"></div></div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇳🇱 Holanda — TU Delft van Effen</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Adalberto de Paula 🇧🇷</div>
+        <div class="card-sub">UFMS Arquitetura → MSc Building Technology · TU Delft · Van Effen Excellence</div>
+      </div>
+      <div class="badge badge-green">Confirmado</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Formado em Arquitetura pela UFMS, trabalhou 4 anos como arquiteto em São Paulo antes de ingressar no mestrado em Delft. A bolsa van Effen cobre mensalidade integral + custos de vida. <em>"A bolsa mudou tudo — foi o que tornou possível estudar aqui."</em> Critérios: excelência acadêmica + potencial de liderança, não apenas GPA.
+    </div>
+    <div class="tags">
+      <span class="tag">Experiência profissional ✓</span>
+      <span class="tag">~2 bolsas por faculdade</span>
+      <span class="tag">Muito competitivo</span>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇮🇹 Itália — MAECI (Ministério das Relações Exteriores)</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Flávia · Milena · Charles 🇧🇷</div>
+        <div class="card-sub">Univ. de Milão · Politecnico di Milano · Univ. de Pádua</div>
+      </div>
+      <div class="badge badge-green">Confirmados</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Três brasileiros com bolsa MAECI integral em universidades italianas de ponta. A bolsa cobre €10.800 por 9 meses (3 parcelas) + taxas reduzidas. <strong>Brasil está na lista de países elegíveis.</strong> Limites de idade: 28 anos para mestrado, 30 para 1º ano de doutorado. Sem requisito mínimo de GPA explícito — seleção holística.
+    </div>
+    <div class="tags">
+      <span class="tag">Sem GPA mínimo</span>
+      <span class="tag">Limite: 28 anos (mestrado)</span>
+      <span class="tag">Prazo: jan–fev/2027</span>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:18px">🇪🇸 Espanha — Fundación Carolina</div>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Luísa Dalcin 🇧🇷</div>
+        <div class="card-sub">Brasil → Mestrado · Espanha · Fundación Carolina · 2012</div>
+      </div>
+      <div class="badge badge-blue">Confirmada</div>
+    </div>
+    <div style="font-size:0.8rem; color:var(--muted); margin-top:6px; line-height:1.5">
+      Brasileira aprovada na bolsa Postgrado da Fundación Carolina. A bolsa aceita explicitamente perfil profissional como alternativa ao histórico acadêmico. <em>"Os pontos fortes do meu perfil eram a experiência profissional e as cartas de recomendação — não o histórico escolar."</em> Cobre mensalidade + estipêndio mensal + passagem.
+    </div>
+    <div class="tags">
+      <span class="tag">Experiência profissional aceita ✓</span>
+      <span class="tag">Latino-americanos prioritários</span>
+      <span class="tag">Prazo: ~fev/2027</span>
+    </div>
+  </div>
+
+  <div class="file-card" onclick="openFile('bolsas_internacionais_pesquisa.md','🌍 Bolsas Internacionais — 7 Países')" style="margin-top:16px">
+    <div class="file-card-icon">🌍</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Ver pesquisa completa — 7 Países</div>
+      <div class="file-card-desc">Canadá · Alemanha · Suíça · Portugal · Itália · Espanha · Holanda + mais países · GPA analysis · 09/05/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('relatos_brasileiros.md','💬 Relatos Completos')" style="margin-top:8px">
+    <div class="file-card-icon">📄</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Ver relatório completo (McCall MacBain · Chevening · KHS · SI)</div>
+      <div class="file-card-desc">Todos os relatos com dicas, fontes e tabela resumo</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="last-updated">Atualizado por Andy em 09/05/2026 às 14h00</div>
+</div>
+
+<!-- ===================== MPHIL PLAN ===================== -->
+<div class="section" id="mphil">
+
+  <div class="urgency-strip">
+    <div class="urgency-icon">🔬</div>
+    <div class="urgency-text">
+      <strong>Próximo passo crítico:</strong> Ler o scoping review da Carrigan (email de 16/06) → Escrever summary de 2-3 páginas → Enviar até <strong>5 Jul</strong>
+    </div>
+  </div>
+
+  <!-- STAT OVERVIEW -->
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-number" style="color:var(--accent)">5</div>
+      <div class="stat-label">Fases do plano</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number" style="color:var(--yellow)">18</div>
+      <div class="stat-label">Dias até envio</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number" style="color:var(--green)">2-3</div>
+      <div class="stat-label">Páginas do summary</div>
+    </div>
+  </div>
+
+  <p class="section-title">Cronograma — Gantt</p>
+
+  <!-- GANTT CHART -->
+  <div class="card" style="padding:16px 14px; overflow-x:auto;">
+    <style>
+      .gantt-wrap { min-width: 320px; }
+      .gantt-header { display: flex; margin-bottom: 8px; padding-left: 110px; }
+      .gantt-header-cell { flex: 1; font-size: 0.58rem; color: var(--muted); text-align: center; font-weight: 600; letter-spacing: 0.3px; }
+      .gantt-row { display: flex; align-items: center; margin-bottom: 6px; gap: 0; }
+      .gantt-label { width: 110px; font-size: 0.68rem; color: var(--muted); flex-shrink: 0; padding-right: 8px; line-height: 1.3; }
+      .gantt-track { flex: 1; height: 20px; background: var(--card2); border-radius: 4px; position: relative; overflow: visible; }
+      .gantt-bar {
+        position: absolute;
+        height: 100%;
+        border-radius: 4px;
+        display: flex; align-items: center; padding: 0 6px;
+        font-size: 0.58rem; font-weight: 700; color: rgba(255,255,255,0.9);
+        white-space: nowrap; overflow: hidden;
+      }
+      .gantt-today { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--red); z-index: 10; border-radius: 1px; }
+      .gantt-today::before { content: '▼'; position: absolute; top: -12px; left: -4px; font-size: 0.55rem; color: var(--red); }
+      .gantt-phase-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin: 10px 0 5px; }
+    </style>
+
+    <div class="gantt-wrap" id="gantt-container">
+      <!-- Rendered by JS below -->
+    </div>
+  </div>
+
+  <!-- FASE CARDS -->
+  <p class="section-title">Fases detalhadas</p>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fase 0 — Preparação</div>
+        <div class="card-sub">17–18 Jun</div>
+      </div>
+      <span class="badge badge-red">AGORA</span>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div>Ler o scoping review da Carrigan (email 16/06) — atenção ao método e estrutura</div>
+      <div class="check-item"><div class="check-box todo"></div>Instalar Zotero + browser connector + plugin Word/Docs</div>
+      <div class="check-item"><div class="check-box todo"></div>Configurar citation style: Vancouver no Zotero</div>
+      <div class="check-item"><div class="check-box todo"></div>Criar conta gratuita no PubMed (pubmed.ncbi.nlm.nih.gov)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fase 1 — Revisão de Literatura</div>
+        <div class="card-sub">19–27 Jun · 9 dias</div>
+      </div>
+      <span class="badge badge-blue">SEMANA 1</span>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div>Buscar no PubMed: "AI diagnostic" + "radiologist/pathologist" + "qualitative/experience"</div>
+      <div class="check-item"><div class="check-box todo"></div>Buscar no Scopus: mesmos termos, filtro Medicine + Computer Science</div>
+      <div class="check-item"><div class="check-box todo"></div>Buscar no CINAHL: foco em perspectiva do usuário clínico</div>
+      <div class="check-item"><div class="check-box todo"></div>Salvar todos os papers no Zotero e categorizar (quantitativo / qualitativo / review)</div>
+      <div class="check-item"><div class="check-box todo"></div>Montar tabela de gap: quantos papers focam em performance técnica vs. experiência humana</div>
+      <div class="check-item"><div class="check-box todo"></div>Identificar 5-10 estudos qualitativos existentes sobre o tema</div>
+      <div class="check-item"><div class="check-box todo"></div>Confirmar framework teórico: SEIPS 2.0 como lente principal</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fase 2 — Escrever o Summary</div>
+        <div class="card-sub">28 Jun – 3 Jul · 6 dias</div>
+      </div>
+      <span class="badge badge-purple">SEMANA 2</span>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div>Background: crescimento de IA diagnóstica + o que a literatura foca + gap qualitativo [28-29 Jun]</div>
+      <div class="check-item"><div class="check-box todo"></div>Problem: 1 parágrafo articulando o gap com clareza [30 Jun]</div>
+      <div class="check-item"><div class="check-box todo"></div>Aims: 3 bullet points paralelos e claros [30 Jun]</div>
+      <div class="check-item"><div class="check-box todo"></div>Method: scoping review JBI + PRISMA-ScR + databases + SEIPS [1 Jul]</div>
+      <div class="check-item"><div class="check-box todo"></div>Expected Outcomes: 1 parágrafo sobre impacto e contribuição [1 Jul]</div>
+      <div class="check-item"><div class="check-box todo"></div>Next Steps: registrar protocolo OSF + piloto + aplicação formal [2 Jul]</div>
+      <div class="check-item"><div class="check-box todo"></div>References: exportar do Zotero em Vancouver style, numerar sequencialmente [2-3 Jul]</div>
+    </div>
+    <div style="margin-top:12px; padding:10px 12px; background:var(--card2); border-radius:8px; font-size:0.73rem; color:var(--muted);">
+      ⚠️ <strong style="color:var(--text)">Regras de formatação:</strong> Sem em dash (—) · Vancouver numerado [1], [2] · 2-3 páginas · Font 11pt · Sem "I hope this message finds you well"
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fase 3 — Revisão e Envio</div>
+        <div class="card-sub">4–5 Jul</div>
+      </div>
+      <span class="badge badge-yellow">DEADLINE</span>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div>Revisão com olhos frescos (1 dia de distância)</div>
+      <div class="check-item"><div class="check-box todo"></div>Checklist: 7 elementos presentes? Sem em dash? Vancouver consistente? 2-3 páginas?</div>
+      <div class="check-item"><div class="check-box todo"></div>Ler em voz alta para verificar fluidez</div>
+      <div class="check-item"><div class="check-box todo"></div>Enviar para Carrigan com email breve e profissional</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Fase 4 — Aplicação Formal</div>
+        <div class="card-sub">Julho em diante — após aprovação da Carrigan</div>
+      </div>
+      <span class="badge badge-gray">FUTURO</span>
+    </div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-box todo"></div>Ajustar summary com feedback da Carrigan</div>
+      <div class="check-item"><div class="check-box todo"></div>Transcript oficial PUC-Rio (autenticado + tradução)</div>
+      <div class="check-item"><div class="check-box todo"></div>TCC em inglês (tradução já feita)</div>
+      <div class="check-item"><div class="check-box todo"></div>2 cartas de recomendação (acadêmica + profissional)</div>
+      <div class="check-item"><div class="check-box todo"></div>Atualizar Statement of Purpose para focar no projeto com Carrigan</div>
+      <div class="check-item"><div class="check-box todo"></div>Submeter aplicação formal via Sydney Student Online</div>
+      <div class="check-item"><div class="check-box todo"></div>Verificar deadline RTP scholarship (Research Training Program)</div>
+    </div>
+  </div>
+
+  <!-- VOCAB CARD -->
+  <p class="section-title">Glossário rápido</p>
+  <div class="card">
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">Scoping review</span><span style="color:var(--muted)">Mapeia o território de um campo — extensão e natureza da evidência. Não avalia qualidade.</span></div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">SEIPS 2.0</span><span style="color:var(--muted)">Framework de human factors em saúde: Person + Tasks + Tools + Environment + Organization</span></div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">Vancouver</span><span style="color:var(--muted)">Citação numerada [1], [2] — padrão em medicina. Zotero exporta automaticamente.</span></div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">PRISMA-ScR</span><span style="color:var(--muted)">Guideline para reportar scoping reviews (fluxograma de screening + critérios)</span></div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">RTP</span><span style="color:var(--muted)">Research Training Program — bolsa federal australiana para MPhil/PhD (~AUD 33k/ano)</span></div>
+      <div style="border-top:1px solid var(--border);"></div>
+      <div style="display:flex;gap:8px;font-size:0.77rem;"><span style="font-weight:700;color:var(--accent);min-width:100px;">OSF</span><span style="color:var(--muted)">Open Science Framework — plataforma para registrar protocolos de pesquisa antes de executar</span></div>
+    </div>
+  </div>
+
+  <!-- KEY FILES -->
+  <p class="section-title">Arquivos do Projeto</p>
+
+  <div class="file-card" onclick="openFile('plano_mphil_usyd.md','🔬 Plano MPhil USyd')">
+    <div class="file-card-icon">📋</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Plano completo — fases, cronograma e rascunhos</div>
+      <div class="file-card-desc">plano_mphil_usyd.md · atualizado 17/06/2026</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('carrigan_scoping_review_notes.md','📄 Notas — Scoping Review da Carrigan')">
+    <div class="file-card-icon">🔍</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Notas do scoping review da Carrigan (SEIPS + DHIs)</div>
+      <div class="file-card-desc">carrigan_scoping_review_notes.md · metodologia, bases, estrutura</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <div class="file-card" onclick="openFile('research_proposal_australia.md','🧪 Research Proposal — Rascunho anterior')">
+    <div class="file-card-icon">📝</div>
+    <div class="file-card-info">
+      <div class="file-card-title">Research Proposal Australia — rascunho anterior</div>
+      <div class="file-card-desc">research_proposal_australia.md · base para o novo summary</div>
+    </div>
+    <div class="file-card-arrow">›</div>
+  </div>
+
+  <!-- KEY INSIGHT FROM SCOPING REVIEW -->
+  <p class="section-title">Insight do Review da Carrigan</p>
+  <div class="card" style="border-color:#7c5cfc40; background:linear-gradient(135deg,#1a1230,#1e1535);">
+    <div style="font-size:0.78rem; line-height:1.7; color:var(--text);">
+      <strong style="color:#a78bfa;">Framework:</strong> JBI methodology · SEIPS 2.0<br>
+      <strong style="color:#a78bfa;">Databases:</strong> Medline (PubMed) · PsycINFO · Web of Science · CINAHL<br>
+      <strong style="color:#a78bfa;">Screening:</strong> Rayyan ou Covidence (gratuitos)<br>
+      <strong style="color:#a78bfa;">Protocolo:</strong> Registrar no OSF antes de começar<br>
+      <strong style="color:#a78bfa;">Citação:</strong> Vancouver numerado [1], [2]... · Zotero exporta automaticamente<br>
+      <strong style="color:#a78bfa;">Gap do campo:</strong> "All research focuses on sensitivity/accuracy — no one looks at the qual side"
+    </div>
+  </div>
+
+  <div class="last-updated">Atualizado por Andy em 17/06/2026 às 04h</div>
+</div>
+
+</div><!-- /main -->
+
+<!-- ===================== FILE MODAL ===================== -->
+<div id="modal-overlay" class="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal-box" id="modal-box">
+    <div class="modal-handle"></div>
+    <div class="modal-header-bar">
+      <h3 id="modal-title">Arquivo</h3>
+      <button class="modal-close-btn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body">
+      <div style="text-align:center;padding:40px;color:var(--muted)">⏳ Carregando...</div>
+    </div>
+  </div>
+</div>
+
+<button class="fab" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Set today's date
+  const d = new Date();
+  const opts = { day: '2-digit', month: 'short', year: 'numeric' };
+  document.getElementById('today-date').textContent = d.toLocaleDateString('pt-BR', opts);
+
+  // Tab switching
+  function switchTab(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  // Interview counter (editable via URL param ?interviews=3)
+  const params = new URLSearchParams(window.location.search);
+  const n = parseInt(params.get('interviews') || '0');
+  document.getElementById('interview-count').textContent = n;
+  const pct = Math.round((n/15)*100);
+  document.getElementById('interview-pct').textContent = pct + '%';
+  document.getElementById('interview-bar').style.width = pct + '%';
+
+  // ── FILE VIEWER ──────────────────────────────────────────
+  function openFile(filename, title) {
+    const overlay = document.getElementById('modal-overlay');
+    const body    = document.getElementById('modal-body');
+    document.getElementById('modal-title').textContent = title;
+    body.innerHTML = '<div style="text-align:center;padding:50px 20px;color:var(--muted);font-size:0.85rem">⏳ Carregando...</div>';
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    fetch(filename + '?v=' + Date.now(), { cache: 'no-store', headers: { 'bypass-tunnel-reminder': 'true' } })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(text => {
+        const div = document.createElement('div');
+        div.className = 'md-content';
+        div.innerHTML = renderMd(text);
+        body.innerHTML = '';
+        body.appendChild(div);
+      })
+      .catch(err => {
+        body.innerHTML = '<div style="color:var(--red);padding:24px;font-size:0.82rem">❌ Erro ao carregar o arquivo.<br><br>Verifique se o servidor do dashboard está ativo.</div>';
+      });
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // ── GANTT CHART ──────────────────────────────────────────
+  (function renderGantt() {
+    const container = document.getElementById('gantt-container');
+    if (!container) return;
+
+    // Chart spans Jun 17 to Jul 15
+    const startDate = new Date('2026-06-17');
+    const endDate   = new Date('2026-07-15');
+    const totalDays = (endDate - startDate) / 86400000;
+    const today     = new Date();
+
+    function pct(d) {
+      const days = (new Date(d) - startDate) / 86400000;
+      return Math.max(0, Math.min(100, (days / totalDays) * 100));
+    }
+    function width(s, e) {
+      return Math.max(0.5, pct(e) - pct(s));
+    }
+
+    const tasks = [
+      { phase: 'FASE 0 — Preparação',    label: 'Ler scoping review + Setup',   start: '2026-06-17', end: '2026-06-19', color: '#ef4444' },
+      { phase: 'FASE 1 — Lit Review',    label: 'Buscas nas bases de dados',     start: '2026-06-19', end: '2026-06-24', color: '#4f8ef7' },
+      { phase: '',                        label: 'Análise do gap',               start: '2026-06-24', end: '2026-06-26', color: '#4f8ef7' },
+      { phase: '',                        label: 'Framework teórico (SEIPS)',    start: '2026-06-26', end: '2026-06-28', color: '#4f8ef7' },
+      { phase: 'FASE 2 — Escrita',        label: 'Background',                   start: '2026-06-28', end: '2026-06-30', color: '#7c5cfc' },
+      { phase: '',                        label: 'Problem + Aims',               start: '2026-06-30', end: '2026-07-01', color: '#7c5cfc' },
+      { phase: '',                        label: 'Method + Outcomes',            start: '2026-07-01', end: '2026-07-02', color: '#7c5cfc' },
+      { phase: '',                        label: 'Next Steps + References',      start: '2026-07-02', end: '2026-07-04', color: '#7c5cfc' },
+      { phase: 'FASE 3 — Revisão',       label: 'Revisão + Envio',              start: '2026-07-04', end: '2026-07-06', color: '#f59e0b' },
+      { phase: 'FASE 4 — Aplicação',     label: 'Ajustes + Docs formais',       start: '2026-07-06', end: '2026-07-15', color: '#22c55e' },
+    ];
+
+    // Build header (week dates)
+    const headerDates = [];
+    for (let i = 0; i <= totalDays; i += 7) {
+      const d = new Date(startDate.getTime() + i * 86400000);
+      headerDates.push({ label: d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' }), left: (i / totalDays) * 100 });
+    }
+
+    let html = '<div style="position:relative;">';
+
+    // Header row
+    html += '<div style="position:relative;height:20px;margin-left:110px;margin-bottom:4px;">';
+    headerDates.forEach(h => {
+      html += `<span style="position:absolute;left:${h.left}%;font-size:0.56rem;color:var(--muted);transform:translateX(-50%);white-space:nowrap;">${h.label}</span>`;
+    });
+    html += '</div>';
+
+    // Today line layer (drawn over tracks)
+    const todayPct = pct(today.toISOString().split('T')[0]);
+    const todayVisible = todayPct > 0 && todayPct < 100;
+
+    let lastPhase = '';
+    tasks.forEach((t, i) => {
+      if (t.phase && t.phase !== lastPhase) {
+        html += `<div style="font-size:0.6rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:var(--muted);margin:8px 0 3px;">${t.phase}</div>`;
+        lastPhase = t.phase;
+      }
+      html += `<div style="display:flex;align-items:center;margin-bottom:5px;gap:0;">`;
+      html += `<div style="width:110px;font-size:0.67rem;color:var(--muted);flex-shrink:0;padding-right:8px;line-height:1.3;">${t.label}</div>`;
+      html += `<div style="flex:1;height:18px;background:var(--card2);border-radius:4px;position:relative;">`;
+      html += `<div style="position:absolute;left:${pct(t.start)}%;width:${width(t.start, t.end)}%;height:100%;background:${t.color};border-radius:4px;opacity:0.85;"></div>`;
+      if (todayVisible) {
+        html += `<div style="position:absolute;left:${todayPct}%;top:-2px;bottom:-2px;width:2px;background:var(--red);border-radius:1px;z-index:5;"></div>`;
+      }
+      html += `</div></div>`;
+    });
+
+    // Legend
+    html += `<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);">`;
+    if (todayVisible) html += `<div style="display:flex;align-items:center;gap:4px;font-size:0.62rem;color:var(--muted);"><div style="width:12px;height:3px;background:var(--red);border-radius:1px;"></div>Hoje</div>`;
+    [['#ef4444','Fase 0'],['#4f8ef7','Fase 1'],['#7c5cfc','Fase 2'],['#f59e0b','Fase 3'],['#22c55e','Fase 4']].forEach(([c,l]) => {
+      html += `<div style="display:flex;align-items:center;gap:4px;font-size:0.62rem;color:var(--muted);"><div style="width:12px;height:10px;background:${c};border-radius:2px;opacity:0.85;"></div>${l}</div>`;
+    });
+    html += '</div>';
+
+    html += '</div>';
+    container.innerHTML = html;
+  })();
+
+  // ── MARKDOWN RENDERER ────────────────────────────────────
+  function renderMd(text) {
+    const lines = text.split('\n');
+    let html = '', inList = false, inTable = false, firstTableRow = false;
+
+    function fmt(s) {
+      s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      s = s.replace(/\*([^*\s][^*\n]{0,80}[^*\s])\*/g, '<em>$1</em>');
+      s = s.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+      s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+      return s;
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+      const raw = lines[i];
+
+      // TABLE
+      if (raw.startsWith('|')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        if (raw.replace(/[|\-:\s]/g, '') === '') { firstTableRow = false; continue; } // separator
+        const cells = raw.split('|').slice(1, -1).map(c => fmt(c.trim()));
+        if (!inTable) { html += '<table>'; inTable = true; firstTableRow = true; }
+        const tag = firstTableRow ? 'th' : 'td';
+        html += '<tr>' + cells.map(c => `<${tag}>${c}</${tag}>`).join('') + '</tr>';
+        firstTableRow = false;
+        continue;
+      }
+      if (inTable) { html += '</table>'; inTable = false; }
+
+      const line = fmt(raw);
+
+      if (raw.startsWith('### ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<h4>${line.slice(4)}</h4>`;
+      } else if (raw.startsWith('## ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<h3>${line.slice(3)}</h3>`;
+      } else if (raw.startsWith('# ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<h2>${line.slice(2)}</h2>`;
+      } else if (raw.match(/^[-*_]{3,}$/) && !raw.startsWith('- ') && !raw.startsWith('* ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<hr>';
+      } else if (raw.match(/^[-*] /)) {
+        if (!inList) { html += '<ul>'; inList = true; }
+        html += `<li>${line.slice(2)}</li>`;
+      } else if (raw === '') {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<div style="height:6px"></div>';
+      } else {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<p>${line}</p>`;
+      }
+    }
+
+    if (inList) html += '</ul>';
+    if (inTable) html += '</table>';
+    return html;
+  }
+</script>
+
+</body>
+</html>

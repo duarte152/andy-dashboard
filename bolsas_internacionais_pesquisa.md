@@ -488,6 +488,227 @@ Baseado em pesquisa em estudarfora.org.br/compensar-notas-ruins/:
 
 ---
 
+---
+
+## UK CDTs (Centros de Treinamento Doutoral) E DTPs — DIGITAL HEALTH / AI / HCI
+
+*Pesquisa realizada: jul/2026 | Contexto: recomendação de Dr. Waty Lilaonitkul (UCL) para aplicar a TODOS os CDTs relevantes*
+
+### O que são CDTs/DTPs
+
+- **CDT (Centre for Doctoral Training):** PhD coletivo de 4 anos (1 ano treinamento/mestrado + 3 anos PhD), financiado majoritariamente pelo EPSRC/UKRI. Inclui estipêndio + mensalidade + fundo de pesquisa.
+- **DTP (Doctoral Training Partnership):** Similar, mas financiado pelo ESRC (ciências sociais). Geralmente inclui strand de ciências da saúde.
+- **Funding:** UKRI anunciou £1 bilhão para 65 CDTs em março/2024 (EPSRC) + £117M separados para 10-15 CDTs de IA.
+- **Stipend padrão 2026-27:** £23.805/ano (UK Research Councils standard); programa TechExpert pilot: £31.000/ano (apenas Home/UK).
+- **Mensalidade Home:** ~£5.238/ano (normalmente coberta pela bolsa).
+- **ATENÇÃO:** A maioria dos CDTs cobre apenas candidatos "Home" (UK/settled status). Candidatos internacionais precisam de vaga explícita de internacional ou bolsa suplementar.
+- **Thiago tem passaporte PT (UE):** Não é automático para "Home fees" no UK pós-Brexit. Candidatos UE que chegaram ao UK após 31/dez/2020 pagam fees internacionais. Verificar status individual.
+
+---
+
+### 1. ENGAGE CDT — UCL (University College London)
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | ENGAGE CDT — Equitable Health Technologies |
+| **Universidade** | UCL (University College London) |
+| **Funding body** | EPSRC/UKRI (£1B programme, 2024) |
+| **Foco** | Desenvolvimento equitativo de tecnologias de saúde; inteligência artificial, devices, digital health com lente de equidade e human factors |
+| **Consórcio** | UCL liderando; parceiros industriais e NHS |
+| **Duração** | 4 anos (1 + 3) |
+| **Stipend** | £23.805/ano (padrão UKRI) |
+| **Vagas internacionais** | A confirmar — verificar site direto |
+| **Prazo 2027** | Tipicamente jan-fev para entrada set/2027 |
+| **URL** | engage-cdt.ac.uk (domínio estava offline em jul/2026 — verificar) |
+| **Fit Thiago** | ★★★★★ — Fit MÁXIMO. "Equitable Health Technologies" mapeia diretamente para trabalho na Laudite com radiologistas/patologistas. Experiência em produto digital de saúde + IELTS 8.0 + cidadania PT são diferenciais. |
+| **Supervisor em vista** | Dr. Waty Lilaonitkul (UCL) — já indicou este CDT pessoalmente |
+
+---
+
+### 2. DRIVE-Health CDT — King's College London (KCL)
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | DRIVE-Health CDT — Data-driven Research and Innovation for Value and Equity in Health |
+| **Universidade** | King's College London (KCL) |
+| **Funding body** | EPSRC/UKRI (£1B programme, 2024) |
+| **Foco** | Dados de saúde, IA, value-based healthcare, equity; human factors implícito no "value and equity" |
+| **Duração** | 4 anos (1 + 3) |
+| **Stipend** | £23.805/ano |
+| **Vagas internacionais** | A confirmar |
+| **Prazo 2027** | A confirmar — monitorar site |
+| **URL** | drivehealth.ac.uk (domínio não resolvia em jul/2026 — verificar) |
+| **Fit Thiago** | ★★★★★ — Fit MÁXIMO. Data-driven health + equity é o núcleo do trabalho de Laudite. KCL tem histórico forte em health informatics. |
+
+---
+
+### 3. AI4Health CDT — Imperial College London
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | EPSRC Centre for Doctoral Training in Artificial Intelligence for Healthcare (AI4Health) |
+| **Universidade** | Imperial College London + UCL (consórcio) |
+| **Funding body** | EPSRC/UKRI |
+| **Foco** | IA aplicada à saúde: imagem médica, dados clínicos, NLP em saúde, sistemas de suporte diagnóstico, ML para saúde pública |
+| **Parceiros industriais** | Philips, GE Healthcare, AstraZeneca, DeepMind/Google, NHS trusts |
+| **Duração** | 4 anos (1 ano MRes + 3 anos PhD) |
+| **Stipend** | £23.805/ano (Home); taxas internacionais requerem bolsa suplementar |
+| **Vagas internacionais** | Limitadas — verificar edital anual |
+| **Prazo 2027** | Geralmente dezembro–janeiro (ciclo 2026-27 fechou jan/2026) |
+| **URL** | ai4health.io |
+| **Fit Thiago** | ★★★★ — IA para imagem diagnóstica é exatamente o domínio da Laudite. Foco mais técnico/ML que human factors puro. Thiago precisaria demonstrar capacidade técnica (Python/ML) ou proposta de human-centered AI evaluation. |
+
+---
+
+### 4. HDR UK-Turing Wellcome PhD Programme in Health Data Science
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | HDR UK-Turing Wellcome PhD Programme in Health Data Science |
+| **Universidade** | Multi-universidade: Cambridge, Edinburgh, UCL, Oxford, Manchester, Bristol, King's, Imperial e outros (escolha do candidato) |
+| **Funding body** | Health Data Research UK (HDR UK) + Alan Turing Institute + Wellcome Trust |
+| **Foco** | Ciência de dados aplicada à saúde: grandes datasets clínicos, biobancos, integração de dados, métodos estatísticos, privacidade |
+| **Duração** | 4 anos |
+| **Stipend** | £23.805/ano (padrão UKRI) |
+| **Vagas internacionais** | Programa tem vagas explícitas para candidatos internacionais — um dos mais abertos |
+| **Prazo 2027** | Geralmente novembro–janeiro |
+| **URL** | hdruk.ac.uk/talent-training/phd-programme/ |
+| **Fit Thiago** | ★★★★ — Health Data Science tem forte componente de "como dados são usados na prática" que pode encaixar experiência de produto. Porém, foco tende a ser mais técnico/epidemiológico. Candidatura pode ser feita para supervisor específico em qualquer univ. do consórcio. |
+
+---
+
+### 5. Oxford BDI — CDT in Healthcare Data Science
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | CDT in Healthcare Data Science — Big Data Institute (BDI) |
+| **Universidade** | University of Oxford |
+| **Funding body** | EPSRC/UKRI (parte do portfolio existente, possivelmente renovado no £1B) |
+| **Foco** | Aprendizado de máquina para saúde, análise de dados clínicos de larga escala, epidemiologia computacional, diagnóstico assistido por IA |
+| **Duração** | 4 anos |
+| **Stipend** | £23.805/ano (Home); Oxford tem suplemento adicional de ~£1.500/ano |
+| **Vagas internacionais** | Limitadas — Oxford tem fundos como Clarendon para suplementar fees internacionais |
+| **Prazo 2027** | Oxford fecha geralmente em janeiro (algumas rodadas em março) |
+| **URL** | bdi.ox.ac.uk/study/cdt |
+| **Fit Thiago** | ★★★ — Fit técnico moderado. Oxford é muito competitivo. Foco em dados clínicos de larga escala é adjacente ao trabalho de Laudite mas não é human factors. Clareza no projeto de pesquisa é crucial. |
+
+---
+
+### 6. Edinburgh Precision Medicine DTP
+
+| Campo | Detalhes |
+|---|---|
+| **Nome completo** | Wellcome Trust PhD Programme in Precision Medicine |
+| **Universidade** | University of Edinburgh |
+| **Funding body** | Wellcome Trust |
+| **Foco** | Medicina de precisão, genômica, bioinformática, dados clínicos; inclui strand de "Digital Health and AI" |
+| **Duração** | 4 anos |
+| **Stipend** | £23.805/ano (alinhado UKRI) |
+| **Vagas internacionais** | Wellcome tem histórico de financiar candidatos internacionais |
+| **Prazo 2027** | Geralmente novembro–dezembro |
+| **URL** | ed.ac.uk/usher/precision-medicine |
+| **Fit Thiago** | ★★★ — O strand de Digital Health tem relevância, mas medicina de precisão é mais genômica/bioinformática que product/HCI. Avaliar se o supervisor certo existe lá. |
+
+---
+
+### 7. UCL CDT in AI-Enabled Healthcare (legado — verificar status)
+
+| Campo | Detalhes |
+|---|---|
+| **Nome** | CDT in Artificial Intelligence-Enabled Healthcare |
+| **Universidade** | UCL |
+| **Liderança** | Prof. Paul Taylor (UCL CHIME) |
+| **Status** | Possivelmente substituído/integrado ao ENGAGE CDT após 2024. Verificar com UCL se ainda aceita novos alunos. |
+| **URL** | healthcdt.ucl.ac.uk (verificar) |
+| **Fit Thiago** | Potencialmente relevante se ainda ativo — mesma linha do ENGAGE |
+
+---
+
+### 8. EPSRC CDTs na Categoria "Health Technologies" — Lista Completa (UKRI £1B, 2024)
+
+A UKRI anunciou 7 CDTs na categoria "Health Technologies" como parte do investimento de £1B em março/2024. Além dos já detalhados, os outros são:
+
+| CDT | Universidade Líder | Foco |
+|---|---|---|
+| ENGAGE CDT | UCL | Equitable Health Technologies |
+| DRIVE-Health | KCL | Data-driven Health Value & Equity |
+| AI4Health | Imperial/UCL | AI for Healthcare |
+| [4 outros a confirmar] | TBD | Verificar lista oficial UKRI |
+
+**Fonte para lista completa:** ukri.org/opportunity/epsrc-centres-for-doctoral-training/ — acessar diretamente e filtrar por "Health Technologies".
+
+---
+
+### 9. UKRI AI CDTs — £117M Programme Separado (2024)
+
+- UKRI investiu £117M adicionais em 10-15 CDTs especificamente focados em IA (2024).
+- Primeiro cohort: 2024-25.
+- Alguns podem ter track de "AI for Health" ou "AI for Society".
+- Lista completa dos CDTs premiados: não encontrada em pesquisa aberta — verificar ukri.org diretamente.
+- **Ação:** Checar quais dos 10-15 CDTs de IA têm foco em health/healthcare.
+
+---
+
+### 10. DTPs ESRC Relevantes (Social Science / Health Informatics)
+
+| DTP | Universidades | Relevância para Thiago |
+|---|---|---|
+| Grand Union DTP | Oxford, UCL, Imperial, KCL, SOAS, Birkbeck, Brunel | Tem strand de "Health and Social Care"; ESRC financia pesquisa qualitativa em sistemas de saúde |
+| UBEL DTP | UCL, Birkbeck, Brunel, London Business School | "UCL Bloomsbury and East London" — strand de digital health e HCI social |
+| Scottish Graduate School of Social Science (SGSSS) | Edinburgh, Glasgow, St Andrews, Aberdeen + 13 outros | Strand de "Health Informatics" e "Digital Society" |
+
+- **Fit Thiago via DTPs:** Se o projeto de pesquisa tem foco em EXPERIÊNCIAS de diagnosticistas (qualitativo) com IA — como proposto por Dr. Ann Carrigan para MPhil USyd — os DTPs ESRC são opção válida para PhD no UK com foco em human factors/qualitativo.
+
+---
+
+### CALENDÁRIO DE APLICAÇÃO — CDTs UK (2026-2027)
+
+| Mês | Ação |
+|---|---|
+| **Jul-Set/2026** | Identificar supervisores potenciais em cada CDT; enviar cold emails antes de candidaturas formais |
+| **Out/2026** | Começar statement of purpose e projeto de pesquisa; pedir cartas de recomendação |
+| **Nov-Dez/2026** | Submeter candidaturas para CDTs com prazo dezembro (Edinburgh, Oxford, HDR UK) |
+| **Jan/2027** | Submeter candidaturas para CDTs com prazo janeiro (AI4Health Imperial, Oxford segunda rodada) |
+| **Fev/2027** | Submeter candidaturas para CDTs com prazo fevereiro (ENGAGE UCL, DRIVE-Health KCL tipicamente) |
+| **Mar-Mai/2027** | Entrevistas e decisões |
+| **Set-Out/2027** | Início dos programas |
+
+---
+
+### AVALIAÇÃO DE FIT — THIAGO X CDTs UK
+
+**Forças do perfil de Thiago:**
+- 4+ anos na Laudite (HealthTech SaaS de laudos médicos com IA) — experiência direta em AI para diagnóstico médico
+- Cidadania portuguesa (UE) — facilita visto, mas fees ainda podem ser internacionais pós-Brexit (verificar individual)
+- IELTS 8.0 — acima da maioria dos requisitos (geralmente 7.0-7.5)
+- Perfil de produto/go-to-market único — pesquisadores de ciência pura raramente têm essa perspectiva prática
+- Conexão com Dr. Waty Lilaonitkul (UCL) — referência interna para ENGAGE CDT
+
+**Áreas de desenvolvimento:**
+- Background quantitativo/técnico: maioria dos CDTs espera Python, ML ou estatística. Thiago deve fazer curso online (fast.ai, Coursera ML) antes de candidaturas.
+- Publicações: zero publicações acadêmicas é fraqueza em programas competitivos. Mitigar com relatórios, blog posts técnicos ou co-autorias.
+- Proposta de pesquisa: um projeto claro e original é essencial. A proposta da Dr. Carrigan (scoping review sobre experiências de diagnosticistas com IA) pode ser adaptada para contexto UK/CDT.
+
+**Recomendação de estratégia:**
+1. **Primeiro alvo:** ENGAGE UCL (conexão com Waty Lilaonitkul) + DRIVE-Health KCL
+2. **Segundo alvo:** AI4Health Imperial + HDR UK (multi-universidade)
+3. **Terceiro alvo:** Oxford BDI + Edinburgh Precision Medicine
+4. **Paralelo:** Verificar DTPs ESRC (Grand Union, UBEL) para track qualitativo
+
+---
+
+### FONTES — UK CDTs
+
+- ukri.org/opportunity/epsrc-centres-for-doctoral-training/ (lista dos 65 CDTs 2024)
+- ai4health.io (AI4Health Imperial — acesso confirmado jul/2026)
+- bdi.ox.ac.uk/study/cdt (Oxford BDI — acesso confirmado jul/2026)
+- ed.ac.uk/usher/precision-medicine (Edinburgh — acesso confirmado jul/2026)
+- engage-cdt.ac.uk (ENGAGE UCL — domínio offline em jul/2026, verificar)
+- drivehealth.ac.uk (DRIVE-Health KCL — domínio offline em jul/2026, verificar)
+- hdruk.ac.uk/talent-training/phd-programme/ (HDR UK — verificar)
+
+---
+
 ## FONTES CONSULTADAS
 
 - nserc-crsng.canada.ca (CGRS-D, CGS-M eligibility)

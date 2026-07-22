@@ -21,6 +21,7 @@
 | `mestrado_pesquisa.md` | Pesquisa geral sobre mestrado no exterior |
 | `supervisores_australia.md` | Lista de supervisores identificados na Austrália (USyd, UNSW etc.) |
 | `supervisores_uk.md` | Lista de supervisores identificados no Reino Unido |
+| `supervisores_mcgill.md` | Supervisores identificados na McGill (Canadá) para McCall MacBain |
 | `supervisores_stanford_mse.md` | Supervisores para Stanford MSE |
 | `research_proposal_australia.md` | Rascunho da proposta de pesquisa para Austrália |
 | `statement_of_purpose.md` | Statement of Purpose base |

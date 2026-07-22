@@ -116,4 +116,19 @@
 - [ ] Escrever emails personalizados para Cafazzo e Morita (prioridade)
 - [ ] Pesquisar papers específicos de cada um para personalização
 - [ ] Verificar se Cafazzo/Morita têm grants ativos (CIHR) — indica capacidade de financiar alunos
-- [ ] Atualizar dashboard com seção Canadá
+- [x] Atualizar dashboard com seção Canadá (21/07/2026)
+
+## 6. McGill — Supervisores para McCall MacBain (21/07/2026)
+
+Ver `supervisores_mcgill.md` para mapeamento completo. Resumo:
+
+| Supervisor | Departamento | Fit |
+|---|---|---|
+| David Buckeridge | Epidemiology/Biostatistics + Clin Epi | ⭐⭐⭐⭐ Health informatics, e-health, CIHR Chair |
+| Nitika Pant Pai | Medicine (Clin Epi/Infectious Diseases) | ⭐⭐⭐⭐ Implementation science de mHealth |
+| Kaberi Dasgupta | Medicine (Endocrinology) | ⭐⭐⭐ Digital health, foco em paciente |
+| Karyn Moffatt | Information Studies | ⭐⭐⭐ HCI genuíno, população-alvo distante |
+
+Nenhum é um "match perfeito" como os supervisores do UK (McGill não tem instituto dedicado a CDSS/Health Informatics como UCL). Buckeridge e Pant Pai são os mais fortes.
+
+**Pendente:** verificação Regra 13 (autoria de papers) antes de redigir emails — ver `emails_supervisores_canada.md`.

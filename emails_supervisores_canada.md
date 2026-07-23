@@ -22,4 +22,19 @@ Para o McCall MacBain fazer sentido, os emails precisam ser refeitos com **profe
 2. Confirmar se os 4 supervisores aceitam mestrado internacional 2027
 3. Confirmar estrutura exata do McCall MacBain para MSc Digital Health Innovation na McGill (thesis-based)
 
-Próxima sessão: completar verificação Regra 13 e redigir a nova rodada de emails (prioridade: Buckeridge e Pant Pai).
+## Atualização — 22/07/2026 (sessão noturna)
+
+✅ **Emails redigidos para os 2 supervisores prioritários** (Buckeridge e Pant Pai) → ver `emails_supervisores_mcgill.md`
+
+Verificação Regra 13 concluída via busca web:
+- **Buckeridge**: último autor (posição sênior) em "Innovations in public health surveillance" (CCDR, abr/2024) — 6 autores, artigo colaborativo com PHAC. Fraseado como "co-authored by you and colleagues" (não "your paper"), conforme Regra 13.1.
+- **Pant Pai**: última autora (posição sênior/correspondente) em "Digital HIV self-testing as an exemplar" (Expert Review of Molecular Diagnostics, 2024) — 3 autores (Beecroft, Vaikla, Pant Pai).
+- Afiliação atual de ambos confirmada via páginas mcgill.ca.
+- Emails institucionais confirmados via mcgill.ca.
+- Elegibilidade do programa MSc Experimental Medicine (Thesis): Digital Health Innovation para o McCall MacBain confirmada (45 créditos, full-time, thesis-based MSc — atende aos critérios).
+
+⚠️ Pendente antes do envio (responsabilidade do Thiago):
+- Confirmar diretamente com McGill/McCall MacBain se Buckeridge e Pant Pai aceitam orientandos MSc para o ciclo 2027 (não havia confirmação explícita nas páginas institucionais)
+- Revisar tom pessoal antes de enviar
+
+Kaberi Dasgupta e Karyn Moffatt continuam como plano B — não priorizados nesta rodada (fit mais fraco, ver `supervisores_mcgill.md`).

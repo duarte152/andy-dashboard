@@ -92,6 +92,7 @@
 | `chevening_pesquisa.md` | Pesquisa completa sobre a Chevening scholarship — portal abre agosto 2026 |
 | `chevening_essay_lideranca.md` | Essay de liderança Chevening (redigido) |
 | `chevening_essays_restantes.md` | Demais 3 essays Chevening (redigidos) |
+| `chevening_essay_framework.md` | Framework de essay consolidando conselhos da Waty (Personal Impact/Vision/Give Back) + Will, alumnus Chevening/UCL (Why UK / Why this course "jigsaw puzzle" / Why now) — usar como base ao redigir "why this course" |
 
 ## Outros
 

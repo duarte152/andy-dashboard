@@ -39,7 +39,8 @@
 | `emails_supervisores_uk_batch2.md` | Emails para supervisores UK - batch 2 |
 | `emails_supervisores_eua.md` | Emails para supervisores EUA - batch 1 |
 | `emails_supervisores_eua_batch2.md` | Emails para supervisores EUA - batch 2 |
-| `emails_supervisores_canada.md` | Emails para supervisores Canadá |
+| `emails_supervisores_canada.md` | Emails para supervisores Canadá — histórico (batch original suspenso 10/05, novo mapeamento McGill 21/07) |
+| `emails_supervisores_mcgill.md` | Emails prontos para Buckeridge e Pant Pai (McGill) — verificação Regra 13 concluída, 22/07/2026 |
 | `emails_followup.md` | Templates de follow-up (14 dias sem resposta) |
 | `baysari_email_v2.md` | Email específico para Prof. Baysari (USyd) |
 | `ajustes_emails_supervisores.md` | Regras e ajustes consolidados (abril/2026) |

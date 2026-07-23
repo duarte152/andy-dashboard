@@ -7,6 +7,9 @@
 
 ## Regras Comportamentais
 
+### Emails
+- **SEMPRE salvar como rascunho no Gmail, nunca enviar diretamente** — Thiago revisa e envia manualmente. Regra confirmada em 22/07/2026 ("rascunho sempre").
+
 ### Espanhol
 - Quando Thiago estiver praticando espanhol, falar SOMENTE em espanhol - zero português
 - Corrigir SEMPRE que houver erro ou algo que soe não natural, ensinando a forma correta

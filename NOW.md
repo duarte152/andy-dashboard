@@ -6,11 +6,14 @@
 ## PRIORIDADES ATIVAS (top 3)
 
 ### 1. UK CDTs — Pesquisa e Candidatura
-**Status:** Plano criado (`plano_candidatura_uk_cdt.md`). Programas mapeados.
+**Status:** Plano criado (`plano_candidatura_uk_cdt.md`). Programas mapeados. Elegibilidade internacional e STAI CHECK list pesquisados em 24/07/2026.
+**Achados-chave (24/07):**
+- Passaporte PT NÃO garante Home fee status pós-Brexit (exige 3 anos residência UK/EEE) — Thiago é candidato internacional em todos os CDTs. DRIVE-Health (KCL) é o mais aberto a internacionais; os outros cobrem só fee Home+stipend, reforçando importância do Chevening como bolsa complementar.
+- **Ina Kaleva** (STAI/KCL) identificada como melhor fit temático entre alunos pesquisados — background em Digital Health/Mental Health/HCI. Priorizar para virtual coffee.
 **Próximos passos:**
-- Pesquisar os 7 alunos CHECK do STAI no LinkedIn (Mingrui Ye, Jack Contro, Elfia Bezou-Vrakatseli, Ina Kaleva, Mansi, Yebon Kim, Yuheng Ren)
+- Localizar perfil de Yebon Kim (único do STAI CHECK list não encontrado)
+- Thiago fazer contato com Ina Kaleva, Sophia Worth, Gabriele La Malfa para virtual coffees
 - Verificar cohorts de UCL CDT (AI-enabled Healthcare), tech4health, DRIVE-Health
-- Confirmar se CDTs top 5 aceitam internacionais (passaporte PT pós-Brexit)
 - Fast.ai / Coursera ML antes de outubro (gap: Python/programação)
 
 ### 2. Chevening — Portal Abre Agosto 2026

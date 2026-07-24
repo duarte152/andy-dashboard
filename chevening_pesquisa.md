@@ -126,13 +126,15 @@ Chevening é **100% funded** pelo governo britânico (FCDO — Foreign, Commonwe
 - O Chevening aceita ofertas condicionais inicialmente — pode submeter antes de ter as ofertas
 
 ### Passo 2: Portal Chevening
-- Abre em **agosto** de cada ano
-- Para o intake 2027–28: **agosto 2026**, deadline ~**início de novembro 2026**
-- O portal coleta: dados pessoais, até 15 períodos de trabalho, 3 escolhas de universidade/curso, referees, e os 4 essays
+- **Abre: terça-feira, 4 de agosto de 2026**
+- **Fecha: terça-feira, 6 de outubro de 2026, às 11:00 UTC** (⚠️ corrigido — pesquisa anterior estimava "início de novembro", data oficial confirmada é 6/out)
+- O portal coleta: dados pessoais, até 15 entradas de educação, até 15 períodos de trabalho (o sistema calcula automaticamente as horas para bater o mínimo de 2.800h), 3 escolhas de universidade/curso, nome + cargo + contato de 2 referees, e os 4 essays
+- **Não é preciso já ter se candidatado às 3 universidades antes de submeter no Chevening** — pode escolher os cursos no formulário mesmo sem ter aplicado ainda
+- Se convidado para entrevista: precisa fazer upload de toda documentação (ID com foto, certificado/diploma de graduação, cartas de referência) no sistema **até 7 dias úteis antes da entrevista**
 
 ### Passo 3: Cartas de recomendação
 - 2 referees obrigatórios
-- São notificados após submissão e têm deadline para preencher (~novembro)
+- São notificados após submissão; referências podem ser enviadas até o fim do período global de entrevistas, mas o ideal é ter tudo pronto até o deadline de 6/out
 - Profissional é preferível (supervisor direto); acadêmico é aceito mas menos forte
 - Avisar referees com **4–6 semanas de antecedência**; compartilhar os essays com eles
 
@@ -273,14 +275,13 @@ Chevening é **100% funded** pelo governo britânico (FCDO — Foreign, Commonwe
 |---|---|
 | **Mai/Jun 2026** | Fazer IELTS ou TOEFL (deadline para eventual reteste) |
 | **Jun–Jul 2026** | Rascunhar os 4 essays; candidatar-se às 3 universidades UK |
-| **Ago 2026** | Portal Chevening abre |
-| **Ago–Out 2026** | Refinar e submeter candidatura |
-| **Out/Nov 2026** | Deadline das referências (referees completam) |
-| **Nov–Dez 2026** | Início de novembro: deadline Chevening |
-| **Jan–Fev 2027** | Shortlisting pela Embaixada Britânica em Brasília |
-| **Fev–Abr 2027** | Entrevistas na Embaixada |
-| **Jun 2027** | Resultado final |
-| **Jul 2027** | Deadline oferta incondicional da universidade |
+| **Ter, 4 Ago 2026** | Portal Chevening abre |
+| **Ago–Out 2026** | Preencher e submeter candidatura (dados, 3 escolhas de curso, referees, 4 essays) |
+| **Ter, 6 Out 2026, 11:00 UTC** | **Deadline oficial de submissão** (corrigido — não é novembro) |
+| **Out 2026–Fev 2027** | Shortlisting pela Embaixada Britânica em Brasília |
+| **Mar–Abr 2027** | Entrevistas na Embaixada (se convidado, upload de documentos até 7 dias úteis antes) |
+| **A partir de meados de Jun 2027** | Resultado final |
+| **8 Jul 2027, 17:00 BST** | Deadline para oferta incondicional confirmada da universidade |
 | **Set/Out 2027** | Evento de indução em Londres; início das aulas |
 
 ---

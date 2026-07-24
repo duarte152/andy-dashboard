@@ -50,11 +50,25 @@ Poucas pessoas pensam nisso. Você precisa mostrar que vai absorver o que o prog
 *Nota: Oxford BDI e Leeds CDT descartados (prereqs técnicos altos; Leeds finalizou cohorts).*
 
 ### 1B — Para cada programa prioritário, verificar:
-- [ ] URL do programa ativo e data de aplicação 2026-2027
-- [ ] Se aceita candidatos internacionais (não Home/UK) — passaporte PT pode não garantir Home status pós-Brexit
-- [ ] Funding disponível para internacionais (muitos CDTs só têm vagas Home)
+- [x] URL do programa ativo e data de aplicação 2026-2027 — ver tabela abaixo
+- [x] Se aceita candidatos internacionais (não Home/UK) — passaporte PT pode não garantir Home status pós-Brexit
+- [x] Funding disponível para internacionais (muitos CDTs só têm vagas Home)
 - [ ] Se exige GRE, testes específicos ou projetos de pesquisa prévios
 - [ ] Quais supervisores estão dentro do CDT (para identificar fit)
+
+### 1C — Elegibilidade internacional por programa (pesquisado 24/07/2026)
+
+⚠️ **Nota importante:** cidadania portuguesa (UE) NÃO garante Home fee status no UK pós-Brexit. Home status normalmente exige "ordinarily resident" no UK/EEE por 3 anos antes do início do curso — Thiago não atende isso morando no Brasil. Ou seja: para fins de funding, Thiago deve se planejar como candidato **internacional/overseas** em todos os programas abaixo, mesmo com passaporte PT.
+
+| Programa | Aceita internacionais? | Funding para internacionais | Deadline relevante | Fonte |
+|---|---|---|---|---|
+| **UCL AI-enabled Healthcare CDT** | Sim | Apenas 3 vagas UKRI para internacionais (cobre fee Home + stipend, não cobre diferença de fee internacional) — muito competitivo. Existe possível UCL International Scholars Award (ISA) para cobrir a diferença — checar detalhes com CDT | Ver ucl.ac.uk/aihealth-cdt | ucl.ac.uk/aihealth-cdt |
+| **tech4health (UCL+Ulster)** | Sim, mas com restrição — extensão de prazo (27/fev/2026) foi só para "Ulster Home Awards", sinal de que vagas internacionais são mais limitadas/competitivas | Não detalhado publicamente — contatar hello@tech4health.co.uk | Deadline original 30/jan (para entrada 2026); ciclo 2027 deve abrir out/2026 | tech4health.co.uk |
+| **DRIVE-Health (KCL)** | ✅ Sim, explicitamente aberto a Home e International "de qualquer background" | 4 anos, stipend aumentado (~£25.400/ano 2026/27) — parece ser dos mais abertos a internacionais dos CDTs pesquisados | drive-health.org.uk/apply | drive-health.org.uk |
+| **AI4Health (Imperial)** | Sim | Cobre apenas fee Home + stipend padrão; poucas bolsas extras para cobrir fee internacional, "highly competitive". Aplicar cedo ajuda (deadline overseas 30/jun) | Round 1 (Home) 22/fev/2026, Round 2 30/abr/2026, **overseas fecha 30/jun/2026** — para ciclo 2027 esperar prazos similares (~jun/2027) | ai4health.io |
+| **HDR UK Turing-Wellcome PhD** | Sim, sem restrição de nacionalidade | Só cobre fee Home + stipend — aluno precisa achar bolsa extra pra cobrir diferença de fee internacional. Não aceita autofinanciamento parcial | Checar hdruk.ac.uk (programa listado como "sem oportunidades abertas no momento" em jul/2026 — monitorar) | hdruk.ac.uk |
+
+**Conclusão prática:** DRIVE-Health (KCL) é hoje o CDT com o discurso mais claramente aberto a internacionais. Os demais (UCL, AI4Health, HDR UK) financiam apenas fee Home + stipend para internacionais — Thiago precisaria de bolsa complementar (ex: Chevening rodando em paralelo, ver Fase 6) para cobrir a diferença do international fee. Isso reforça a importância estratégica de manter Chevening como candidatura paralela: se ganhar CDT + Chevening, o Chevening pode cobrir exatamente esse gap financeiro em programas como UCL/AI4Health/HDR UK.
 
 ---
 
@@ -102,14 +116,17 @@ Você pode escrever no essay: *"Before applying, I reached out to 15 PhD student
 - **Gabriele La Malfa** (2022/23) — BA+MA Accounting, MSc Quant Finance (EMLYON) → identidade, privilégio e justiça social em IA. *Business background — sinal verde.*
 - **Nathan Schneider Gavenski** (2021/22) — BA Info Systems + MSc CS (PUCRS) → background mais técnico. *Referência, não benchmark.*
 
-🔍 CHECK (pesquisar perfis):
-- Mingrui Ye
-- Jack Contro
-- Elfia Bezou-Vrakatseli
-- Ina Kaleva
-- Mansi
-- Yebon Kim
-- Yuheng Ren
+🔍 CHECK — pesquisados 24/07/2026 (via web, não LinkedIn direto — LinkedIn bloqueia scraping):
+
+✅ **Ina Kaleva** — background em **Digital Health, Mental Health e HCI** no KCL (Dept. Psychosis Studies antes do STAI), incluindo pesquisa em VR training e intervenções digitais de apoio a profissionais de saúde, publicação na CHI 2024. **Sinal MUITO verde** — é o perfil mais próximo do domínio de Thiago (digital health + adoção de tecnologia em saúde) entre todos os alunos do STAI pesquisados até agora. Vale tentar contato direto para virtual coffee.
+- Elfia Bezou-Vrakatseli (2023/24) — PhD em Argumentation/ética de IA (human-AI ethical debate); MSc AI (Utrecht), formação em Matemática Aplicada (NTUA Atenas). Fellow do Alan Turing Institute. *Background técnico-filosófico, não é sinal direto de match mas mostra diversidade de origem no programa.*
+- Jack Contro — pesquisa em detecção de "deception and manipulation" em sistemas de IA, com foco em impacto real em regulação. *Ângulo de governança/regulação de IA — relevante se Thiago quiser costurar policy no essay.*
+- Yuheng Ren — pesquisa em HCI e visualização de dados, aplicando XAI (Explainable AI) para sustentabilidade e IA generativa. *HCI aplicado é adjacente ao trabalho de produto de Thiago.*
+- Mingrui Ye — pesquisa em safety/trust de IA aplicada à educação (privacidade de dados, robustez, fairness, viés). *Setor diferente (educação), mas metodologia de "IA responsável em domínio de alto risco" é análoga ao que Thiago viveria em saúde.*
+- Mansi — entrou out/2025, pesquisa em AI alignment, supervisionada por Dr. Francesco Leofante. *Muito técnico/teórico, pouco fit direto.*
+- Yebon Kim — página de perfil existe em safeandtrustedai.org/person/yebon-kim mas conteúdo não pôde ser extraído (JS-rendered); não encontrado via busca. **Pendente:** acessar a página diretamente no navegador ou LinkedIn para completar o perfil.
+
+**Próximo passo sugerido:** priorizar contato com **Ina Kaleva** primeiro (melhor fit temático) e depois Sophia Worth/Gabriele La Malfa (já marcados como GOOD acima) para os virtual coffees de 20min sugeridos pela Waty.
 
 **UCL AI-enabled Healthcare CDT — cohorts a pesquisar**
 - [ ] Listar alunos atuais do site ucl.ac.uk/aihealth-cdt
@@ -225,4 +242,5 @@ Aplicar ao Chevening em paralelo com os CDTs. Se ganhar os dois: aceitar o CDT, 
 
 *Criado por Andy em 13/07/2026*
 *Base: call Thiago x Dr. Waty Lilaonitkul (27/05/2026) + pesquisa de programas*
+*Atualizado 24/07/2026: elegibilidade internacional dos 5 CDTs prioritários + perfis STAI CHECK list (6/7 pesquisados, Ina Kaleva = melhor fit temático)*
 *Atualizar conforme progresso nas fases*

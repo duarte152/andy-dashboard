@@ -42,7 +42,7 @@ Poucas pessoas pensam nisso. Você precisa mostrar que vai absorver o que o prog
 | tech4health (Digital Health Technologies) | UCL + Ulster | Alto | Não (programação) | ⭐⭐⭐⭐ |
 | DRIVE-Health | King's College London | Alto | Não (pesquisar cohorts) | ⭐⭐⭐⭐ |
 | AI4Health | Imperial College | Médio | Não (pesquisar cohorts) | ⭐⭐⭐ |
-| HDR UK-Turing-Wellcome | Multi (UCL/Oxford/Imperial...) | Alto | Verificar | ⭐⭐⭐⭐ |
+| HDR UK-Turing-Wellcome | Multi (Birmingham/Cambridge/Edinburgh/Manchester/Oxford/QUB) | ⚠️ Rebaixado 24/07 — sem oportunidades abertas desde 2025, não recruta atualmente | Não aplicável agora | ⭐⭐ (era ⭐⭐⭐⭐) |
 | Practice-Oriented AI | Bristol | Médio | Baixo | ⭐⭐ |
 | SPADS | Edinburgh | Baixo | Sim | ⭐ |
 | ADAPT AI | KCL | Baixo | Sim | ⭐ |
@@ -124,21 +124,29 @@ Você pode escrever no essay: *"Before applying, I reached out to 15 PhD student
 - Yuheng Ren — pesquisa em HCI e visualização de dados, aplicando XAI (Explainable AI) para sustentabilidade e IA generativa. *HCI aplicado é adjacente ao trabalho de produto de Thiago.*
 - Mingrui Ye — pesquisa em safety/trust de IA aplicada à educação (privacidade de dados, robustez, fairness, viés). *Setor diferente (educação), mas metodologia de "IA responsável em domínio de alto risco" é análoga ao que Thiago viveria em saúde.*
 - Mansi — entrou out/2025, pesquisa em AI alignment, supervisionada por Dr. Francesco Leofante. *Muito técnico/teórico, pouco fit direto.*
-- Yebon Kim — página de perfil existe em safeandtrustedai.org/person/yebon-kim mas conteúdo não pôde ser extraído (JS-rendered); não encontrado via busca. **Pendente:** acessar a página diretamente no navegador ou LinkedIn para completar o perfil.
+- Yebon Kim — **RESOLVIDO 24/07/2026 (sessão noturna):** acessado via navegador (agent-browser, renderiza JS). Confirmado que a página existe mas o corpo de bio está genuinamente vazio — não é problema de fetch/scraping, o CDT simplesmente não preencheu o conteúdo do perfil (sem foto, sem texto, sem tópico de pesquisa). Busca por "Yebon Kim" no Google e tentativa via LinkedIn também não retornaram resultado. **Conclusão:** não dá para avançar mais nesse perfil sem contato direto — descartar como fonte de pesquisa e não investir mais tempo aqui.
 
 **Próximo passo sugerido:** priorizar contato com **Ina Kaleva** primeiro (melhor fit temático) e depois Sophia Worth/Gabriele La Malfa (já marcados como GOOD acima) para os virtual coffees de 20min sugeridos pela Waty.
 
 **UCL AI-enabled Healthcare CDT — cohorts a pesquisar**
 - [ ] Listar alunos atuais do site ucl.ac.uk/aihealth-cdt
+- ⚠️ Tentado 24/07/2026 via agent-browser: site protegido por Cloudflare bot-check ("Performing security verification"), bloqueou acesso automatizado mesmo com navegador real. **Pendente: acesso manual pelo Thiago** ou nova tentativa em sessão futura.
+- Confirmado via busca: primeira cohort do CDT começa no ano letivo 2024/2025 (programa novo, MRes de 1 ano + PhD de 3 anos embutido em ambiente NHS) — cohort ainda pequena/recente, o que é bom sinal para quem aplica agora (menos concorrência histórica, programa ainda se estabelecendo).
 
 **tech4health (UCL + Ulster) — cohorts a pesquisar**
-- [ ] Listar alunos do site tech4health.co.uk
+- [x] Pesquisado 24/07/2026: 1ª cohort teve 15 alunos (backgrounds diversos, não só técnicos); 2ª cohort (Ulster) somou mais 7 alunos. Nomes individuais não divulgados publicamente nos posts do blog. Estrutura: intake ~50:50 entre UCL e Ulster, ano 1 com avaliação individual de skills + plano de treinamento personalizado + secondment de 3 meses com indústria.
+- **Achado relevante:** os 4 temas de pesquisa do programa (apresentados na indução) são: (1) Diagnostic/Prognostic Indications — wearables/sensores; (2) Treatment and Care Optimisation — tecnologia digital em contexto clínico, liderado por médico do UCLH, com ênfase em "trabalho colaborativo entre técnicos e clínicos" (isso é literalmente o que Thiago faz na Laudite); (3) tema 3 não detalhado na fonte; (4) Health Data Security, Interoperability and Sharing. **Tema 2 é o encaixe mais direto com o perfil de Thiago** — vale mencionar especificamente esse tema em contato com o programa.
+- Contato geral do programa: hello@tech4health.co.uk
 
 **DRIVE-Health (KCL) — cohorts a pesquisar**
-- [ ] Listar alunos do site drive-health.org.uk
+- [x] Pesquisado 24/07/2026 via drive-health.org.uk/connect: já treinou 30 alunos até 2024, com nova leva de 5 cohorts adicionais (~85 alunos no total) a partir do award de £7.9M do EPSRC. 4ª cohort teve pelo menos 15 alunos entrando em out/2024.
+- **Achado forte — aluna com fit quase perfeito:** **Dina Farran**, pesquisa sobre rastreamento de fibrilação atrial e gestão de risco de AVC em pacientes com doença mental grave, usando prontuários eletrônicos (EHR) e **sistemas de suporte à decisão clínica (CDSS)** no South London and Maudsley NHS Foundation Trust. Isso é quase um espelho do trabalho de Thiago na Laudite (CDSS + adoção hospitalar). **Prioridade alta para virtual coffee.**
+- Outro nome: **Hugh Logan-Ellis** — médico (Diabetes and Endocrinology Registrar) cujo PhD é sobre extrair valor clínico de dados de EHR ("single unit of health from EHR data"). Perfil clínico-técnico, relevante mas menos direto que Dina Farran.
+- Contato do programa: drive-health-cdt@kcl.ac.uk
 
 **HDR UK — cohorts a pesquisar**
-- [ ] Ver lista em hdruk.ac.uk/talent-training/phd-programme/
+- [x] Pesquisado 24/07/2026: **ALERTA IMPORTANTE.** O programa HDR UK-Turing-Wellcome PhD in Health Data Science **não está mais recrutando para 2025 em diante** — busca confirma "HDR UK does not currently have any PhD Programme opportunities" no site oficial (hdruk.ac.uk). A última cohort confirmada foi outubro/2024 (universidades parceiras: Birmingham, Cambridge, Edinburgh, Manchester, Oxford, Queen's Belfast — **não incluía UCL/Imperial**, diferente do que a tabela de programas prioritários (Fase 1A) sugeria).
+- **Recomendação: rebaixar prioridade de HDR UK no plano.** Não há sinal de quando (ou se) o programa reabrirá. Sugiro remover das candidaturas ativas para o ciclo 2026-2027 e monitorar apenas passivamente (checar hdruk.ac.uk a cada 2-3 meses), sem investir mais tempo de pesquisa nele por ora.
 
 ---
 
@@ -189,7 +197,7 @@ Visão clara de onde esse PhD te leva. Não precisa ser academia ou indústria �
 |---|---|---|
 | Ago/2026 | Chevening portal abre | Confirmar 3 escolhas + avisar referees |
 | Nov/2026 | Chevening deadline | Submeter candidatura |
-| Nov–Dez/2026 | HDR UK, Edinburgh | Submeter candidaturas |
+| Nov–Dez/2026 | Edinburgh (HDR UK removido — sem oportunidades abertas, ver Fase 3) | Submeter candidaturas |
 | Jan/2027 | AI4Health Imperial | Submeter candidatura |
 | Jan–Fev/2027 | UCL CDT, STAI, tech4health, DRIVE-Health | Submeter candidaturas |
 | Dez/2026 | RTP (USyd) | Submeter candidatura MPhil |
@@ -218,7 +226,7 @@ Aplicar ao Chevening em paralelo com os CDTs. Se ganhar os dois: aceitar o CDT, 
 | Frente | Status | Próxima ação | Prazo |
 |---|---|---|---|
 | USyd / Carrigan (MPhil + RTP) | Email enviado 13/07 | Preparar research summary | Antes de Dez/2026 |
-| UK CDTs | Mapeamento iniciado | Pesquisar cohorts STAI CHECK list | Ago-Set 2026 |
+| UK CDTs | Cohorts dos 4 programas prioritários pesquisadas (STAI, tech4health, DRIVE-Health, HDR UK) — só falta UCL (bloqueado por Cloudflare) | Contatar Dina Farran (DRIVE-Health) e Ina Kaleva (STAI) para virtual coffee; Thiago tentar acessar ucl.ac.uk/aihealth-cdt manualmente | Ago-Set 2026 |
 | Chevening | Essays prontos | Confirmar programas + referees | Antes de Ago 2026 |
 | Dr. Waty (UCL) | Call feita em 27/05 | Reativar contato quando tiver CDT escolhido | Set 2026 |
 
@@ -242,5 +250,6 @@ Aplicar ao Chevening em paralelo com os CDTs. Se ganhar os dois: aceitar o CDT, 
 
 *Criado por Andy em 13/07/2026*
 *Base: call Thiago x Dr. Waty Lilaonitkul (27/05/2026) + pesquisa de programas*
-*Atualizado 24/07/2026: elegibilidade internacional dos 5 CDTs prioritários + perfis STAI CHECK list (6/7 pesquisados, Ina Kaleva = melhor fit temático)*
+*Atualizado 24/07/2026 (sessão diurna): elegibilidade internacional dos 5 CDTs prioritários + perfis STAI CHECK list (6/7 pesquisados, Ina Kaleva = melhor fit temático)*
+*Atualizado 24/07/2026 (sessão noturna): Yebon Kim resolvido (perfil confirmado vazio, não é problema de fetch); cohorts pesquisadas em tech4health, DRIVE-Health e HDR UK; achado forte — Dina Farran (DRIVE-Health/KCL) tem fit quase perfeito com CDSS/EHR; ALERTA — HDR UK sem oportunidades abertas desde 2025, rebaixado de prioridade; UCL CDT bloqueado por Cloudflare, pendente acesso manual*
 *Atualizar conforme progresso nas fases*

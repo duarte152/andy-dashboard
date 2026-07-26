@@ -54,6 +54,8 @@ Notas detalhadas de leitura em: `carrigan_scoping_review_notes.md`
 
 ### FASE 1 — Revisão de Literatura (19–27 Jun)
 
+> **🔄 Atualização 25/07/2026 (sessão noturna):** busca piloto no PubMed realizada — ver `mphil_usyd_pesquisa_literatura.md`. Achado crítico: existe uma rapid scoping review recente e ampla (Lawrence et al. 2025, eClinicalMedicine, 140 estudos) que cobre parte do território deste tema, mas é radiologia-only e sem framework sociotécnico único — o gap específico de Thiago (radiologia+patologia, foco qualitativo puro, lente SEIPS 2.0) continua válido e agora tem evidência concreta para citar. Busca sistemática completa nas 4 bases (PsycINFO, WoS, CINAHL) e registro no Zotero ainda pendentes.
+
 Esta fase tem 3 sub-etapas:
 
 #### 1A — Busca nas bases de dados (19–23 Jun)

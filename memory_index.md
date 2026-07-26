@@ -9,8 +9,41 @@
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| `preferences.md` | Regras comportamentais, regras de email, acesso ao Gmail, protocolo de memória |
+| `NOW.md` | Estado atual consolidado — prioridades ativas, próximos passos, datas críticas (fonte de verdade vigente) |
+| `preferences.md` | Regras comportamentais, regras de email, acesso ao Gmail, protocolo de memória, arquitetura de memória |
 | `thiago_profile.md` | Perfil completo: identidade, carreira, projetos, metas, rotina, nutrição |
+
+---
+
+## Arquitetura de Memória (adotado 25/07/2026)
+
+| Arquivo | Conteúdo |
+|---------|----------|
+| `log.md` | Registro cronológico append-only — 1 linha por decisão/sessão relevante |
+| `inbox.md` | Entrada bruta não classificada (exceção, não fluxo principal — triar rápido) |
+| `ideias.md` | Backlog de ideias soltas que ainda não viraram projeto ativo |
+
+---
+
+## Notion (segundo cérebro de candidaturas)
+
+**Status: estrutura completa construída em 25/07/2026** — 7 páginas (raiz + 6 subpáginas), condensando os arquivos locais abaixo. Notion = visão condensada/navegável e compartilhada com Thiago; os arquivos `.md` locais continuam sendo a versão completa/fonte de detalhe.
+
+| Arquivo / Página | Conteúdo |
+|---------|----------|
+| `.notion_key` | Token da integração interna do Notion (API) |
+| `notion_helpers.py` | Toolkit Python (urllib) para criar/editar blocos via API do Notion — reusar em vez de recriar |
+| `attachments/design-system-notion.txt` | **Guia obrigatório de sintaxe + convenções estéticas** para qualquer página escrita no Notion (Notion-flavored Markdown) — ler antes de criar/editar página |
+| [🧠 Segundo Cérebro (Thiago)](https://app.notion.com/p/Segundo-C-rebro-Thiago-3a81f7dcf5b580fd86abd8ea0dea631c) | **Página raiz** — dashboard com status das 3 frentes, hierarquia de confiança, regra de autonomia, link para as 6 subpáginas abaixo |
+| [🎨 Design System - Regras de Formatação](https://app.notion.com/p/Design-System-Regras-de-Formata-o-3a81f7dcf5b581a1b43be6277c3d3f51) | Espelho no próprio Notion do `design-system-notion.txt` — regras de formatação a seguir sempre |
+| [🎓 Chevening](https://app.notion.com/p/Chevening-3a81f7dcf5b581718beee434604d9239) | Versão condensada de `chevening_pesquisa.md` + essays — status, datas, pendências |
+| [🎓 UK CDT/DTP](https://app.notion.com/p/UK-CDT-DTP-3a81f7dcf5b58142bd5ef28d8fb5a108) | Versão condensada de `plano_candidatura_uk_cdt.md` — programas, calendário, virtual coffees |
+| [🎓 MPhil USyd (Carrigan)](https://app.notion.com/p/MPhil-USyd-Carrigan-3a81f7dcf5b58110958ef16d4ee61973) | Versão condensada de `plano_mphil_usyd.md` — status, deadline RTP, próximos passos |
+| [🗒️ Log](https://app.notion.com/p/Log-3a81f7dcf5b58148a0b4c33a5fd62b84) | Espelho no Notion do `log.md` — registro cronológico |
+| [💡 Ideias / Backlog](https://app.notion.com/p/Ideias-Backlog-3a81f7dcf5b5815fb128d1b399a240bb) | Espelho no Notion do `ideias.md` — ainda vazio, pronto para uso |
+| [🏆 Aprovados em Chevening — Pesquisa de Práticas](https://app.notion.com/p/Aprovados-em-Chevening-Pesquisa-de-Pr-ticas-3a81f7dcf5b58194a09df9fd7dc7573c) | Subpágina de 🎓 Chevening. Compilado de práticas de ~30 aprovados reais (LatAm, África, Ásia, Oriente Médio), por ensaio + casos de rejeição→aprovação. Detalhe completo em `chevening_aprovados_pesquisa.md` |
+| `chevening_aprovados_pesquisa.md` | Pesquisa completa (todas as fontes com detalhe integral) que originou a página acima — usar como matéria-prima para o Thiago escrever os próprios ensaios |
+| `build_notion_aprovados.py` | Script usado para gerar a página acima — referência de como popular páginas grandes com toggles/tabelas via `notion_helpers.py` |
 
 ---
 
@@ -81,6 +114,7 @@
 |---------|----------|
 | `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) — deadline RTP: 18/Dez/2026 |
 | `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
+| `mphil_usyd_pesquisa_literatura.md` | **NOVO (25/07 noturna)** — busca piloto de literatura (Fase 1A) no PubMed. Achado crítico: revisão Lawrence et al. 2025 (eClinicalMedicine, 140 estudos, radiologia-only) se sobrepõe parcialmente mas não invalida o gap da proposta; matriz de 6 estudos mapeados + recomendação de diferenciação para o Background |
 | `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
 
 ## Candidatura UK — CDTs e Chevening

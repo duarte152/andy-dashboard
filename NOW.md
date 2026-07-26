@@ -1,5 +1,9 @@
 # NOW — Estado Atual
-*Atualizado: 2026-07-24 (sessão noturna) | Atualizar ao fim de cada sessão relevante*
+*Atualizado: 2026-07-25 | Atualizar ao fim de cada sessão relevante*
+
+---
+
+**🧠 Notion:** as 3 frentes abaixo agora também têm versão condensada e compartilhada no Notion — ver [página raiz do Segundo Cérebro](https://app.notion.com/p/Segundo-C-rebro-Thiago-3a81f7dcf5b580fd86abd8ea0dea631c) (dashboard + links para Chevening/UK CDT/USyd). Este `NOW.md` continua sendo a fonte de verdade vigente em caso de conflito (ver `preferences.md`); o Notion é espelho condensado para leitura rápida/compartilhada.
 
 ---
 
@@ -28,11 +32,13 @@
 
 ### 3. USyd / Carrigan — MPhil + RTP
 **Status:** ✅ Email enviado 14/07 e Carrigan já respondeu (13/07 23:50 UTC): "Great and many thanks for the update." — confirmação simples, sem novas exigências. Timeline (Sem 2 2027, deadline RTP 18/dez/2026) está validada por ela.
+**Achado novo (25/07, sessão noturna):** busca piloto de literatura (Fase 1A) realizada no PubMed — ver `mphil_usyd_pesquisa_literatura.md`. Achado crítico: existe revisão recente e ampla (Lawrence et al. 2025, eClinicalMedicine, 140 estudos) que cobre parte do tema, mas é radiologia-only e sem framework sociotécnico único — o gap específico de Thiago (radiologia+patologia, foco qualitativo puro, lente SEIPS 2.0) segue válido e agora tem evidência concreta para citar no Background da proposta.
 **Deadline crítico:** RTP = 18 dezembro 2026
 **Próximos passos:**
 - Preparar research summary (2-3 páginas, 7 elementos, Vancouver style) nos próximos meses — entregar bem antes do deadline
+- Busca sistemática completa nas 4 bases (PsycINFO, Web of Science, CINAHL — PubMed já com piloto feito) + registro no Zotero, quando Thiago instalar
 - Continuar acompanhando espaço de ambient scribes (mencionado no email como relevante ao trabalho na Laudite)
-- Plano detalhado em `plano_mphil_usyd.md`
+- Plano detalhado em `plano_mphil_usyd.md`, pesquisa de literatura em `mphil_usyd_pesquisa_literatura.md`
 
 ---
 
@@ -59,7 +65,16 @@
 
 ---
 
-## O QUE MUDOU HOJE (24/07/2026 — sessão noturna)
+## O QUE MUDOU HOJE (25/07/2026)
+
+- Notion "segundo cérebro" construído por completo, com autonomia total (a pedido do Thiago): 7 páginas (raiz/dashboard + Design System + Chevening + UK CDT/DTP + MPhil USyd + Log + Ideias/Backlog), seguindo `design-system-notion.txt`. Detalhes em `log.md` e `memory_index.md`.
+- Arquitetura de memória local formalizada: `log.md`, `inbox.md`, `ideias.md` criados; hierarquia de confiança e regra de autonomia documentadas em `preferences.md`.
+
+### Sessão noturna (25/07/2026)
+- Verificação de rotina: `supervisores_uk.md` e `chevening_essay_lideranca.md` confirmados íntegros e sem alterações necessárias (mesma tarefa repetida mensalmente desde abril — ver nota em `plano_noturno.md`).
+- Usado o tempo real da sessão para avançar a Fase 1A (pesquisa de literatura) do `plano_mphil_usyd.md`, item pendente de maior prioridade real: busca piloto no PubMed, resultando em `mphil_usyd_pesquisa_literatura.md` (novo arquivo) — achado crítico sobre revisão Lawrence et al. 2025 que precisa ser citada/diferenciada na proposta.
+
+### Sessão anterior (24/07/2026 — sessão noturna)
 
 - Cohorts pesquisadas para tech4health, DRIVE-Health e HDR UK (complementa STAI CHECK list feito na sessão diurna)
 - Yebon Kim (STAI) resolvido via agent-browser: perfil confirmado vazio, não é problema de fetch

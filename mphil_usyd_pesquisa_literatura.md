@@ -53,6 +53,35 @@ A busca piloto **confirma e refina** a hipótese original do plano de Thiago:
 
 ---
 
+---
+
+## Expansão da busca piloto (26/07/2026, sessão noturna)
+
+Continuação da Fase 1A conforme sugerido no "Próximos passos" acima (item 2): busca com termos adicionais — "endoscopist", "dermatology AI", "clinical decision support system" isolado de "diagnostic" + sociotechnical/SEIPS.
+
+### ⭐ Novo achado importante — segunda revisão-guarda-chuva que reforça o gap
+
+**Wenderott K, Krups J, Weigl M, Wooldridge AR. "Facilitators and Barriers to Implementing AI in Routine Medical Imaging: Systematic Review and Qualitative Analysis." J Med Internet Res. 2025 Jul 21;27:e63649.**
+
+- Systematic review, 6 bases de dados, 13.756 registros triados, **38 estudos incluídos**. Identificou 12 dimensões e 37 subtemas que influenciam implementação de IA em imaging.
+- **Frase-chave para citar diretamente na proposta:** os autores relatam que os estudos **"focused predominantly on performance metrics over the experiences or outcomes of clinicians"** — ou seja, a própria revisão mais recente e ampla sobre implementação de IA em imaging médico confirma, com dados sistemáticos, que a experiência do clinico é sub-representada face às métricas de performance. Isso é evidência direta e quotável do gap que a proposta de Thiago ataca.
+- Também usa lente sociotécnica (protocolo relacionado: "Integration of Artificial Intelligence Into Sociotechnical Work Systems" — JMIR Research Protocols 2022) — reforça a pertinência de um framework como SEIPS 2.0.
+- **Recomendação:** citar Wenderott et al. 2025 **junto com** Lawrence et al. 2025 no Background — duas revisões-guarda-chuva de 2025, ambas em imaging, ambas confirmando o mesmo gap por ângulos diferentes (Lawrence: pouca fatia "experiência" nos 140 estudos; Wenderott: foco em métricas de performance sobre experiência/outcomes do clínico nos 38 estudos de implementação).
+
+### Outros achados da expansão
+
+| Tema buscado | Resultado | Relevância |
+|---|---|---|
+| **Endoscopista + IA qualitativo** | Literatura sobre IA em endoscopia (colonoscopia, EGD) é quase toda **quantitativa** — detection rate, deskilling (ex: Lancet Gastro & Hepatology 2025 sobre risco de "deskilling" de endoscopistas após exposição a IA). Nenhum estudo qualitativo sobre experiência de endoscopistas com IA encontrado. | Confirma que endoscopistas (público que a Laudite também atende) são um grupo **ainda mais desprovido** de pesquisa qualitativa do que radiologistas/patologistas — reforça a relevância prática da proposta, mesmo que o escopo formal do MPhil continue radiologia+patologia (não expandir escopo sem alinhar com Carrigan) |
+| **Dermatologia + IA qualitativo** | Existem estudos qualitativos de entrevista nessa área — ex: "Exploring the Views of Dermatologists, GPs, and Melanographers on the Use of AI Tools... Qualitative Interview Study" (JMIR Dermatology 2025, 30 clínicos, Austrália/NZ) e estudo similar com 29 stakeholders (2024) sobre detecção precoce de câncer de pele | São radiologia/patologia-adjacentes (diagnóstico por imagem de pele, não radiologia/patologia clássica) — **fora do escopo direto da proposta**, mas úteis como comparador metodológico: mostram que entrevista qualitativa semiestruturada é o desenho padrão da área, validando a escolha metodológica de Thiago. Nota: um desses é australiano (Austrália/NZ) — outro ponto de fit institucional com a USyd, como o achado NASSS de Brisbane já registrado |
+| **CDSS isolado + sociotécnico/SEIPS** | Confirma padrão já visto: SEIPS aparece mais em estudos de segurança/workflow geral (ex: estudo 2026 sobre CDSS de transfusão de sangue, PMC12881895) do que especificamente em diagnóstico por imagem. Também localizado: "Barriers to and Facilitators of Artificial Intelligence Adoption in Health Care: Scoping Review" (JMIR Human Factors 2024) — outra revisão-guarda-chuva ampla (todo o setor de saúde, não só imaging) | Confirma que SEIPS 2.0 aplicado especificamente a diagnosticistas de imagem (radiologia+patologia) continua um espaço pouco ocupado — nenhuma das revisões encontradas até agora (Lawrence 2025, Wenderott 2025, JMIR Human Factors 2024) aplica SEIPS como lente central em diagnóstico por imagem |
+
+### Leitura atualizada do gap (após expansão)
+
+Com dois achados de revisões-guarda-chuva de 2025 (Lawrence + Wenderott) confirmando de formas independentes que a experiência do clínico é sub-representada face a métricas técnicas/de performance, a proposta de Thiago tem agora **duas citações-âncora** fortes e recentes para abrir o Background, além da matriz de estudos individuais já mapeada na sessão anterior.
+
+---
+
 ## O que NÃO foi feito (deixado para sessão dedicada com Zotero)
 
 - Busca sistemática completa nas 4 bases (isso foi só PubMed/web, piloto de ~10 buscas)
@@ -66,9 +95,10 @@ A busca piloto **confirma e refina** a hipótese original do plano de Thiago:
 ## Próximos passos recomendados
 
 1. Thiago instalar Zotero + configurar Vancouver style (Fase 0.2, ainda pendente)
-2. Andy pode continuar a busca piloto em sessões futuras, expandindo para mais termos (ex: "endoscopist", "dermatology AI", "clinical decision support system" isolado de "diagnostic")
-3. Ao escrever o Background da proposta (Fase 2A do plano original), usar Lawrence et al. 2025 como a citação-âncora para "o que já existe" e os achados #2-#6 acima como evidência da natureza fragmentada da literatura qualitativa existente
-4. Considerar registrar o protocolo no **PROSPERO** em vez de (ou além de) OSF, já que é o registro usado pela revisão mais próxima do campo (Lawrence et al. 2025)
+2. Ao escrever o Background da proposta (Fase 2A do plano original), usar **Lawrence et al. 2025 e Wenderott et al. 2025** juntas como as duas citações-âncora para "o que já existe" (ambas 2025, ambas em imaging médico, ambas confirmando por ângulos diferentes que a experiência do clínico é sub-representada) e os achados #2-#6 da matriz original como evidência da natureza fragmentada da literatura qualitativa existente
+3. Considerar registrar o protocolo no **PROSPERO** em vez de (ou além de) OSF, já que é o registro usado pela revisão mais próxima do campo (Lawrence et al. 2025)
+4. Próxima expansão sugerida (se houver sessão futura disponível): buscar diretamente pelos 38 estudos incluídos em Wenderott et al. 2025 e pelos 14 estudos de "experiência" dentro dos 140 de Lawrence et al. 2025, para checar sobreposição direta com a matriz já mapeada e evitar duplicidade na Fase 1B (screening formal)
+5. PsycINFO, Web of Science e CINAHL seguem pendentes de acesso institucional USyd (sem mudança)
 
 ---
 

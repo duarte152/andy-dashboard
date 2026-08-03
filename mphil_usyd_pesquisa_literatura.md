@@ -82,6 +82,42 @@ Com dois achados de revisões-guarda-chuva de 2025 (Lawrence + Wenderott) confir
 
 ---
 
+---
+
+## Rastreamento das fontes das revisões-guarda-chuva (03/08/2026, sessão noturna)
+
+Continuação do "próximo passo sugerido" da sessão de 26/07: buscar diretamente pelos estudos individuais citados dentro de Lawrence et al. 2025 (14 estudos de "experiência") e Wenderott et al. 2025 (38 estudos incluídos), para checar sobreposição com a matriz já mapeada.
+
+### Estudos novos identificados (não estavam na matriz)
+
+| Estudo | Amostra/Método | Foco | Rad+Path juntos? | Framework sociotécnico? |
+|---|---|---|---|---|
+| Farič et al. 2023, JAMIA | Entrevistas semiestruturadas + observação, sites early-adopter (Escócia) | Experiências iniciais de integração de DSS de IA (Veye Lung Nodules) | Não (só radiologia) | Não |
+| Stogiannos et al. 2025, J Med Imaging Radiat Sci | 5 entrevistas semiestruturadas, profissionais de imagem/radioterapia (UK) | Lições de implementação a partir de práticos sêniores | Não | Não |
+| Wenderott et al. 2024, Applied Ergonomics | Entrevistas com radiologistas alemães, IA-CAD para RM de próstata | Barreiras/facilitadores de integração ao workflow | Não | Não SEIPS — usa "Model of Workflow Integration" + TAM |
+| Kim et al. 2024, Insights into Imaging | Estudo de caso etnográfico longitudinal (3 anos), 18 entrevistas + 43 dias de observação, centro acadêmico holandês | Abordagem "holística" para implementação de IA | Não | Adjacente a sociotécnica, mas não SEIPS explícito |
+
+Nenhum dos 4 estudos novos combina radiologistas e patologistas na mesma amostra; nenhum usa SEIPS 2.0 explicitamente em nível de estudo primário.
+
+### Achado importante sobre os 38 estudos de Wenderott et al. 2025
+
+Todos os 38 estudos incluídos na revisão são quantitativos/observacionais (tempos de leitura, taxas de detecção, validações retro/prospectivas) — **nenhum é estudo qualitativo de experiência**. Apenas um envolve patologia (Sandbank et al. — validação de IA em patologia mamária, 5.954 casos, puramente quantitativo). O SEIPS é usado pelos próprios revisores como lente de síntese pós-hoc para codificar barreiras/facilitadores extraídos de estudos quantitativos — **não está presente nos estudos primários como lente de coleta qualitativa**. Isso é uma distinção importante: confirma que SEIPS já circula no campo como ferramenta analítica de revisão, mas ninguém ainda o aplicou como lente etnográfica/qualitativa primária em radiologia+patologia — exatamente o espaço da proposta de Thiago.
+
+### Duplicata confirmada
+"Naicker et al., JMIR 2026, e80342" (NASSS, 43 entrevistas, Brisbane) é o mesmo estudo já mapeado como #3 da matriz original — não é um achado novo.
+
+### Limitações desta busca
+- Das 14 "experience studies" de Lawrence et al., só foi possível identificar com segurança ~12 via texto corrido (a Tabela 1 do artigo é resumo numérico, sem lista nominal completa); apêndices suplementares (.docx) não foram baixados/parseados.
+- Sem acesso a full-text pago de estudos individuais além de abstracts.
+
+### Leitura atualizada do gap (após rastreamento das fontes)
+
+Mesmo garimpando diretamente os estudos-fonte das duas revisões-guarda-chuva mais recentes (2025), **nenhum estudo qualitativo primário combina radiologistas e patologistas na mesma amostra**, e **nenhum aplica SEIPS 2.0 explicitamente como framework de coleta/análise em nível de estudo primário** sobre experiência de uso de IA diagnóstica — apenas como ferramenta de síntese pós-hoc de revisor (Wenderott 2025). Isso é a terceira confirmação independente (após Lawrence 2025 e Wenderott 2025) de que o gap da proposta de Thiago permanece válido e agora tem evidência ainda mais granular (nível de estudo individual, não só de revisão) para citar no Background.
+
+**Matriz de literatura agora totaliza 10 estudos mapeados** (6 da sessão 25/07 + 4 novos desta sessão), todos catalogados sem sobreposição.
+
+---
+
 ## O que NÃO foi feito (deixado para sessão dedicada com Zotero)
 
 - Busca sistemática completa nas 4 bases (isso foi só PubMed/web, piloto de ~10 buscas)
@@ -97,8 +133,9 @@ Com dois achados de revisões-guarda-chuva de 2025 (Lawrence + Wenderott) confir
 1. Thiago instalar Zotero + configurar Vancouver style (Fase 0.2, ainda pendente)
 2. Ao escrever o Background da proposta (Fase 2A do plano original), usar **Lawrence et al. 2025 e Wenderott et al. 2025** juntas como as duas citações-âncora para "o que já existe" (ambas 2025, ambas em imaging médico, ambas confirmando por ângulos diferentes que a experiência do clínico é sub-representada) e os achados #2-#6 da matriz original como evidência da natureza fragmentada da literatura qualitativa existente
 3. Considerar registrar o protocolo no **PROSPERO** em vez de (ou além de) OSF, já que é o registro usado pela revisão mais próxima do campo (Lawrence et al. 2025)
-4. Próxima expansão sugerida (se houver sessão futura disponível): buscar diretamente pelos 38 estudos incluídos em Wenderott et al. 2025 e pelos 14 estudos de "experiência" dentro dos 140 de Lawrence et al. 2025, para checar sobreposição direta com a matriz já mapeada e evitar duplicidade na Fase 1B (screening formal)
+4. ✅ Feito em 03/08/2026: rastreamento direto das fontes de Wenderott et al. 2025 (38 estudos) e Lawrence et al. 2025 (14 estudos de "experiência") — 4 estudos novos mapeados, sem sobreposição com a matriz. Ver seção "Rastreamento das fontes das revisões-guarda-chuva" acima.
 5. PsycINFO, Web of Science e CINAHL seguem pendentes de acesso institucional USyd (sem mudança)
+6. Próxima expansão sugerida: tentar baixar os apêndices suplementares (.docx) de Lawrence et al. 2025 e Wenderott et al. 2025 para obter a lista nominal completa dos estudos (atualmente só ~12/14 e todos os 38 foram checados via texto corrido) — pode revelar mais 1-2 estudos de experiência ainda não mapeados
 
 ---
 

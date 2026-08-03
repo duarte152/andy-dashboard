@@ -114,7 +114,7 @@
 |---------|----------|
 | `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) — deadline RTP: 18/Dez/2026 |
 | `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
-| `mphil_usyd_pesquisa_literatura.md` | Busca piloto de literatura (Fase 1A) no PubMed (25/07) + **expansão (26/07 noturna)** com novos termos (endoscopist, dermatology AI, CDSS+SEIPS). Duas revisões-guarda-chuva de 2025 confirmam o gap: Lawrence et al. 2025 (eClinicalMedicine, 140 estudos, radiologia-only) e Wenderott et al. 2025 (JMIR, 38 estudos, foco em métricas de performance > experiência do clínico); matriz de 6 estudos + recomendações de diferenciação para o Background |
+| `mphil_usyd_pesquisa_literatura.md` | Busca piloto de literatura (Fase 1A) no PubMed (25/07) + expansão (26/07) com novos termos (endoscopist, dermatology AI, CDSS+SEIPS) + **rastreamento das fontes das 2 revisões-guarda-chuva (03/08 noturna)**: 4 estudos novos identificados dentro de Lawrence 2025/Wenderott 2025, sem sobreposição — matriz agora com 10 estudos. Confirmado: nenhum estudo primário combina radiologistas+patologistas nem usa SEIPS 2.0 como lente qualitativa primária — gap segue validado em 3 níveis independentes |
 | `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
 
 ## Candidatura UK — CDTs e Chevening

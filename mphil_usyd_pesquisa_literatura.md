@@ -118,6 +118,35 @@ Mesmo garimpando diretamente os estudos-fonte das duas revisões-guarda-chuva ma
 
 ---
 
+## Apêndices suplementares baixados via Europe PMC API (04/08/2026, sessão noturna)
+
+Continuação do item 6 dos "Próximos passos" (sessão 03/08): os sites originais (Lancet/eClinicalMedicine e PMC) bloqueiam WebFetch/agent-browser com Cloudflare + prova-de-trabalho JS/reCAPTCHA. Contornado via **API REST da Europe PMC** (`ebi.ac.uk/europepmc/webservices/rest/{PMCID}/supplementaryFiles` e `/fullTextXML`), sem essas proteções. Baixados e lidos: planilha completa dos 140 estudos de Lawrence et al. (mmc1.xlsx, coluna nominal "Study topic") + apêndices S1-S7 (quality assessment); os 9 Multimedia Appendices (docx) de Wenderott et al. + full-text XML com a Tabela 1 nominal dos 38 estudos. Arquivos salvos em `attachments/lawrence_supp/` e `attachments/wenderott_supp/` (xlsx/docx/XML + script `parse_xlsx.py`).
+
+### Lista nominal completa das 14 "Experience studies" de Lawrence et al. 2025
+
+Os 2 que faltavam identificar (de 12/14 já mapeados em 03/08): **Rosa et al. 2023** (Eur J Radiol Open) e **Liu et al. 2024** (J Clin Imaging Sci, radiologistas na China, nódulo pulmonar). Lista completa: Carlile 2020, Choi 2023, ESR 2022, Faric 2023, Hoppe 2024, Liu 2024, Nehme 2023, Rabinovich 2022, Rosa 2023, Shiang 2022, Shin 2023, Stogiannos 2025, Wenderott 2024, Yoon 2023 — **todas radiologia, nenhuma patologia**. Confirma que a categoria "experience" de Lawrence et al. é 100% radiologia, reforçando o argumento de diferenciação (proposta de Thiago cobre radiologia+patologia).
+
+### ⭐ Achado crítico — precedente publicado mais próximo do gap de Thiago
+
+**Drogt J, Milota M, Veldhuis W, Vos S, Jongsma K (2024). "The promise of AI for image-driven medicine: qualitative interview study of radiologists' and pathologists' perspectives." JMIR Human Factors. 11:e52514.**
+
+- 21 entrevistas (7 patologistas, 10 radiologistas, 4 cientistas de computação), Holanda — **combina radiologistas E patologistas na mesma amostra qualitativa**, exatamente a combinação da proposta de Thiago.
+- Já estava na matriz original (item #2, mapeado em 25/07) — mas o motivo de não ter aparecido no rastreamento de fontes de 03/08 agora está claro: **Lawrence et al. o classificou como "Perceptions", não "Experience"** — por isso não estava nos 14 estudos-fonte rastreados naquela sessão. É o mesmo estudo, confirmado via full-text.
+- **Boa notícia para o gap:** confirmado no full-text que o estudo **não usa SEIPS nem qualquer framework sociotécnico** (nenhuma menção). Não invalida o gap de Thiago, mas é o **precedente publicado mais próximo** e deve ser citado e diferenciado explicitamente no Background (mesma população, lente teórica diferente/ausente).
+
+### Achado secundário — patologia dentro dos 38 estudos de Wenderott
+
+**Sandbank et al. 2022** (NPJ Breast Cancer, estudo #92 dos 38 de Wenderott et al. 2025) é validação de IA para detecção de câncer de mama em **biópsias** — ou seja, um dos 38 estudos é de **patologia digital**, não só radiologia/gastro como presumido. É quantitativo/retrospectivo (não qualitativo) — não muda o gap, mas corrige a suposição de que os 38 eram só radiologia.
+
+### ⚠️ Alerta terminológico — SEIPS 2.0 vs SEIPS 3.0
+
+Wenderott et al. 2025 usa explicitamente o modelo **SEIPS como lente de síntese**, mas citam a versão **SEIPS 3.0** (Carayon, Wooldridge & Hoonakker, 2020) — não "2.0" — e consideraram e descartaram CFIR e NASSS como alternativas. **Vale Thiago verificar com Carrigan se a proposta deveria adotar SEIPS 3.0** (versão mais recente, já sendo citada como referência corrente na literatura de 2025) em vez de "2.0" — decisão que cabe a Thiago/Carrigan, não a mim.
+
+### Não verificado
+Texto completo de **Wenderott et al. 2024** (Applied Ergonomics, DOI 10.1016/j.apergo.2024.104243 — o estudo primário qualitativo de radiologistas alemães dentro dos 14 de Lawrence) está em periódico Elsevier separado, não baixado nesta sessão — recomenda-se leitura direta para confirmar se usa linguagem SEIPS explícita.
+
+---
+
 ## O que NÃO foi feito (deixado para sessão dedicada com Zotero)
 
 - Busca sistemática completa nas 4 bases (isso foi só PubMed/web, piloto de ~10 buscas)
@@ -135,7 +164,9 @@ Mesmo garimpando diretamente os estudos-fonte das duas revisões-guarda-chuva ma
 3. Considerar registrar o protocolo no **PROSPERO** em vez de (ou além de) OSF, já que é o registro usado pela revisão mais próxima do campo (Lawrence et al. 2025)
 4. ✅ Feito em 03/08/2026: rastreamento direto das fontes de Wenderott et al. 2025 (38 estudos) e Lawrence et al. 2025 (14 estudos de "experiência") — 4 estudos novos mapeados, sem sobreposição com a matriz. Ver seção "Rastreamento das fontes das revisões-guarda-chuva" acima.
 5. PsycINFO, Web of Science e CINAHL seguem pendentes de acesso institucional USyd (sem mudança)
-6. Próxima expansão sugerida: tentar baixar os apêndices suplementares (.docx) de Lawrence et al. 2025 e Wenderott et al. 2025 para obter a lista nominal completa dos estudos (atualmente só ~12/14 e todos os 38 foram checados via texto corrido) — pode revelar mais 1-2 estudos de experiência ainda não mapeados
+6. ✅ Feito em 04/08/2026: apêndices suplementares de ambas as revisões baixados via API da Europe PMC (contornando bloqueio Cloudflare dos sites originais) — lista nominal completa das 14 "experience studies" de Lawrence obtida. Achado crítico: Drogt et al. 2024 (JMIR Human Factors) é o precedente publicado mais próximo do gap (radiologistas+patologistas juntos, mas sem SEIPS) — já estava mapeado, mas agora com origem/classificação esclarecida. Ver seção "Apêndices suplementares baixados via Europe PMC API" acima.
+7. **Thiago decidir**: verificar com Carrigan se a proposta deveria adotar **SEIPS 3.0** (versão citada por Wenderott et al. 2025) em vez de "SEIPS 2.0" — ver alerta terminológico na seção acima.
+8. Pendente: ler texto completo de Wenderott et al. 2024 (Applied Ergonomics, acesso pago) para confirmar se usa linguagem SEIPS explícita
 
 ---
 

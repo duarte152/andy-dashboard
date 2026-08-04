@@ -114,7 +114,7 @@
 |---------|----------|
 | `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) — deadline RTP: 18/Dez/2026 |
 | `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
-| `mphil_usyd_pesquisa_literatura.md` | Busca piloto de literatura (Fase 1A) no PubMed (25/07) + expansão (26/07) com novos termos (endoscopist, dermatology AI, CDSS+SEIPS) + **rastreamento das fontes das 2 revisões-guarda-chuva (03/08 noturna)**: 4 estudos novos identificados dentro de Lawrence 2025/Wenderott 2025, sem sobreposição — matriz agora com 10 estudos. Confirmado: nenhum estudo primário combina radiologistas+patologistas nem usa SEIPS 2.0 como lente qualitativa primária — gap segue validado em 3 níveis independentes |
+| `mphil_usyd_pesquisa_literatura.md` | Busca piloto de literatura (Fase 1A) no PubMed (25/07) + expansão (26/07) com novos termos (endoscopist, dermatology AI, CDSS+SEIPS) + rastreamento das fontes das 2 revisões-guarda-chuva (03/08): 4 estudos novos, matriz com 10 estudos + **apêndices suplementares baixados via Europe PMC API (04/08 noturna)**: lista nominal completa das 14 "experience studies" de Lawrence obtida; achado crítico — Drogt et al. 2024 (JMIR) é o precedente publicado mais próximo do gap (rad+path juntos, sem SEIPS); alerta terminológico SEIPS 2.0 vs 3.0 (Wenderott usa 3.0) para Thiago decidir com Carrigan. Gap segue validado |
 | `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
 
 ## Candidatura UK — CDTs e Chevening
@@ -128,6 +128,12 @@
 | `chevening_essay_lideranca.md` | Essay de liderança Chevening (redigido) |
 | `chevening_essays_restantes.md` | Demais 3 essays Chevening (redigidos) |
 | `chevening_essay_framework.md` | Framework de essay consolidando conselhos da Waty (Personal Impact/Vision/Give Back) + Will, alumnus Chevening/UCL (Why UK / Why this course "jigsaw puzzle" / Why now) — usar como base ao redigir "why this course" |
+
+## Trabalhos Extras (MC / Blockchain Rio)
+
+| Arquivo | Conteúdo |
+|---------|----------|
+| `minuta_contrato_blockchain_rio.md` | Minuta de contrato de MC para o Blockchain Rio 2026 (evento 12-13/08, Expo Rio) — rascunho aguardando decisões do Thiago em pontos `[A DEFINIR]` (prazo pagamento, direitos de imagem, cancelamento, confirmação do nome do palco) antes de enviar para Cintia/Ciça |
 
 ## Outros
 

@@ -32,7 +32,7 @@
 
 ### 3. USyd / Carrigan — MPhil + RTP
 **Status:** ✅ Email enviado 14/07 e Carrigan já respondeu (13/07 23:50 UTC): "Great and many thanks for the update." — confirmação simples, sem novas exigências. Timeline (Sem 2 2027, deadline RTP 18/dez/2026) está validada por ela.
-**Achado novo (25/07-03/08, sessões noturnas):** busca piloto de literatura (Fase 1A) realizada no PubMed, expandida com novos termos, e agora com rastreamento direto das fontes — ver `mphil_usyd_pesquisa_literatura.md`. Duas revisões-guarda-chuva de 2025 confirmam o gap por ângulos diferentes: Lawrence et al. 2025 (eClinicalMedicine, 140 estudos, radiologia-only, "experiência" é só 10% dos estudos) e Wenderott et al. 2025 (JMIR, 38 estudos, confirma que a literatura foca em métricas de performance mais do que na experiência/outcomes do clínico). **Sessão 03/08:** rastreados os estudos-fonte dentro dessas duas revisões — 4 estudos novos mapeados (Farič 2023, Stogiannos 2025, Wenderott 2024, Kim 2024), nenhum combina radiologistas+patologistas nem usa SEIPS 2.0 como lente qualitativa primária. Matriz agora com 10 estudos. Gap de Thiago (radiologia+patologia, foco qualitativo puro, lente SEIPS 2.0) confirmado em 3 níveis independentes — tem material sólido para o Background da proposta.
+**Achado novo (25/07-04/08, sessões noturnas):** busca piloto de literatura (Fase 1A) realizada no PubMed, expandida com novos termos, e agora com rastreamento direto das fontes — ver `mphil_usyd_pesquisa_literatura.md`. Duas revisões-guarda-chuva de 2025 confirmam o gap por ângulos diferentes: Lawrence et al. 2025 (eClinicalMedicine, 140 estudos, radiologia-only, "experiência" é só 10% dos estudos) e Wenderott et al. 2025 (JMIR, 38 estudos, confirma que a literatura foca em métricas de performance mais do que na experiência/outcomes do clínico). **Sessão 03/08:** rastreados os estudos-fonte dentro dessas duas revisões — 4 estudos novos mapeados (Farič 2023, Stogiannos 2025, Wenderott 2024, Kim 2024), nenhum combina radiologistas+patologistas nem usa SEIPS 2.0 como lente qualitativa primária. Matriz agora com 10 estudos. Gap de Thiago (radiologia+patologia, foco qualitativo puro, lente SEIPS 2.0) confirmado em 3 níveis independentes — tem material sólido para o Background da proposta. **Sessão 04/08:** apêndices suplementares das 2 revisões baixados via Europe PMC API — lista nominal completa das 14 "experience studies" de Lawrence obtida (100% radiologia). Achado crítico: **Drogt et al. 2024** (JMIR) é o precedente publicado mais próximo (rad+path juntos, mas sem SEIPS) — citar e diferenciar no Background. ⚠️ Alerta: Wenderott usa **SEIPS 3.0**, não "2.0" — Thiago deve verificar com Carrigan qual versão adotar na proposta.
 **Deadline crítico:** RTP = 18 dezembro 2026
 **Próximos passos:**
 - Preparar research summary (2-3 páginas, 7 elementos, Vancouver style) nos próximos meses — entregar bem antes do deadline
@@ -65,7 +65,17 @@
 
 ---
 
-## O QUE MUDOU HOJE (03/08/2026)
+## O QUE MUDOU HOJE (04/08/2026)
+
+### Sessão noturna (04/08/2026)
+- Verificação de rotina: `supervisores_uk.md` e `chevening_essay_lideranca.md` confirmados íntegros e sem alterações necessárias (mesma tarefa repetida mensalmente desde abril — ver nota em `plano_noturno.md`).
+- Dei sequência ao próximo passo explicitamente sugerido na sessão de 03/08 em `mphil_usyd_pesquisa_literatura.md` (item 6): tentei baixar os apêndices suplementares de Lawrence et al. 2025 e Wenderott et al. 2025. Sites originais (Lancet/PMC) bloqueiam WebFetch/agent-browser com Cloudflare + prova-de-trabalho JS; contornado via API REST da Europe PMC, que devolveu os arquivos reais (xlsx/docx/XML).
+- **Lista nominal completa das 14 "experience studies" de Lawrence obtida** — confirma que são 100% radiologia (nenhuma patologia), reforçando o argumento de diferenciação.
+- **Achado crítico:** Drogt et al. 2024 (JMIR Human Factors, 21 entrevistas, Holanda) é o **precedente publicado mais próximo do gap** — combina radiologistas E patologistas na mesma amostra qualitativa, mas confirmado (via full-text) que **não usa SEIPS nem framework sociotécnico**. Não invalida o gap, mas precisa ser citado e diferenciado explicitamente no Background.
+- **Alerta para Thiago:** Wenderott et al. 2025 usa **SEIPS 3.0** (não "2.0") como lente de síntese — vale verificar com Carrigan se a proposta deveria adotar a versão 3.0.
+- Arquivos atualizados: `mphil_usyd_pesquisa_literatura.md` (nova seção), `memory_index.md`.
+
+## O QUE MUDOU (03/08/2026)
 
 ### Sessão noturna (03/08/2026)
 - Verificação de rotina: `supervisores_uk.md` e `chevening_essay_lideranca.md` confirmados íntegros e sem alterações necessárias (mesma tarefa repetida mensalmente desde abril — ver nota em `plano_noturno.md`).

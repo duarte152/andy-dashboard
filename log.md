@@ -4,6 +4,7 @@
 
 ---
 
+- **2026-08-04** — Call com Will (alumnus Chevening/UCL, conectado pela Waty) confirmada: Thiago propôs 9/08, 22h-23h horário da Tailândia (= 12h-13h BRT) por email direto. Contexto completo do thread Waty+Will exportado em `waty_will_thread_export_2026-08-04.txt`.
 - **2026-07-25 (sessão noturna)** — Tarefa agendada repetiu escopo já concluído (supervisores UK + essay Chevening liderança, verificados sem alterações). Usei o tempo real da sessão para avançar Fase 1A (pesquisa de literatura) do plano MPhil USyd/Carrigan, parada desde 17/06: busca piloto no PubMed → `mphil_usyd_pesquisa_literatura.md`. Achado crítico: revisão Lawrence et al. 2025 (eClinicalMedicine, 140 estudos, radiologia-only) se sobrepõe parcialmente ao tema mas não invalida o gap (falta patologia + framework SEIPS dedicado + foco qualitativo puro) — recomendado citá-la no Background da proposta para diferenciação.
 
 - **2026-07-25** — Chevening: fechada a lacuna do chevening.org/news (bloqueado para WebFetch/curl/wayback, mas acessível via `agent-browser`/navegador real — nova regra técnica salva em `preferences.md`). Lidos 4 posts oficiais: tips da Nora (Bristol), roundup de 4 bolsistas, feedback oficial dos comitês de leitura Chevening (fonte primária mais valiosa da pesquisa toda) e o caso de Rafael Zhansultanov (Cazaquistão, 4 rejeições antes de aprovar — novo recorde de persistência encontrado, supera Moudy Alfiana). Tudo incorporado em `chevening_aprovados_pesquisa.md` e será espelhado no Notion.

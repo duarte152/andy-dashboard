@@ -1,149 +1,102 @@
 # Memory Index
 
-*Last updated: 2026-06-15*
-*Consultar este índice para encontrar o arquivo certo antes de iniciar qualquer tarefa.*
+*Last updated: 2026-08-06*
+*Consultar este índice para encontrar o arquivo certo antes de iniciar qualquer tarefa. A partir de 06/08/2026, o Notion é a fonte de verdade única — este arquivo serve só de mapa de onde cada coisa está (Notion ou arquivo local ainda não migrado).*
 
 ---
 
-## Leitura Obrigatória no Início de Sessão
+## Leitura Obrigatória no Início de Sessão (Notion, desde 06/08/2026)
 
-| Arquivo | Conteúdo |
-|---------|----------|
-| `NOW.md` | Estado atual consolidado — prioridades ativas, próximos passos, datas críticas (fonte de verdade vigente) |
-| `preferences.md` | Regras comportamentais, regras de email, acesso ao Gmail, protocolo de memória, arquitetura de memória |
-| `thiago_profile.md` | Perfil completo: identidade, carreira, projetos, metas, rotina, nutrição |
+**Notion é a fonte de verdade única.** Os arquivos `NOW.md`, `preferences.md`, `thiago_profile.md` viraram stubs congelados (só ponteiro) — não ler/escrever mais neles. Ver `CLAUDE.md` para o protocolo completo.
 
----
+| Página Notion | ID | Conteúdo |
+|---------|----|----------|
+| 📌 Contexto para IA | `3b41f7dc-f5b5-81fa-9bb9-ed827f2e6286` | Identidade, formação, carreira, projetos, metas, rotina, regras operacionais (email/espanhol/infra técnica/trabalho remunerado), protocolo de memória e autonomia — substitui `thiago_profile.md` + `preferences.md` |
+| 📍 Estado Atual | `3b41f7dc-f5b5-8145-a121-cf333f7ea65d` | Prioridades ativas (UK CDTs/Chevening/USyd), contatos, datas críticas, pendências abertas — substitui `NOW.md` |
+| 🗒️ Log | `3a81f7dc-f5b5-8148-a0b4-c33a5fd62b84` | Registro cronológico append-only — fonte oficial (não mais espelho de `log.md` local) |
 
-## Arquitetura de Memória (adotado 25/07/2026)
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `log.md` | Registro cronológico append-only — 1 linha por decisão/sessão relevante |
-| `inbox.md` | Entrada bruta não classificada (exceção, não fluxo principal — triar rápido) |
-| `ideias.md` | Backlog de ideias soltas que ainda não viraram projeto ativo |
+Backups congelados (referência morta, não editar): `NOW_archive_2026-08-06.md`, `preferences_archive_2026-08-06.md`, `thiago_profile_archive_2026-08-06.md`, `log.md`.
 
 ---
 
-## Notion (segundo cérebro de candidaturas)
+## Tabela Completa de Páginas Notion (segundo cérebro)
 
-**Status: estrutura completa construída em 25/07/2026** — 7 páginas (raiz + 6 subpáginas), condensando os arquivos locais abaixo. Notion = visão condensada/navegável e compartilhada com Thiago; os arquivos `.md` locais continuam sendo a versão completa/fonte de detalhe.
+Página raiz: **🧠 Segundo Cérebro (Thiago)** — `3a81f7dc-f5b5-80fd-86ab-d8ea0dea631c`
 
-| Arquivo / Página | Conteúdo |
-|---------|----------|
+| Página | ID | Conteúdo | Arquivos locais que originaram / foram substituídos |
+|---|---|---|---|
+| 📌 Contexto para IA | `3b41f7dc-f5b5-81fa-9bb9-ed827f2e6286` | Identidade, regras operacionais, protocolo de memória/autonomia, infraestrutura técnica (Groq/Gmail/Notion API/GitHub Pages), regra "nunca trabalhar de graça" | `thiago_profile.md`, `preferences.md`, `plano_noturno.md` (info de infra) |
+| 📍 Estado Atual | `3b41f7dc-f5b5-8145-a121-cf333f7ea65d` | Prioridades ativas, contatos, datas críticas, pendências | `NOW.md` |
+| 🗒️ Log | `3a81f7dc-f5b5-8148-a0b4-c33a5fd62b84` | Registro cronológico append-only, fonte oficial | `log.md` (congelado, histórico até 04/08) |
+| 💡 Ideias / Backlog | `3a81f7dc-f5b5-815f-b128-d1b399a240bb` | Backlog de ideias soltas | `ideias.md` (espelhado, não congelado) |
+| 🎨 Design System - Regras de Formatação | `3a81f7dc-f5b5-81a1-b43b-e6277c3d3f51` | Guia de formatação Notion | `attachments/design-system-notion.txt` (fonte original, ler sempre antes de escrever) |
+| 💼 Laudite | `3b41f7dc-f5b5-81f4-be50-ea0be2325710` | Cargo atual, resultados quantificáveis, trajetória, produção de conteúdo | — |
+| 🎤 Trabalhos Extras | `3b41f7dc-f5b5-81ec-84c7-c152b5295f16` | Blockchain Rio, DB Saúde, MC geral | `minuta_contrato_blockchain_rio.md` (congelado) |
+| 🌐 Networking / Contatos | `3b41f7dc-f5b5-81ac-b53a-da48ea4f05e6` | Contatos ativos (mestrado) + estratégia LinkedIn | `linkedin_strategy.md` (congelado) |
+| 🎓 Chevening | `3a81f7dc-f5b5-8171-8bee-e434604d9239` | Status, datas, 4 essays completos (texto final nos toggles), framework de essay "why this course" (Waty+Will) | `chevening_essay_lideranca.md`, `chevening_essays_restantes.md`, `chevening_essay_framework.md` (todos congelados) |
+| 🎓 UK CDT/DTP | `3a81f7dc-f5b5-8142-bd5e-f28d8fb5a108` | Programas, calendário, virtual coffees, dicionário de termos, elegibilidade internacional detalhada, estrutura do personal statement | `plano_candidatura_uk_cdt.md`, `waty_call_notes.md` (congelados) |
+| 🎓 MPhil USyd (Carrigan) | `3a81f7dc-f5b5-8110-958e-f16d4ee61973` | Status, deadline RTP (18/dez/2026), metodologia do scoping review, progresso da revisão de literatura (10 estudos), detalhe RTP | `carrigan_scoping_review_notes.md`, `rtp_pesquisa.md`, `mphil_usyd_pesquisa_literatura.md` (congelados) |
+| 🏆 Aprovados em Chevening — Pesquisa de Práticas (subpágina de Chevening) | `3a81f7dc-f5b5-8194-a09d-f9fd7dc7573c` | Compilado de práticas de ~30 aprovados reais, por ensaio + casos de rejeição→aprovação | `chevening_aprovados_pesquisa.md` (NÃO congelado — mantido como matéria-prima permanente) |
+| 👑 McCall MacBain (McGill) | `3b41f7dc-f5b5-8191-81f7-c15b5b3cf73e` | Pesquisa, narrativa, recomendadores, supervisores McGill | `mccallmacbain_pesquisa.md`, `mccallmacbain_narrativa.md`, `mccallmacbain_recomendadores.md`, `supervisores_mcgill.md`, `emails_supervisores_mcgill.md` (todos congelados) |
+| 🎓 Knight-Hennessy (Stanford) | `3b41f7dc-f5b5-81dc-8ab3-c8316e62e718` | Pesquisa, essay de liderança, supervisores Stanford MSE, SOP, métricas de impacto | `knighthennessy_pesquisa.md`, `knighthennessy_essay_lideranca.md`, `supervisores_stanford_mse.md`, `sop_stanford_mse.md`, `metricas_impacto_khs.md` (todos congelados) |
+| 🌍 Outras Bolsas (Fulbright/Erasmus/Canadá/Suécia) | `3b41f7dc-f5b5-8127-92c8-c81931cb7a6f` | Pesquisa consolidada dessas 4 frentes | `fulbright_research.md`, `erasmus_pesquisa.md`, `canada_pesquisa.md`, `swedish_pesquisa.md`, `emails_supervisores_canada.md` (todos congelados) |
+| 📧 Emails para Supervisores | `3b41f7dc-f5b5-8142-bc27-f978a2db7bb9` | Templates, checklist, emails prontos/enviados (UK, EUA, follow-up) | `supervisor_email_template.md`, `emails_followup.md`, `emails_supervisores_prontos.md`, `baysari_email_v2.md`, `emails_supervisores_uk.md`, `emails_supervisores_uk_batch2.md`, `emails_supervisores_eua.md`, `emails_supervisores_eua_batch2.md` (todos congelados) |
+| 📄 CV / Perfil Profissional | `3b41f7dc-f5b5-81aa-8187-d259a9f7bdb5` | CV texto + estratégia de perfil | `cv_english.md`, `linkedin_strategy.md` (congelados) |
+| ✅ Pré-Requisitos de Candidatura | `3b41f7dc-f5b5-81ae-bbbe-ff310f194109` | Levantamento de pré-requisitos acadêmicos/técnicos/testes/docs | `pacote_pre_requisitos_2026-08-06.md` (congelado) |
+
+**Nota importante:** `ajustes_emails_supervisores.md` NÃO foi congelado — continua sendo leitura obrigatória antes de redigir qualquer email (regra explícita no `CLAUDE.md`, raiz do projeto). Não migrar/congelar sem revisar essa regra primeiro.
+
+---
+
+## Arquivos locais ainda NÃO migrados (dívida técnica pendente)
+
+Estes arquivos têm conteúdo que ainda não foi incorporado a nenhuma página Notion de forma completa. Ao encontrar um durante alguma tarefa, migrar o conteúdo relevante para uma página Notion (nova ou existente) em vez de só citá-lo, seguindo a regra do `CLAUDE.md`.
+
+| Arquivo | Conteúdo | Página Notion candidata (ainda não criada/completada) |
+|---|---|---|
+| `mestrado_pesquisa.md` | Pesquisa geral sobre mestrado no exterior | Nenhuma página geral de "Mestrado" existe ainda — avaliar se cabe em Estado Atual ou página nova |
+| `supervisores_australia.md` | Supervisores identificados na Austrália (USyd, UNSW etc.) | 🎓 MPhil USyd (Carrigan) |
+| `supervisores_uk.md` | Supervisores identificados no Reino Unido | 🎓 UK CDT/DTP |
+| `research_proposal_australia.md` | Rascunho da proposta de pesquisa para Austrália | 🎓 MPhil USyd (Carrigan) |
+| `statement_of_purpose.md` | Statement of Purpose base | 📄 CV / Perfil Profissional |
+| `sop_uk_personalizados.md` | SOPs personalizados para universidades do Reino Unido | 🎓 UK CDT/DTP |
+| `bolsas_internacionais_pesquisa.md` | Pesquisa geral sobre bolsas internacionais | 🌍 Outras Bolsas (ou nova página geral) |
+| `relatos_brasileiros.md` | Relatos de brasileiros no exterior | A definir |
+| `chevening_pesquisa.md` | Pesquisa completa da Chevening (elegibilidade, valor, perfil de bolsistas, dicas de alumni) | 🎓 Chevening — mantido intencionalmente como detalhe de apoio (citado no callout de fechamento da página) |
+| `chevening_aprovados_pesquisa.md` | Pesquisa integral de práticas de aprovados Chevening | Mantido intencionalmente como matéria-prima (já espelhado como subpágina 🏆) |
+| `plano_mphil_usyd.md` | Plano completo com cronograma granular da proposta à Carrigan | 🎓 MPhil USyd (Carrigan) — mantido intencionalmente como detalhe operacional (citado no callout de fechamento da página) |
+| `dashboard.html` | Dashboard HTML público (hospedado via GitHub Pages) | Não aplicável — é artefato de código, não conteúdo de memória |
+| `cv_thiago_rocha_duarte.html` / `.pdf` | CV em HTML/PDF | Não aplicável — artefato de arquivo, não conteúdo de memória |
+
+---
+
+## Arquivos locais que permanecem ativos por design (não migrar)
+
+| Arquivo | Motivo |
+|---------|--------|
+| `ajustes_emails_supervisores.md` | Leitura obrigatória antes de qualquer email — regra explícita no `CLAUDE.md` |
+| `inbox.md` | Scratch space intencional para entrada bruta não classificada — vazio no momento |
+| `ideias.md` | Espelhado no Notion (💡 Ideias/Backlog), mas mantido local como rascunho de trabalho |
+| `.notion_key`, `.groq_key` | Credenciais — nunca migrar para Notion |
+| `notion_helpers.py`, `transcribe.py`, `github_push.sh`, `build_notion_aprovados.py` | Scripts/ferramentas — não são conteúdo de memória |
+| `conversations/` | Histórico narrativo completo de sessões — arquivo morto, não editar |
+
+---
+
+## Ferramentas
+
+| Arquivo | Uso |
+|---------|-----|
 | `.notion_key` | Token da integração interna do Notion (API) |
 | `notion_helpers.py` | Toolkit Python (urllib) para criar/editar blocos via API do Notion — reusar em vez de recriar |
-| `attachments/design-system-notion.txt` | **Guia obrigatório de sintaxe + convenções estéticas** para qualquer página escrita no Notion (Notion-flavored Markdown) — ler antes de criar/editar página |
-| [🧠 Segundo Cérebro (Thiago)](https://app.notion.com/p/Segundo-C-rebro-Thiago-3a81f7dcf5b580fd86abd8ea0dea631c) | **Página raiz** — dashboard com status das 3 frentes, hierarquia de confiança, regra de autonomia, link para as 6 subpáginas abaixo |
-| [🎨 Design System - Regras de Formatação](https://app.notion.com/p/Design-System-Regras-de-Formata-o-3a81f7dcf5b581a1b43be6277c3d3f51) | Espelho no próprio Notion do `design-system-notion.txt` — regras de formatação a seguir sempre |
-| [🎓 Chevening](https://app.notion.com/p/Chevening-3a81f7dcf5b581718beee434604d9239) | Versão condensada de `chevening_pesquisa.md` + essays — status, datas, pendências |
-| [🎓 UK CDT/DTP](https://app.notion.com/p/UK-CDT-DTP-3a81f7dcf5b58142bd5ef28d8fb5a108) | Versão condensada de `plano_candidatura_uk_cdt.md` — programas, calendário, virtual coffees |
-| [🎓 MPhil USyd (Carrigan)](https://app.notion.com/p/MPhil-USyd-Carrigan-3a81f7dcf5b58110958ef16d4ee61973) | Versão condensada de `plano_mphil_usyd.md` — status, deadline RTP, próximos passos |
-| [🗒️ Log](https://app.notion.com/p/Log-3a81f7dcf5b58148a0b4c33a5fd62b84) | Espelho no Notion do `log.md` — registro cronológico |
-| [💡 Ideias / Backlog](https://app.notion.com/p/Ideias-Backlog-3a81f7dcf5b5815fb128d1b399a240bb) | Espelho no Notion do `ideias.md` — ainda vazio, pronto para uso |
-| [🏆 Aprovados em Chevening — Pesquisa de Práticas](https://app.notion.com/p/Aprovados-em-Chevening-Pesquisa-de-Pr-ticas-3a81f7dcf5b58194a09df9fd7dc7573c) | Subpágina de 🎓 Chevening. Compilado de práticas de ~30 aprovados reais (LatAm, África, Ásia, Oriente Médio), por ensaio + casos de rejeição→aprovação. Detalhe completo em `chevening_aprovados_pesquisa.md` |
-| `chevening_aprovados_pesquisa.md` | Pesquisa completa (todas as fontes com detalhe integral) que originou a página acima — usar como matéria-prima para o Thiago escrever os próprios ensaios |
-| `build_notion_aprovados.py` | Script usado para gerar a página acima — referência de como popular páginas grandes com toggles/tabelas via `notion_helpers.py` |
+| `attachments/design-system-notion.txt` | **Guia obrigatório de sintaxe + convenções estéticas** para qualquer página escrita no Notion — ler antes de criar/editar página |
+| `build_notion_aprovados.py` | Script de referência para popular páginas grandes com toggles/tabelas via `notion_helpers.py` |
+| `transcribe.py` | Transcrição de áudio via Groq API |
+| `github_push.sh` | Deploy do dashboard público via GitHub Pages |
 
 ---
-
-## Mestrado no Exterior
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `mestrado_pesquisa.md` | Pesquisa geral sobre mestrado no exterior |
-| `supervisores_australia.md` | Lista de supervisores identificados na Austrália (USyd, UNSW etc.) |
-| `supervisores_uk.md` | Lista de supervisores identificados no Reino Unido |
-| `supervisores_mcgill.md` | Supervisores identificados na McGill (Canadá) para McCall MacBain |
-| `supervisores_stanford_mse.md` | Supervisores para Stanford MSE |
-| `research_proposal_australia.md` | Rascunho da proposta de pesquisa para Austrália |
-| `statement_of_purpose.md` | Statement of Purpose base |
-| `sop_uk_personalizados.md` | SOPs personalizados para universidades do Reino Unido |
-| `sop_stanford_mse.md` | SOP para Stanford MSE |
-
-## Emails para Supervisores
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `ajustes_emails_supervisores.md` | **REGRAS GLOBAIS de estilo e conteúdo para todos os emails** |
-| `supervisor_email_template.md` | Template base + checklist pré-envio |
-| `emails_supervisores_prontos.md` | Emails prontos (Austrália + outros) |
-| `emails_supervisores_uk.md` | Emails para supervisores UK - batch 1 |
-| `emails_supervisores_uk_batch2.md` | Emails para supervisores UK - batch 2 |
-| `emails_supervisores_eua.md` | Emails para supervisores EUA - batch 1 |
-| `emails_supervisores_eua_batch2.md` | Emails para supervisores EUA - batch 2 |
-| `emails_supervisores_canada.md` | Emails para supervisores Canadá — histórico (batch original suspenso 10/05, novo mapeamento McGill 21/07) |
-| `emails_supervisores_mcgill.md` | Emails prontos para Buckeridge e Pant Pai (McGill) — verificação Regra 13 concluída, 22/07/2026 |
-| `emails_followup.md` | Templates de follow-up (14 dias sem resposta) |
-| `baysari_email_v2.md` | Email específico para Prof. Baysari (USyd) |
-| `ajustes_emails_supervisores.md` | Regras e ajustes consolidados (abril/2026) |
-
-## Bolsas e Programas
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `bolsas_internacionais_pesquisa.md` | Pesquisa geral sobre bolsas internacionais |
-| `rtp_pesquisa.md` | Research Training Program (Austrália) |
-| `chevening_pesquisa.md` | Bolsa Chevening (Reino Unido) |
-| `chevening_essay_lideranca.md` | Essay de liderança para Chevening |
-| `chevening_essays_restantes.md` | Demais essays Chevening |
-| `knighthennessy_pesquisa.md` | Knight-Hennessy (Stanford) |
-| `knighthennessy_essay_lideranca.md` | Essay de liderança Knight-Hennessy |
-| `mccallmacbain_pesquisa.md` | McCall MacBain (McGill) |
-| `mccallmacbain_narrativa.md` | Narrativa para McCall MacBain |
-| `mccallmacbain_recomendadores.md` | Recomendadores para McCall MacBain |
-| `fulbright_research.md` | Bolsa Fulbright (EUA) |
-| `erasmus_pesquisa.md` | Programa Erasmus |
-| `canada_pesquisa.md` | Pesquisa sobre mestrado no Canadá |
-| `swedish_pesquisa.md` | Pesquisa sobre programas na Suécia |
-| `rtp_pesquisa.md` | RTP Austrália |
-
-## CV e Perfil Profissional
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `cv_english.md` | CV em inglês (texto) |
-| `cv_thiago_rocha_duarte.html` | CV em HTML |
-| `cv_thiago_rocha_duarte.pdf` | CV em PDF |
-| `linkedin_strategy.md` | Estratégia para LinkedIn |
-| `metricas_impacto_khs.md` | Métricas de impacto (Knight-Hennessy) |
-
-## MPhil USyd — Plano de Ação
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `plano_mphil_usyd.md` | Plano completo com cronograma para entregar proposta à Carrigan (USyd) — deadline RTP: 18/Dez/2026 |
-| `carrigan_scoping_review_notes.md` | Notas do review não publicado da Carrigan (SEIPS + DHIs) — metodologia, bases de dados, estrutura |
-| `mphil_usyd_pesquisa_literatura.md` | Busca piloto de literatura (Fase 1A) no PubMed (25/07) + expansão (26/07) com novos termos (endoscopist, dermatology AI, CDSS+SEIPS) + rastreamento das fontes das 2 revisões-guarda-chuva (03/08): 4 estudos novos, matriz com 10 estudos + **apêndices suplementares baixados via Europe PMC API (04/08 noturna)**: lista nominal completa das 14 "experience studies" de Lawrence obtida; achado crítico — Drogt et al. 2024 (JMIR) é o precedente publicado mais próximo do gap (rad+path juntos, sem SEIPS); alerta terminológico SEIPS 2.0 vs 3.0 (Wenderott usa 3.0) para Thiago decidir com Carrigan. Gap segue validado |
-| `attachments/SEIPS review_final_App Erg.docx` | Arquivo original do scoping review da Carrigan (não publicado — não compartilhar) |
-
-## Candidatura UK — CDTs e Chevening
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `plano_candidatura_uk_cdt.md` | **PLANO PRINCIPAL UK** — programas CDT/DTP mapeados, prereqs, estratégia de entrevistas com alunos, personal statement, calendário de aplicações |
-| `waty_call_notes.md` | Notas brutas da call com Dr. Waty Lilaonitkul (27/05/2026) — estratégia de candidatura, dicas de personal statement, orientação sobre CDTs |
-| `supervisores_uk.md` | Supervisores identificados (UCL, Imperial, Edinburgh) — Dr. Waty é contato ativo |
-| `chevening_pesquisa.md` | Pesquisa completa sobre a Chevening scholarship — portal abre agosto 2026 |
-| `chevening_essay_lideranca.md` | Essay de liderança Chevening (redigido) |
-| `chevening_essays_restantes.md` | Demais 3 essays Chevening (redigidos) |
-| `chevening_essay_framework.md` | Framework de essay consolidando conselhos da Waty (Personal Impact/Vision/Give Back) + Will, alumnus Chevening/UCL (Why UK / Why this course "jigsaw puzzle" / Why now) — usar como base ao redigir "why this course" |
-
-## Trabalhos Extras (MC / Blockchain Rio)
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `minuta_contrato_blockchain_rio.md` | Minuta de contrato de MC para o Blockchain Rio 2026 (evento 12-13/08, Expo Rio) — rascunho aguardando decisões do Thiago em pontos `[A DEFINIR]` (prazo pagamento, direitos de imagem, cancelamento, confirmação do nome do palco) antes de enviar para Cintia/Ciça |
-
-## Outros
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `relatos_brasileiros.md` | Relatos de brasileiros no exterior |
-| `plano_noturno.md` | Plano noturno / rotina |
-| `dashboard.html` | Dashboard de acompanhamento das aplicações |
 
 ## Histórico de Conversas
 
-Pasta `conversations/` - 22 arquivos de sessões anteriores (abr-mai/2026).
+Pasta `conversations/` - arquivos de sessões anteriores (abr-mai/2026).
 Para buscar contexto: `grep -rl "palavra-chave" /workspace/group/conversations/`
